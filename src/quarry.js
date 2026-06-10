@@ -55,7 +55,10 @@ export async function quarryUrl(root, url) {
     text = extractText(await res.text())
     if (text.length > MAX_CHARS) { text = text.slice(0, MAX_CHARS); note = `truncated at ${MAX_CHARS} characters — the page went on, this capture does not` }
   } catch (e) {
-    note = `the fetch failed: ${e.message} — this capture records the failure so the attempt is not forgotten`
+    // undici hides the real reason (ENOTFOUND, ECONNREFUSED) in e.cause; a
+    // receipt that cannot say WHY is a weak receipt.
+    const why = e.cause?.code || e.cause?.message || e.message
+    note = `the fetch failed: ${why} — this capture records the failure so the attempt is not forgotten`
   }
   const path = await save(root, slugUrl(url), [
     `# capture: ${url}`,

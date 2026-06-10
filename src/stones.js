@@ -6,19 +6,23 @@
 // parser vanished tonight, the castle would still stand at dawn.
 
 import { readFile, readdir, mkdir, writeFile } from 'node:fs/promises'
-import { existsSync } from 'node:fs'
+import { existsSync, statSync } from 'node:fs'
 import { join, dirname, relative, resolve, sep } from 'node:path'
 
 export const CERTAINTY = ['tested', 'reasoned', 'told', 'guessed']
 export const today = () => new Date().toISOString().slice(0, 10)
+const DATE = /^\d{4}-\d{2}-\d{2}$/
 
+// Any letter or number in any script keeps its place — a mind's title is not
+// silently renamed just for being non-Latin. Sliced by code point so the cap
+// can never split a character.
 export const slug = (title) =>
-  title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 64) || 'untitled'
+  [...title.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '-').replace(/^-+|-+$/g, '')].slice(0, 64).join('') || 'untitled'
 
 // Parse one stone. Never throws on bad form — bad form is a finding, not a
 // crash, so every problem lands in `problems` and the friction report says it.
 export function parseStone(text, path = '') {
-  const lines = text.split('\n')
+  const lines = text.split(/\r?\n/) // a stone written on another OS is still a stone
   const stone = {
     path, title: null, keys: {}, leansOn: [], rubsAgainst: [],
     body: '', sections: {}, problems: [],
@@ -27,14 +31,16 @@ export function parseStone(text, path = '') {
   if (lines[i]?.startsWith('# ')) { stone.title = lines[i].slice(2).trim(); i++ }
   else stone.problems.push('no title line — a stone begins "# <the insight, named honestly>"')
   while (i < lines.length && lines[i].trim() === '') i++
-  while (i < lines.length && /^- \S/.test(lines[i])) {
+  // Only true `- key: value` lines are header; the first line that is not one
+  // ends the header and belongs to the body — nothing is swallowed in between.
+  while (i < lines.length) {
     const m = lines[i].match(/^- ([a-z-]+):\s*(.*)$/)
-    if (m) {
-      const [, key, value] = m
-      if (key === 'leans-on') stone.leansOn.push(value.trim())
-      else if (key === 'rubs-against') stone.rubsAgainst.push(value.trim())
-      else stone.keys[key] = value.trim()
-    }
+    if (!m) break
+    const [, key, value] = m
+    const v = value.trim()
+    if (key === 'leans-on') { if (v) stone.leansOn.push(v) }
+    else if (key === 'rubs-against') { if (v) stone.rubsAgainst.push(v) }
+    else stone.keys[key] = v
     i++
   }
   stone.body = lines.slice(i).join('\n').trim()
@@ -52,14 +58,20 @@ export function parseStone(text, path = '') {
   if (stone.keys.certainty && !CERTAINTY.includes(stone.keys.certainty)) {
     stone.problems.push(`certainty "${stone.keys.certainty}" is not a certainty word (${CERTAINTY.join(' | ')})`)
   }
+  for (const key of ['laid', 'checked']) {
+    if (stone.keys[key] && !DATE.test(stone.keys[key])) {
+      stone.problems.push(`"${key}: ${stone.keys[key]}" is not a date (YYYY-MM-DD)`)
+    }
+  }
   return stone
 }
 
 // Resolve a stone's relative link to a repo-relative path, or null if it
 // points at nothing. Links are relative on purpose — they survive the tool.
+// A directory is not a stone: a lean must land on a file.
 export function resolveLink(stonePath, link, root) {
   const target = resolve(root, dirname(stonePath), link)
-  return existsSync(target) ? relative(root, target) : null
+  return existsSync(target) && statSync(target).isFile() ? relative(root, target) : null
 }
 
 async function* mdFiles(dir) {

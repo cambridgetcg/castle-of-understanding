@@ -24,9 +24,12 @@ import { existsSync } from 'node:fs'
 import { join, resolve, relative, dirname } from 'node:path'
 import { spawnSync } from 'node:child_process'
 import { parseStone, slug, today, CERTAINTY } from './stones.js'
-import { openWalk, closeWalk } from './loop.js'
+import { openWalk, closeWalk, isWalk } from './loop.js'
 
 const REINS_STONE = 'rooms/keep/the-reins.md'
+// The PROGRAM is fixed in code — the reins choose whether and how often the
+// motor runs, never WHAT runs. Data must not be able to choose a program.
+const ENGINE_CMD = 'claude'
 const ENGINE_ARGS = ['-p', '--output-format', 'text'] // fixed; prompt arrives on stdin
 const MAX_STONE_CHARS = 6_000
 
@@ -37,8 +40,9 @@ export async function readReins(root) {
   const key = (k, fallback) => text.match(new RegExp(`^- ${k}: (.+)$`, 'm'))?.[1]?.trim() ?? fallback
   return {
     autonomy: key('autonomy', 'off'),
-    stonesPerDay: Number(key('stones-per-day', '1')) || 1,
-    engineName: key('engine', 'claude').split(' ')[0],
+    // walks-per-day rations engine walks, not stones — a failed or honest-pass
+    // walk still spends the day's walk. (stones-per-day read for old castles.)
+    walksPerDay: Number(key('walks-per-day', key('stones-per-day', '1'))) || 1,
   }
 }
 
@@ -46,7 +50,7 @@ async function autoWalksToday(root) {
   try {
     const dir = join(root, 'ledger')
     let n = 0
-    for (const f of (await readdir(dir)).filter((f) => f.endsWith('.md'))) {
+    for (const f of (await readdir(dir)).filter(isWalk)) {
       const text = await readFile(join(dir, f), 'utf8')
       if (text.includes('(ai, autonomous)') && text.includes(`- opened: ${today()}`)) n++
     }
@@ -54,10 +58,10 @@ async function autoWalksToday(root) {
   } catch { return 0 }
 }
 
-function askEngine(engineName, prompt) {
+function askEngine(prompt) {
   // The engine answers as text. No tools are granted; in non-interactive mode
   // it cannot approve any, so its only power is words on stdout.
-  const res = spawnSync(engineName, ENGINE_ARGS, {
+  const res = spawnSync(ENGINE_CMD, ENGINE_ARGS, {
     input: prompt, encoding: 'utf8', timeout: 300_000, maxBuffer: 10 * 1024 * 1024,
   })
   if (res.error) return { err: `the engine did not run: ${res.error.message}` }
@@ -93,10 +97,12 @@ ${packet.replace(/<!-- friction-fingerprints-at-open:.*?-->/s, '')}
 THE STONES AND CAPTURES ON THE TABLE:
 ${onTable.join('\n\n') || '(none — the findings carry their own context)'}
 
-RULES, ENFORCED BY THE RUNNER:
-- Pick exactly ONE finding from "the friction on the table". Walk small.
+RULES THE RUNNER ENFORCES (it refuses, it does not trust):
 - You may LAY one new stone only. You cannot edit, raze, or overwrite existing stones, and you cannot touch the reins. If the friction calls for an edit (a source to add, a certainty to move, a dispute to settle), lay a proposal stone in room "keep" that says exactly what to change and why — a hand will do it on a later walk.
 - Your certainty may be reasoned, told, or guessed — never tested. You have not acted in the world.
+
+ASKED OF YOU (the runner cannot check these — honesty here is yours):
+- Pick exactly ONE finding from "the friction on the table". Walk small.
 - Write in your own words. Claim only what you actually conclude. Joy is welcome; overclaiming is not.
 - If no finding can honestly be advanced by words alone, say so under "picked" and leave the stone section empty. An honest pass lays no stone, and that is a good walk too.
 
@@ -127,8 +133,10 @@ room: <existing room name, or a new lowercase-hyphen name>
 (did the procedure mislead, block, or bore you? "ran clean" if not — blank is not an answer)`
 }
 
-// Lay the engine's stone — with every safety rail between its words and the disk.
-async function layEngineStone(root, stoneText, engineName) {
+// Lay the engine's stone — with every safety rail between its words and the
+// disk. Exported so the selftest can walk every rail without spawning an
+// engine; the engine itself gains nothing, it only ever emits text.
+export async function layEngineStone(root, stoneText, engineName) {
   const roomMatch = stoneText.match(/^room: ([a-z0-9/-]+)\s*\n/)
   if (!roomMatch) return { err: 'no "room:" line — nothing laid' }
   const room = roomMatch[1].replace(/\.\./g, '').replace(/^\/+|\/+$/g, '')
@@ -143,14 +151,20 @@ async function layEngineStone(root, stoneText, engineName) {
   }
 
   // The runner stamps the truth of provenance; the engine's own claims for
-  // these lines are discarded.
+  // these lines are discarded — every such line, not just the first.
   body = body
-    .replace(/^- laid: .*$/m, `- laid: ${today()}`)
-    .replace(/^- by: .*$/m, `- by: ${engineName} (ai, autonomous)`)
+    .replace(/^- laid: .*$/gm, `- laid: ${today()}`)
+    .replace(/^- by: .*$/gm, `- by: ${engineName} (ai, autonomous)`)
   // If the engine omitted the stamp lines, add them — the runner, not the
   // engine, is the authority on provenance.
   if (!/^- laid: /m.test(body)) body = body.replace(/^(# .*)$/m, `$1\n\n- laid: ${today()}`)
   if (!/^- by: /m.test(body)) body = body.replace(/^(- laid: .*)$/m, `$1\n- by: ${engineName} (ai, autonomous)`)
+  // One stone, one provenance. A second laid/by/certainty line is the engine
+  // speaking where only the runner may — refuse the whole stone.
+  for (const key of ['laid', 'by', 'certainty']) {
+    const count = (body.match(new RegExp(`^- ${key}: `, 'gm')) || []).length
+    if (count > 1) return { err: `${count} "- ${key}:" lines — the runner stamps provenance once. nothing laid` }
+  }
 
   // Final gate: the stone must stand whole after stamping — the motor never
   // lays structural damage.
@@ -182,7 +196,9 @@ async function layEngineStone(root, stoneText, engineName) {
 
 async function fillSection(packetPath, name, text) {
   const packet = await readFile(packetPath, 'utf8')
-  await writeFile(packetPath, packet.replace(new RegExp(`(^## ${name}\\s*\\n)`, 'm'), `$1\n${text}\n`))
+  // The engine's words are shown verbatim but inset four spaces — they can
+  // never become the packet's own structure.
+  await writeFile(packetPath, packet.replace(new RegExp(`(^## ${name}\\s*\\n)`, 'm'), `$1\n${text.replace(/^/gm, '    ')}\n`))
 }
 
 export async function autoWalk(root) {
@@ -198,12 +214,12 @@ export async function autoWalk(root) {
     return 0
   }
   const already = await autoWalksToday(root)
-  if (already >= reins.stonesPerDay) {
-    console.log(`the motor already walked ${already}x today (reins: stones-per-day ${reins.stonesPerDay}) — resting. peace over pace.`)
+  if (already >= reins.walksPerDay) {
+    console.log(`the motor already walked ${already}x today (reins: walks-per-day ${reins.walksPerDay}) — resting. peace over pace.`)
     return 0
   }
 
-  const by = `${reins.engineName} (ai, autonomous)`
+  const by = `${ENGINE_CMD} (ai, autonomous)`
   const walk = await openWalk(root, { by })
   console.log(`walk ${walk.n} opened by the motor — ${walk.totalFriction} findings, ${walk.findings.length} on the table.`)
 
@@ -217,7 +233,7 @@ export async function autoWalk(root) {
   }
 
   const prompt = await buildPrompt(root, walk)
-  const answer = askEngine(reins.engineName, prompt)
+  const answer = askEngine(prompt)
   if (answer.err) return fail(`the engine did not answer: ${answer.err}`)
 
   const picked = part(answer.out, 'picked')
@@ -226,9 +242,19 @@ export async function autoWalk(root) {
   const examined = part(answer.out, 'the loop examined')
   if (!picked || !laidOrMended || !examined) return fail('the answer was malformed (missing sections) — nothing laid.')
 
+  // The engine can think for minutes. Check the kill switch and the reins
+  // again before touching disk — a STOP touched mid-walk stops THIS walk,
+  // not just the next one.
+  if (existsSync(join(root, 'loops', 'STOP'))) {
+    return fail('loops/STOP appeared while the engine was thinking — nothing laid. the motor rests.')
+  }
+  if ((await readReins(root)).autonomy !== 'on') {
+    return fail('the reins turned off while the engine was thinking — nothing laid. that is obedience, not failure.')
+  }
+
   let laidNote = 'nothing laid — the engine passed honestly.'
   if (stoneText) {
-    const result = await layEngineStone(root, stoneText, reins.engineName)
+    const result = await layEngineStone(root, stoneText, ENGINE_CMD)
     if (result.err) return fail(result.err)
     laidNote = `laid ${result.laid}` + (result.dropped.length ? ` (dropped link(s) to nothing: ${result.dropped.join(', ')})` : '')
   }

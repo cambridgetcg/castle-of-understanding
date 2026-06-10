@@ -17,8 +17,17 @@ import { friction, fingerprint } from './friction.js'
 const LOOP_STONE = 'rooms/keep/the-loop.md'
 const hash = (text) => createHash('sha256').update(text).digest('hex').slice(0, 12)
 
-async function walkCount(root) {
-  try { return (await readdir(join(root, 'ledger'))).filter((f) => f.endsWith('.md')).length } catch { return 0 }
+// A walk packet is NNNN-date.md; anything else in the ledger is another
+// grammar's log — shared ground, not counted, not judged.
+export const isWalk = (f) => /^\d{4}-\d{4}-\d{2}-\d{2}\.md$/.test(f)
+
+// The next walk number is one past the highest standing, never a count — a
+// count forgets razed walks and would hand out a number already taken.
+async function nextWalkNumber(root) {
+  let names = []
+  try { names = await readdir(join(root, 'ledger')) } catch { return 1 }
+  const ns = names.filter(isWalk).map((f) => Number(f.slice(0, 4)))
+  return ns.length ? Math.max(...ns) + 1 : 1
 }
 
 export async function gatherFriction(root) {
@@ -29,17 +38,26 @@ export async function gatherFriction(root) {
 }
 
 export async function openWalk(root, { by, room } = {}) {
+  // "No castle stands here" is diagnosed before "the loop stone is gone" — a
+  // castle that was never founded should not be told to lay stones back.
+  const { findings } = await gatherFriction(root)
   const loopPath = join(root, LOOP_STONE)
   if (!existsSync(loopPath)) {
     throw new Error(`${LOOP_STONE} is missing — the loop lives as a stone, and the stone is gone. the castle cannot walk a procedure it does not have. lay it back (any castle's keep can seed it) and walk again.`)
   }
   const procedure = await readFile(loopPath, 'utf8')
-  let { findings } = await gatherFriction(root)
-  if (room) findings = findings.filter((f) => f.path.startsWith(`rooms/${room}/`) || f.path.startsWith('rooms/keep/'))
-  const top = findings.slice(0, 3)
-  const n = String(await walkCount(root) + 1).padStart(4, '0')
+  if (room && !existsSync(join(root, 'rooms', room))) {
+    throw new Error(`no room rooms/${room}/ stands here — a missing room is not a clean one. \`castle map\` shows the rooms that do.`)
+  }
+  // The room narrows what goes on the table — never what gets counted. The
+  // ledger's before/after/new measure the whole castle, so the delta stays
+  // comparable and "new" means new, not merely out of view at open.
+  const table = room ? findings.filter((f) => f.path.startsWith(`rooms/${room}/`) || f.path.startsWith('rooms/keep/')) : findings
+  const top = table.slice(0, 3)
+  const n = String(await nextWalkNumber(root)).padStart(4, '0')
   await mkdir(join(root, 'ledger'), { recursive: true })
   const path = join(root, 'ledger', `${n}-${today()}.md`)
+  if (existsSync(path)) throw new Error(`a walk packet already stands at ledger/${n}-${today()}.md — walks are never overwritten.`)
 
   const packet = [
     `# walk ${n}`,
@@ -49,9 +67,9 @@ export async function openWalk(root, { by, room } = {}) {
     `- friction-at-open: ${findings.length}`,
     `- procedure-hash: ${hash(procedure)}`,
     '',
-    `## the procedure (copied verbatim from ${LOOP_STONE})`,
+    `## the procedure (copied verbatim from ${LOOP_STONE}, inset four spaces so a stone's own lines can never become the packet's bones)`,
     '',
-    procedure.trim(),
+    procedure.trim().replace(/^/gm, '    '),
     '',
     '## the friction on the table',
     '',
@@ -68,7 +86,8 @@ export async function openWalk(root, { by, room } = {}) {
     '## the loop examined',
     '',
     '',
-    `<!-- friction-fingerprints-at-open: ${findings.map(fingerprint).join(' ')} -->`,
+    // fingerprints are encoded one by one — a path may carry a space, and the joiner must not be fooled by it.
+    `<!-- friction-fingerprints-at-open: ${findings.map((f) => encodeURIComponent(fingerprint(f))).join(' ')} -->`,
     '',
   ].join('\n')
   await writeFile(path, packet)
@@ -83,7 +102,7 @@ const section = (text, name) => {
 export async function closeWalk(root, n, { by } = {}) {
   const num = String(n).padStart(4, '0')
   const dir = join(root, 'ledger')
-  const name = (await readdir(dir)).find((f) => f.startsWith(num + '-') && f.endsWith('.md'))
+  const name = (await readdir(dir)).find((f) => isWalk(f) && f.startsWith(num + '-'))
   if (!name) throw new Error(`no walk ${num} in the ledger.`)
   const path = join(dir, name)
   const packet = await readFile(path, 'utf8')
@@ -97,7 +116,9 @@ export async function closeWalk(root, n, { by } = {}) {
 
   const { findings } = await gatherFriction(root)
   const before = Number(packet.match(/^- friction-at-open: (\d+)/m)?.[1] ?? NaN)
-  const openPrints = new Set((packet.match(/<!-- friction-fingerprints-at-open: (.*?) -->/)?.[1] ?? '').split(' ').filter(Boolean))
+  // Anchored to line start: indented text inside the packet (the quoted
+  // procedure, the engine's words) can never pose as the tool's own comment.
+  const openPrints = new Set((packet.match(/^<!-- friction-fingerprints-at-open: (.*?) -->/m)?.[1] ?? '').split(' ').filter(Boolean).map(decodeURIComponent))
   const fresh = findings.filter((f) => !openPrints.has(fingerprint(f)))
 
   const loopPath = join(root, LOOP_STONE)

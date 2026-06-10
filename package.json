@@ -1,7 +1,8 @@
 {
   "name": "castle",
   "version": "0.1.0",
-  "description": "a castle of understanding — plain-markdown insights with labelled certainty, a friction finder, and a creation loop that lives as data inside it.",
+  "description": "a castle of understanding — plain-markdown insights with labelled certainty, a friction finder, and a creation loop that lives as data inside it. this wing's docs: rooms/keep/the-door.md (the root README describes a sibling grammar sharing this ground).",
+  "private": true,
   "type": "module",
   "bin": { "castle": "bin/castle.js" },
   "scripts": {

@@ -68,7 +68,7 @@ export const SIGNS = [
     confidence: 'medium-high',
     find: ({ stones, captures }) => captures
       .filter((c) => c.fetched && age(c.fetched) > 14)
-      .filter((c) => !stones.some((s) => (s.keys.source || '').includes(basename(c.path))))
+      .filter((c) => !stones.some((s) => citesCapture(s.keys.source, c.path)))
       .map((c) => ({ path: c.path, message: `raw material ${age(c.fetched)} days in the quarry, cited by no stone — shape it or let it go (14 days is stated policy, not truth)` })),
   },
   {
@@ -102,13 +102,20 @@ export const SIGNS = [
     vow: 'one stone, one true thing — said whole', cs: 1,
     confidence: 'heuristic',
     find: ({ stones }) => stones
-      .filter((s) => s.insight.length > 0 && s.insight.length < 80)
-      .map((s) => ({ path: s.path, message: `the insight is ${s.insight.length} characters — too thin to lean on, or not yet written` })),
+      .filter((s) => s.insight.length < 80)
+      .map((s) => ({ path: s.path, message: s.insight.length === 0 ? 'the insight is empty — not yet written' : `the insight is ${s.insight.length} characters — too thin to lean on, or not yet written` })),
   },
 ]
 
 const firstLine = (text) => text.split('\n')[0].slice(0, 100)
 const basename = (p) => p.split('/').pop()
+// A citation must name the capture's filename as a whole token — "a.md" must
+// not count as citing "2026-a.md" or vice versa.
+const citesCapture = (source, capturePath) => {
+  if (!source) return false
+  const esc = basename(capturePath).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  return new RegExp(`(^|[\\s/("'])${esc}([\\s)"',;]|$)`).test(source)
+}
 
 // Run every sign. Findings come back keep-room-first (friction in the loop
 // compounds into every future walk), then in priority order.

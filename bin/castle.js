@@ -5,7 +5,7 @@
 import { resolve } from 'node:path'
 import { existsSync } from 'node:fs'
 import { layStone, loadQuarry } from '../src/stones.js'
-import { gatherFriction, openWalk, closeWalk } from '../src/loop.js'
+import { gatherFriction, openWalk, closeWalk, isWalk } from '../src/loop.js'
 import { printMap, printFriction } from '../src/report.js'
 import { quarryUrl, quarryStdin } from '../src/quarry.js'
 import { autoWalk } from '../src/auto.js'
@@ -24,12 +24,25 @@ function parseFlags(args) {
   const flags = {}
   const rest = []
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--by') flags.by = args[++i]
-    else if (args[i] === '--from') flags.from = args[++i]
-    else if (args[i] === '--auto') flags.auto = true
+    if (args[i] === '--by' || args[i] === '--from') {
+      const value = args[i + 1]
+      if (value === undefined || value.startsWith('--')) {
+        throw new Error(`${args[i]} needs a value — the tool will not guess one.`)
+      }
+      flags[args[i].slice(2)] = value
+      i++
+    } else if (args[i] === '--auto') flags.auto = true
     else rest.push(args[i])
   }
   return { flags, rest }
+}
+
+// lay and quarry create things; they must stand in a castle to do it, the
+// same way map/friction/loop already refuse outside one.
+function mustStandInCastle(root) {
+  if (!existsSync(resolve(root, 'rooms', 'keep'))) {
+    throw new Error('no castle stands here — run `castle found` to found one, or cd to the castle root.')
+  }
 }
 
 const HELP = `castle v0.1 — a castle of understanding
@@ -52,8 +65,13 @@ usage:
   castle close <n> [--by <who>]         close a walk; blank is not an answer
 
 the loop lives at rooms/keep/the-loop.md — a stone, not code. mend it and the
-next walk runs the mended loop. an empty friction report is not proof of a
-sound castle; it is only the absence of what ten small checks can see.`
+next walk runs the mended loop. the reins live at rooms/keep/the-reins.md —
+only hands edit that stone; set \`autonomy: off\` there (or \`touch loops/STOP\`)
+and the motor rests. an empty friction report is not proof of a sound castle;
+it is only the absence of what ten small checks can see.
+
+the README.md at this castle's root describes a sibling grammar (tools/castle);
+this wing's door is rooms/keep/the-door.md.`
 
 const { flags, rest } = parseFlags(args)
 
@@ -62,6 +80,7 @@ try {
   if (cmd === 'found') {
     code = await found(root)
   } else if (cmd === 'lay') {
+    mustStandInCastle(root)
     const [room, title] = rest
     if (!room || !title) throw new Error('castle lay <room> "<title>" — both are needed.')
     let source
@@ -77,6 +96,7 @@ try {
     console.log(`stone laid (unfilled) at ${path}`)
     console.log('now the mind\'s work: write the one true thing, name your certainty, link what it leans on.')
   } else if (cmd === 'quarry') {
+    mustStandInCastle(root)
     const [target] = rest
     if (!target) throw new Error('castle quarry <url | -> — a chosen page, or a paste on stdin.')
     const result = target === '-'
@@ -87,7 +107,7 @@ try {
   } else if (cmd === 'map') {
     const { castle, captures } = await gatherFriction(root)
     const walks = existsSync(resolve(root, 'ledger'))
-      ? (await import('node:fs/promises').then((fs) => fs.readdir(resolve(root, 'ledger')))).filter((f) => f.endsWith('.md')).length
+      ? (await import('node:fs/promises').then((fs) => fs.readdir(resolve(root, 'ledger')))).filter(isWalk).length
       : 0
     printMap(castle, captures, walks)
   } else if (cmd === 'friction') {
@@ -99,7 +119,12 @@ try {
       else roomFilter = arg
     }
     let { findings } = await gatherFriction(frictionRoot)
-    if (roomFilter) findings = findings.filter((f) => f.path.startsWith(`rooms/${roomFilter}/`))
+    if (roomFilter) {
+      if (!existsSync(resolve(frictionRoot, 'rooms', roomFilter))) {
+        throw new Error(`no room rooms/${roomFilter}/ stands here — a missing room is not a clean one. \`castle map\` shows the rooms that do.`)
+      }
+      findings = findings.filter((f) => f.path.startsWith(`rooms/${roomFilter}/`))
+    }
     code = printFriction(findings)
   } else if (cmd === 'loop' && flags.auto) {
     code = await autoWalk(root)
@@ -117,7 +142,8 @@ try {
     if (r.revised) console.log('the procedure was revised this walk — the next walk runs the mended loop.')
   } else {
     console.log(HELP)
-    code = cmd === undefined ? 0 : 1
+    // asking for help is not an error; an unknown command is.
+    code = cmd === undefined || ['help', '--help', '-h'].includes(cmd) ? 0 : 1
   }
   process.exit(code)
 } catch (e) {

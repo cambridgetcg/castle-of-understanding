@@ -25,8 +25,10 @@ mechanical signs; exit non-zero only on structural damage), `castle loop` /
 ./the-loop.md, blank is not an answer, delta measured), `castle loop --auto`
 (the motor: one autonomous walk under ./the-reins.md and loops/STOP, charter
 C004 while proposed), `castle found` (a child castle seeded from this keep,
-reins off). `npm run selftest` proves all of it against planted frictions in
-examples/.
+reins off). `npm run selftest` proves the signs against planted frictions in
+examples/, the walk machinery end to end, and the motor's safety rails —
+without ever spawning an engine, so the live engine call itself is the one
+path the gate takes on trust.
 
 ## still unknown
 

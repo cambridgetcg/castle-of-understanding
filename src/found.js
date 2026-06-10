@@ -16,9 +16,13 @@ import { today } from './stones.js'
 const MOTHER = join(dirname(fileURLToPath(import.meta.url)), '..')
 
 export async function found(root) {
-  if (existsSync(join(root, 'rooms', 'keep'))) {
-    console.log('a castle already stands here — found refuses politely. (one ground, one castle.)')
-    return 1
+  // Look upward too: a castle is never founded inside another castle.
+  for (let d = root; ; d = dirname(d)) {
+    if (existsSync(join(d, 'rooms', 'keep'))) {
+      console.log(`a castle already stands at ${d} — found refuses politely. (one ground, one castle.)`)
+      return 1
+    }
+    if (dirname(d) === d) break
   }
   const motherKeep = join(MOTHER, 'rooms', 'keep')
   if (!existsSync(motherKeep)) throw new Error('the mother castle has no keep — cannot seed a child. (was the package stripped?)')

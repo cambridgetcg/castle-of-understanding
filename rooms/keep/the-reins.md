@@ -7,12 +7,14 @@
 - leans-on: ./creation-needs-a-creator.md
 - leans-on: ./the-law.md
 - autonomy: on
-- stones-per-day: 1
-- engine: claude
+- walks-per-day: 1
+- engine: claude — a label for the ledger; the program the motor runs is fixed in code, never read from this stone
 
 The motor is real and the reins are real. `castle loop --auto` runs one
-autonomous walk: the engine named above is shown the law, the form, the
-procedure, and the friction — and answers in words only. The runner alone
+autonomous walk: the engine is shown the law, the form, the procedure, and
+the friction — and answers in words only. A walk that lays nothing — a failed
+engine or an honest pass — still spends the day's walk: walks-per-day rations
+engine walks, not stones, on purpose. The runner alone
 touches disk; it lays at most one NEW stone per walk, stamped
 "(ai, autonomous)", born at told/reasoned/guessed and never tested, never
 editing or overwriting anything, never this stone. Change `autonomy: on` to
@@ -36,7 +38,7 @@ new still-unknowns — structure grows on its own; power never does.
 
 ## still unknown
 
-stones-per-day is 1 — gentle on purpose, this castle is young. When the
+walks-per-day is 1 — gentle on purpose, this castle is young. When the
 ledger shows a month of autonomous walks whose stones earned promotion by
 hand, a hand may raise it. What is the number at which gentle becomes
 neglect, and quick becomes noise?
