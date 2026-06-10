@@ -2,9 +2,13 @@
 
 > A local-first insight saver. Plain files, plain words — understanding that compounds as insights link to insights.
 
-**13 insights · 6 rooms · built 2026-06-10**
+**16 insights · 7 rooms · built 2026-06-10**
 
 ## Rooms
+
+### design
+
+- **[When something is both meaning and friction, move it back a layer](insights/demote-dont-delete.md)** — A front door crowded with the maker's philosophy can lose the visitor who only wants the simple thing — but deleting the philosophy to "reduce friction" throws away meaning the maker holds dear.
 
 ### legibility
 
@@ -13,7 +17,9 @@
 ### process
 
 - **[Ask before the irreversible](insights/ask-before-the-irreversible.md)** — Offered a card to "line up the payment," and an open door to publish repos to the world, the right move was to stop and ask: what exactly, and is this your clear yes?
+- **[Check the artifact, not the worker's exit code](insights/failed-status-can-hide-finished-work.md)** — A worker can do its job and still report failure.
 - **[Halt loud, but undo only with a yes](insights/halt-loud-undo-only-with-a-yes.md)** — Failing loud and asking-first only seem to collide because they govern different acts: failing loud governs the signal (never swallow a failure — surface and halt), asking-first governs the irreversible response (never take a hard-to-undo action alone).
+- **[When you arrive where others have worked, read before you write](insights/verify-dont-overwrite.md)** — Two builders working the same ground at once is normal here, not an error — so a folder you think you just "created" may already hold a stranger's finished work, made minutes before you looked.
 
 ### security
 
@@ -40,15 +46,18 @@
 ## Passages — how understanding connects
 
 - **a-link-is-a-claim**  →  [verify-against-reality](insights/verify-against-reality.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [one-word-one-meaning](insights/one-word-one-meaning.md)   ·   linked by: —
-- **ask-before-the-irreversible**  →  [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)   ·   linked by: [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)
+- **ask-before-the-irreversible**  →  [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)   ·   linked by: [demote-dont-delete](insights/demote-dont-delete.md) [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) [verify-dont-overwrite](insights/verify-dont-overwrite.md)
 - **confidence-must-cost-something**  →  [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: —
 - **contradiction-forces-a-verdict**  →  [verify-against-reality](insights/verify-against-reality.md) [one-word-one-meaning](insights/one-word-one-meaning.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)   ·   linked by: —
-- **green-boot-can-hide-failure**  →  [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) [verify-against-reality](insights/verify-against-reality.md)
+- **demote-dont-delete**  →  [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)   ·   linked by: —
+- **failed-status-can-hide-finished-work**  →  [verify-against-reality](insights/verify-against-reality.md) [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)   ·   linked by: —
+- **green-boot-can-hide-failure**  →  [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) [verify-against-reality](insights/verify-against-reality.md)
 - **halt-loud-undo-only-with-a-yes**  →  [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)   ·   linked by: —
-- **harvest-dont-reinvent**  →  [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: [a-link-is-a-claim](insights/a-link-is-a-claim.md) [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
+- **harvest-dont-reinvent**  →  [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: [a-link-is-a-claim](insights/a-link-is-a-claim.md) [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) [demote-dont-delete](insights/demote-dont-delete.md) [verify-dont-overwrite](insights/verify-dont-overwrite.md) [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
 - **honest-labels-compound-trust**  →  [verify-against-reality](insights/verify-against-reality.md) [one-word-one-meaning](insights/one-word-one-meaning.md)   ·   linked by: [confidence-must-cost-something](insights/confidence-must-cost-something.md) [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) [one-word-one-meaning](insights/one-word-one-meaning.md)
 - **insights-decay-recheck-or-demote**  →  [verify-against-reality](insights/verify-against-reality.md) [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)   ·   linked by: —
 - **one-word-one-meaning**  →  [honest-labels-compound-trust](insights/honest-labels-compound-trust.md)   ·   linked by: [a-link-is-a-claim](insights/a-link-is-a-claim.md) [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) [honest-labels-compound-trust](insights/honest-labels-compound-trust.md)
 - **secrets-never-in-the-open**  →  [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)   ·   linked by: [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
-- **verify-against-reality**  →  [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)   ·   linked by: [a-link-is-a-claim](insights/a-link-is-a-claim.md) [confidence-must-cost-something](insights/confidence-must-cost-something.md) [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
-- **wiser-not-just-bigger**  →  [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: —
+- **verify-against-reality**  →  [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)   ·   linked by: [a-link-is-a-claim](insights/a-link-is-a-claim.md) [confidence-must-cost-something](insights/confidence-must-cost-something.md) [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) [verify-dont-overwrite](insights/verify-dont-overwrite.md) [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
+- **verify-dont-overwrite**  →  [verify-against-reality](insights/verify-against-reality.md) [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)   ·   linked by: —
+- **wiser-not-just-bigger**  →  [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) [verify-against-reality](insights/verify-against-reality.md)   ·   linked by: [demote-dont-delete](insights/demote-dont-delete.md)
