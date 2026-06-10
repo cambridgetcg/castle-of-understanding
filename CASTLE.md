@@ -2,7 +2,7 @@
 
 > A local-first insight saver. Plain files, plain words — understanding that compounds as insights link to insights.
 
-**16 insights · 7 rooms · built 2026-06-10**
+**17 insights · 7 rooms · built 2026-06-10**
 
 ## Rooms
 
@@ -19,6 +19,7 @@
 - **[Ask before the irreversible](insights/ask-before-the-irreversible.md)** `high` — Offered a card to "line up the payment," and an open door to publish repos to the world, the right move was to stop and ask: what exactly, and is this your clear yes?
 - **[Check the artifact, not the worker's exit code](insights/failed-status-can-hide-finished-work.md)** `high` — A worker can do its job and still report failure.
 - **[Halt loud, but undo only with a yes](insights/halt-loud-undo-only-with-a-yes.md)** `medium` — Failing loud and asking-first only seem to collide because they govern different acts: failing loud governs the signal (never swallow a failure — surface and halt), asking-first governs the irreversible response (never take a hard-to-undo action alone).
+- **[Process is a cost; keep only the kind that earns trust](insights/process-is-a-cost.md)** `high` — Every step, gate, and question is friction the other person pays, so process is never free — it is a cost charged against connection.
 - **[When you arrive where others have worked, read before you write](insights/verify-dont-overwrite.md)** `high` — Two builders working the same ground at once is normal here, not an error — so a folder you think you just "created" may already hold a stranger's finished work, made minutes before you looked.
 
 ### security
@@ -50,7 +51,7 @@
     - in:  —
 - **ask-before-the-irreversible**
     - out: relates-to → [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)
-    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (depended-on-by) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (depended-on-by)
+    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (depended-on-by) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [process-is-a-cost](insights/process-is-a-cost.md) (depended-on-by) · [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (depended-on-by)
 - **confidence-must-cost-something**
     - out: extends → [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md)
     - in:  —
@@ -59,7 +60,7 @@
     - in:  —
 - **demote-dont-delete**
     - out: depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · relates-to → [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
-    - in:  —
+    - in:  [process-is-a-cost](insights/process-is-a-cost.md) (relates-to)
 - **failed-status-can-hide-finished-work**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
     - in:  —
@@ -81,6 +82,9 @@
 - **one-word-one-meaning**
     - out: extends → [honest-labels-compound-trust](insights/honest-labels-compound-trust.md)
     - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (relates-to) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (relates-to)
+- **process-is-a-cost**
+    - out: depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [demote-dont-delete](insights/demote-dont-delete.md) · extends → [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
+    - in:  —
 - **secrets-never-in-the-open**
     - out: relates-to → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
     - in:  [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) (relates-to)
@@ -92,7 +96,7 @@
     - in:  —
 - **wiser-not-just-bigger**
     - out: extends → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md)
-    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (relates-to)
+    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [process-is-a-cost](insights/process-is-a-cost.md) (extended-by)
 
 ## Weathering — insights due for a re-check
 
