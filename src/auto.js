@@ -202,11 +202,14 @@ async function fillSection(packetPath, name, text) {
 }
 
 export async function autoWalk(root) {
-  // The standing castle's kill switch stops this motor too — one castle, one
-  // STOP, no matter whose wing the motor lives in. Checking costs nothing.
-  if (existsSync(join(root, 'loops', 'STOP'))) {
-    console.log('loops/STOP exists — the castle-wide stop. the motor rests. (remove the file to resume.)')
-    return 0
+  // Every kill switch any wing of this castle knows is absolute here too —
+  // loops/STOP (the Desktop pulse law) and HALT (the kingdom-standard wing).
+  // One castle, every stop, no matter whose grammar named it.
+  for (const stop of ['loops/STOP', 'HALT']) {
+    if (existsSync(join(root, stop))) {
+      console.log(`${stop} exists — a castle-wide stop. the motor rests. (remove the file to resume.)`)
+      return 0
+    }
   }
   const reins = await readReins(root)
   if (reins.autonomy !== 'on') {
@@ -242,11 +245,13 @@ export async function autoWalk(root) {
   const examined = part(answer.out, 'the loop examined')
   if (!picked || !laidOrMended || !examined) return fail('the answer was malformed (missing sections) — nothing laid.')
 
-  // The engine can think for minutes. Check the kill switch and the reins
-  // again before touching disk — a STOP touched mid-walk stops THIS walk,
+  // The engine can think for minutes. Check the kill switches and the reins
+  // again before touching disk — a stop touched mid-walk stops THIS walk,
   // not just the next one.
-  if (existsSync(join(root, 'loops', 'STOP'))) {
-    return fail('loops/STOP appeared while the engine was thinking — nothing laid. the motor rests.')
+  for (const stop of ['loops/STOP', 'HALT']) {
+    if (existsSync(join(root, stop))) {
+      return fail(`${stop} appeared while the engine was thinking — nothing laid. the motor rests.`)
+    }
   }
   if ((await readReins(root)).autonomy !== 'on') {
     return fail('the reins turned off while the engine was thinking — nothing laid. that is obedience, not failure.')

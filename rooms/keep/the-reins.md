@@ -18,8 +18,9 @@ engine walks, not stones, on purpose. The runner alone
 touches disk; it lays at most one NEW stone per walk, stamped
 "(ai, autonomous)", born at told/reasoned/guessed and never tested, never
 editing or overwriting anything, never this stone. Change `autonomy: on` to
-`off` and the motor stops — one word, a hand, done. The standing castle's
-kill switch (`loops/STOP`) stops it too, and its schedule is not loaded:
+`off` and the motor stops — one word, a hand, done. Every kill switch any
+wing of this castle knows stops it too — `loops/STOP` and `HALT` alike —
+and its schedule is not loaded:
 it waits as charter C004 (proposed) in loops/charters/, under the census in
 loops/PULSE.md, because the law of this shared ground says beating loops are
 counted and a newborn castle walks before it runs.

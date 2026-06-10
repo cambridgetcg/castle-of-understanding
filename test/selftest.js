@@ -97,6 +97,9 @@ try {
   await writeFile(join(tmp, 'loops/STOP'), '')
   ok(await autoWalk(tmp) === 0, 'loops/STOP rests the motor before any engine is asked')
   await rm(join(tmp, 'loops'), { recursive: true })
+  await writeFile(join(tmp, 'HALT'), '')
+  ok(await autoWalk(tmp) === 0, 'HALT — another wing\'s kill switch — rests the motor just the same')
+  await rm(join(tmp, 'HALT'))
 
   console.log('\nthe mended edges:')
   const crlf = parseStone('# a stone from another OS\r\n\r\n- laid: 2026-06-10\r\n- by: x (human)\r\n- certainty: guessed\r\n\r\na body long enough that no sign mistakes carriage returns for missing form, eighty characters and more.')
