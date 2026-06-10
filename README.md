@@ -77,6 +77,11 @@ for understanding.
 
 ## File forms
 
+These forms are what the tools write and the pulse tidies. They serve the
+mind, not the other way around — plain text with one source line is always
+acceptable, and the pulse will dress it into form later without changing its
+meaning.
+
 An **insight** — `rooms/<room>/NNNN-slug.md`:
 
 ```markdown

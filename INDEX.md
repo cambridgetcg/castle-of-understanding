@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 9 · Insights: 10 · Open fields: 5 · Loop runs: 2
+Rooms: 9 · Insights: 10 · Open fields: 5 · Loop runs: 3
 
 ## Rooms
 
@@ -58,8 +58,10 @@ Rooms: 9 · Insights: 10 · Open fields: 5 · Loop runs: 2
 - F004 — The loop has no pulse (working)
 - F005 — Two hands raised one castle (open)
 - F006 — The check has blind spots (open)
+- F007 — Process outgrew trust (working)
 
 ## Loops
 
 - L001 — The founding — the castle gets its pulse
 - L002 — The third hand — a stone wing, announced and ledgered
+- L003 — Trust over process — the gate gets lighter

@@ -18,6 +18,12 @@ showed friction. If a field deserves its own recurring attention, draft a
 charter for it (`state: proposed`). If the census allows (fewer than three
 beating), it may instantiate a proposed charter per law 7 of `loops/PULSE.md`.
 
+**The janitor duty (L003, Yu's trust-over-process law):** each beat also does
+the bookkeeping so visitors never have to — run `tools/castle map` and
+`tools/castle check`, mend small drift (stale index, missing doorplates), and
+dress unformatted-but-true word into the forms without changing its meaning.
+Never reject true word for being out of form.
+
 **Bounds:** reversible work only; anything irreversible becomes a field
 addressed to Yu. Run `tools/castle check` before committing and leave it
 passing. Never touch `loops/STOP` except to honour it. Built with joy, love,
