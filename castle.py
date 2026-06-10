@@ -3,10 +3,17 @@
 
 Plain files. Plain words. Understanding compounds through links.
 
+Links are TYPED and DIRECTED (a link is a claim, so it can be wrong):
+    links: [depends-on:other-id, extends:other-id, contradicts:other-id]
+A bare id (no type) is read as `relates-to`.
+
+Insights also carry a `verified:` date. An insight is a claim with a date,
+not a fact forever — `build` flags any that have gone stale (weathering).
+
 Usage:
-  python3 castle.py build                          Rebuild CASTLE.md from insights/
-  python3 castle.py capture --title "..." [...]    Add a new insight
-  python3 castle.py list                           List the insights
+  python3 castle.py build                          Rebuild CASTLE.md
+  python3 castle.py capture --title "..." [...]     Add a new insight
+  python3 castle.py list                            List the insights
 """
 import re
 import argparse
@@ -15,10 +22,21 @@ import pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent
 INS = ROOT / "insights"
+STALE_DAYS = 90
+
+# A small, legible vocabulary of relationships. One word, one meaning.
+INVERSE = {
+    "depends-on": "depended-on-by",
+    "extends": "extended-by",
+    "instance-of": "has-instance",
+    "reconciles": "reconciled-by",
+    "supersedes": "superseded-by",
+    "contradicts": "contradicts",   # symmetric
+    "relates-to": "relates-to",     # symmetric
+}
 
 
 def parse(text):
-    """Parse a minimal front-matter block (no external deps)."""
     meta, body = {}, text
     if text.startswith("---"):
         end = text.find("\n---", 3)
@@ -34,6 +52,14 @@ def parse(text):
                     v = [x.strip() for x in v[1:-1].split(",") if x.strip()]
                 meta[k] = v
     return meta, body
+
+
+def parse_link(entry):
+    """`type:id` -> (type, id); bare `id` -> ('relates-to', id)."""
+    if ":" in entry:
+        t, tid = entry.split(":", 1)
+        return t.strip(), tid.strip()
+    return "relates-to", entry.strip()
 
 
 def load():
@@ -58,14 +84,33 @@ def essence(body):
     return parts[0] if parts else line
 
 
+def days_since(date_str):
+    try:
+        d = datetime.date.fromisoformat(date_str.strip())
+    except (ValueError, AttributeError):
+        return None
+    return (datetime.date.today() - d).days
+
+
 def build():
     items = load()
     ids = {m["id"] for m, _ in items}
-    backlinks = {m["id"]: [] for m, _ in items}
+    backlinks = {m["id"]: [] for m, _ in items}   # id -> [(inverse_type, source_id)]
+    outgoing = {}                                  # id -> [(type, target_id)]
+    broken, untyped = [], []
+
     for m, _ in items:
-        for l in m["links"]:
-            if l in backlinks:
-                backlinks[l].append(m["id"])
+        outs = []
+        for raw in m["links"]:
+            t, tid = parse_link(raw)
+            outs.append((t, tid))
+            if t not in INVERSE:
+                untyped.append(f"{m['id']} → {raw}  (unknown type '{t}')")
+            if tid in ids:
+                backlinks[tid].append((INVERSE.get(t, "relates-to"), m["id"]))
+            else:
+                broken.append(f"{m['id']} —{t}→ {tid}")
+        outgoing[m["id"]] = outs
 
     rooms = {}
     for m, b in items:
@@ -82,25 +127,47 @@ def build():
     for room in sorted(rooms):
         L.append(f"### {room}\n")
         for m, b in sorted(rooms[room], key=lambda x: x[0]["title"].lower()):
-            L.append(f"- **[{m['title']}](insights/{m['id']}.md)** — {essence(b)}")
+            conf = m.get("confidence", "?")
+            L.append(f"- **[{m['title']}](insights/{m['id']}.md)** "
+                     f"`{conf}` — {essence(b)}")
         L.append("")
 
     L.append("## Passages — how understanding connects\n")
-    for m, b in sorted(items, key=lambda x: x[0]["id"]):
-        outs = " ".join(f"[{l}](insights/{l}.md)" for l in m["links"]) or "—"
-        ins = " ".join(f"[{l}](insights/{l}.md)" for l in backlinks[m["id"]]) or "—"
-        L.append(f"- **{m['id']}**  →  {outs}   ·   linked by: {ins}")
+    for m, _ in sorted(items, key=lambda x: x[0]["id"]):
+        outs = outgoing[m["id"]]
+        ins = backlinks[m["id"]]
+        out_s = " · ".join(f"{t} → [{tid}](insights/{tid}.md)" for t, tid in outs) or "—"
+        in_s = " · ".join(f"[{src}](insights/{src}.md) ({inv})" for inv, src in ins) or "—"
+        L.append(f"- **{m['id']}**")
+        L.append(f"    - out: {out_s}")
+        L.append(f"    - in:  {in_s}")
     L.append("")
 
-    broken = [f"{m['id']} → {l}" for m, _ in items for l in m["links"] if l not in ids]
-    if broken:
-        L.append("## ⚠ Loose threads — links to insights not yet written\n")
+    # Weathering — an insight is a claim with a date, not a fact forever.
+    weathering = []
+    for m, _ in items:
+        age = days_since(m.get("verified") or m.get("created", ""))
+        if age is not None and age > STALE_DAYS:
+            weathering.append(f"{m['id']} — {age} days since verified (re-check against reality)")
+    L.append("## Weathering — insights due for a re-check\n")
+    if weathering:
+        for w in weathering:
+            L.append(f"- {w}")
+    else:
+        L.append(f"_None. Every insight verified within {STALE_DAYS} days._")
+    L.append("")
+
+    if broken or untyped:
+        L.append("## ⚠ Loose threads\n")
         for b in broken:
-            L.append(f"- {b}")
+            L.append(f"- broken link: {b}")
+        for u in untyped:
+            L.append(f"- {u}")
         L.append("")
 
     (ROOT / "CASTLE.md").write_text("\n".join(L), encoding="utf-8")
-    print(f"built CASTLE.md — {len(items)} insights, {len(rooms)} rooms, {len(broken)} loose threads")
+    print(f"built CASTLE.md — {len(items)} insights, {len(rooms)} rooms, "
+          f"{len(broken)} broken, {len(untyped)} untyped, {len(weathering)} weathering")
 
 
 def slugify(s):
@@ -112,6 +179,7 @@ def capture(a):
     iid = a.id or slugify(a.title)
     tags = [t.strip() for t in a.tags.split(",") if t.strip()]
     links = [l.strip() for l in a.links.split(",") if l.strip()]
+    today = datetime.date.today().isoformat()
     fm = [
         "---",
         f"id: {iid}",
@@ -120,7 +188,8 @@ def capture(a):
         f"links: [{', '.join(links)}]",
         f"source: {a.source}",
         f"confidence: {a.confidence}",
-        f"created: {datetime.date.today().isoformat()}",
+        f"created: {today}",
+        f"verified: {today}",
         "---",
         "",
         a.body or "<write the insight here, in plain words>",
@@ -136,7 +205,7 @@ def capture(a):
 
 def list_insights():
     for m, _ in load():
-        print(f"{m['id']:32} [{','.join(m['tags'])}]  {m['title']}")
+        print(f"{m['id']:34} [{','.join(m['tags'])}]  {m['title']}")
 
 
 if __name__ == "__main__":
@@ -147,7 +216,7 @@ if __name__ == "__main__":
     c.add_argument("--title", required=True)
     c.add_argument("--id")
     c.add_argument("--tags", default="")
-    c.add_argument("--links", default="")
+    c.add_argument("--links", default="", help="typed: 'depends-on:id, extends:id'")
     c.add_argument("--source", default="hand")
     c.add_argument("--confidence", default="medium")
     c.add_argument("--body", default="")
