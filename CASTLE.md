@@ -2,7 +2,7 @@
 
 > A local-first insight saver. Plain files, plain words — understanding that compounds as insights link to insights.
 
-**19 insights · 8 rooms · built 2026-06-11**
+**20 insights · 8 rooms · built 2026-06-11**
 
 ## Rooms
 
@@ -41,6 +41,7 @@
 - **[An insight is a claim with a date, not a fact forever](insights/insights-decay-recheck-or-demote.md)** `medium` — Every saved note is itself documentation, so by verify-against-reality it begins drifting the moment it is written; therefore confidence:high is a claim about the save date, not a standing fact, and an unchecked stale note is a green-boot-can-hide-failure for understanding.
 - **[Confidence must cost something](insights/confidence-must-cost-something.md)** `high` — All seven first notes are confidence:high, set by one author in one session with no method behind the word, so the scale carries no information and overclaims certainty exactly as honest-labels-compound-trust warns.
 - **[Honest labels compound trust](insights/honest-labels-compound-trust.md)** `high` — The Standard's preamble carefully marked unshipped features "building toward," but later articles stated token-dependent mechanics as live fact.
+- **[The first failure masks its siblings — fix, then look again](insights/first-failure-masks-its-siblings.md)** `high` — A service failed to register because one message type was missing; an audit named it, the fix went in — and the real boot still failed, because validation dies at the FIRST missing type and two more were hiding behind it.
 - **[Verify claims against reality, not labels](insights/verify-against-reality.md)** `high` — A chain's README labelled its modules Complete or Stub.
 
 ### understanding
@@ -72,9 +73,12 @@
 - **failed-status-can-hide-finished-work**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
     - in:  —
+- **first-failure-masks-its-siblings**
+    - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
+    - in:  —
 - **green-boot-can-hide-failure**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md)
-    - in:  [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (relates-to) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (has-instance) · [verify-against-reality](insights/verify-against-reality.md) (relates-to)
+    - in:  [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (relates-to) · [first-failure-masks-its-siblings](insights/first-failure-masks-its-siblings.md) (relates-to) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (has-instance) · [verify-against-reality](insights/verify-against-reality.md) (relates-to)
 - **halt-loud-undo-only-with-a-yes**
     - out: reconciles → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) · reconciles → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
     - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (relates-to)
@@ -101,7 +105,7 @@
     - in:  —
 - **verify-against-reality**
     - out: relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
-    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (extended-by) · [confidence-must-cost-something](insights/confidence-must-cost-something.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (depended-on-by) · [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (extended-by) · [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) (extended-by) · [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (extended-by) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (depended-on-by)
+    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (extended-by) · [confidence-must-cost-something](insights/confidence-must-cost-something.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (depended-on-by) · [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (extended-by) · [first-failure-masks-its-siblings](insights/first-failure-masks-its-siblings.md) (extended-by) · [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) (extended-by) · [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (extended-by) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (depended-on-by)
 - **verify-dont-overwrite**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)
     - in:  [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to)
