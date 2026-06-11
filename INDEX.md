@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 9 · Insights: 10 · Open fields: 5 · Loop runs: 3
+Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
 
 ## Rooms
 
@@ -49,6 +49,10 @@ Rooms: 9 · Insights: 10 · Open fields: 5 · Loop runs: 3
 - 0004 — Contact is not understanding
 - 0009 — The spirit a thing is built in is part of what the thing is
 - 0010 — Loops may create loops, but only inside walls
+
+### word
+
+(no insights yet)
 
 ## Fields
 
