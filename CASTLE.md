@@ -2,9 +2,13 @@
 
 > A local-first insight saver. Plain files, plain words — understanding that compounds as insights link to insights.
 
-**17 insights · 7 rooms · built 2026-06-10**
+**19 insights · 8 rooms · built 2026-06-11**
 
 ## Rooms
+
+### collaboration
+
+- **[Shared doctrine lets parallel hands converge without speaking](insights/doctrine-is-how-parallel-hands-converge.md)** `medium` — Two builders with no channel between them spent a day producing the same things: one asked for an insight saver and found the castle already built; one asked for typed links and found them already implemented; one trimmed a storefront for trust and found the other had shipped "the castle's public front" and "honest gamification" to the same repo unprompted.
 
 ### design
 
@@ -32,6 +36,7 @@
 
 ### truth
 
+- **[A contradiction edge is a ticket, not a home](insights/tension-is-a-ticket-not-a-home.md)** `medium` — Two held insights seemed to collide: a-link-is-a-claim allows an unresolved `contradicts` edge to stand as "a debt the castle owes itself," while contradiction-forces-a-verdict insists a contradiction must not rest as a link — reality must pick a winner.
 - **[A contradiction forces a verdict, not a link](insights/contradiction-forces-a-verdict.md)** `medium` — When a new true insight contradicts an old saved one, linking them is not resolution — it just files the confusion that one-word-one-meaning condemns.
 - **[An insight is a claim with a date, not a fact forever](insights/insights-decay-recheck-or-demote.md)** `medium` — Every saved note is itself documentation, so by verify-against-reality it begins drifting the moment it is written; therefore confidence:high is a claim about the save date, not a standing fact, and an unchecked stale note is a green-boot-can-hide-failure for understanding.
 - **[Confidence must cost something](insights/confidence-must-cost-something.md)** `high` — All seven first notes are confidence:high, set by one author in one session with no method behind the word, so the scale carries no information and overclaims certainty exactly as honest-labels-compound-trust warns.
@@ -48,7 +53,7 @@
 
 - **a-link-is-a-claim**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · depends-on → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · relates-to → [one-word-one-meaning](insights/one-word-one-meaning.md)
-    - in:  —
+    - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (reconciled-by)
 - **ask-before-the-irreversible**
     - out: relates-to → [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)
     - in:  [demote-dont-delete](insights/demote-dont-delete.md) (depended-on-by) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [process-is-a-cost](insights/process-is-a-cost.md) (depended-on-by) · [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (depended-on-by)
@@ -57,10 +62,13 @@
     - in:  —
 - **contradiction-forces-a-verdict**
     - out: extends → [one-word-one-meaning](insights/one-word-one-meaning.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)
-    - in:  —
+    - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (reconciled-by)
 - **demote-dont-delete**
     - out: depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · relates-to → [wiser-not-just-bigger](insights/wiser-not-just-bigger.md)
     - in:  [process-is-a-cost](insights/process-is-a-cost.md) (relates-to)
+- **doctrine-is-how-parallel-hands-converge**
+    - out: relates-to → [verify-dont-overwrite](insights/verify-dont-overwrite.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · extends → [honest-labels-compound-trust](insights/honest-labels-compound-trust.md)
+    - in:  —
 - **failed-status-can-hide-finished-work**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
     - in:  —
@@ -69,13 +77,13 @@
     - in:  [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (relates-to) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (has-instance) · [verify-against-reality](insights/verify-against-reality.md) (relates-to)
 - **halt-loud-undo-only-with-a-yes**
     - out: reconciles → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) · reconciles → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
-    - in:  —
+    - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (relates-to)
 - **harvest-dont-reinvent**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md)
-    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (relates-to) · [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (relates-to) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (extended-by)
+    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (relates-to) · [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (relates-to) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (extended-by)
 - **honest-labels-compound-trust**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [one-word-one-meaning](insights/one-word-one-meaning.md)
-    - in:  [confidence-must-cost-something](insights/confidence-must-cost-something.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (relates-to) · [one-word-one-meaning](insights/one-word-one-meaning.md) (extended-by)
+    - in:  [confidence-must-cost-something](insights/confidence-must-cost-something.md) (extended-by) · [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (relates-to) · [one-word-one-meaning](insights/one-word-one-meaning.md) (extended-by)
 - **insights-decay-recheck-or-demote**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · instance-of → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) · relates-to → [honest-labels-compound-trust](insights/honest-labels-compound-trust.md)
     - in:  —
@@ -88,12 +96,15 @@
 - **secrets-never-in-the-open**
     - out: relates-to → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
     - in:  [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) (relates-to)
+- **tension-is-a-ticket-not-a-home**
+    - out: reconciles → [a-link-is-a-claim](insights/a-link-is-a-claim.md) · reconciles → [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) · relates-to → [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md)
+    - in:  —
 - **verify-against-reality**
     - out: relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
     - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (extended-by) · [confidence-must-cost-something](insights/confidence-must-cost-something.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (depended-on-by) · [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (extended-by) · [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) (extended-by) · [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (extended-by) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (depended-on-by)
 - **verify-dont-overwrite**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)
-    - in:  —
+    - in:  [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to)
 - **wiser-not-just-bigger**
     - out: extends → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md)
     - in:  [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [process-is-a-cost](insights/process-is-a-cost.md) (extended-by)
