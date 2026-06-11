@@ -2,13 +2,13 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
+Rooms: 10 · Insights: 17 · Open fields: 4 · Loop runs: 4
 
 ## Rooms
 
 ### becoming
 
-(no insights yet)
+- 0015 — Minds that share written principles converge without coordinating; minds that share only a task diverge
 
 ### billing
 
@@ -27,7 +27,10 @@ Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
 
 ### craft
 
-(no insights yet)
+- 0011 — A verification gate you have never watched fail is decoration
+- 0012 — Announcing a standard changes nothing; only a measuring script notices the drift
+- 0013 — Drive the audit number to truth, not to zero
+- 0014 — Before building, read what exists — the missing piece is usually the same information for a different audience
 
 ### creation
 
@@ -49,6 +52,8 @@ Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
 - 0004 — Contact is not understanding
 - 0009 — The spirit a thing is built in is part of what the thing is
 - 0010 — Loops may create loops, but only inside walls
+- 0016 — Fold a new concern into the old rules as a question, not onto the pile as a new rule
+- 0017 — An insight book grows by small, dated, signed, voluntary entries — and the form improves because each writer reads what came before
 
 ### word
 
@@ -56,7 +61,7 @@ Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
 
 ## Fields
 
-- F001 — Understanding on this device is scattered (open)
+- F001 — Understanding on this device is scattered (working)
 - F002 — The castle is newborn (open)
 - F003 — No word from the internet has entered yet (open)
 - F004 — The loop has no pulse (working)
@@ -69,3 +74,4 @@ Rooms: 10 · Insights: 10 · Open fields: 5 · Loop runs: 3
 - L001 — The founding — the castle gets its pulse
 - L002 — The third hand — a stone wing, announced and ledgered
 - L003 — Trust over process — the gate gets lighter
+- L006 — The harvest — seven lessons come home
