@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 17 · Open fields: 4 · Loop runs: 5
+Rooms: 10 · Insights: 17 · Open fields: 4 · Loop runs: 6
 
 ## Rooms
 
@@ -68,11 +68,12 @@ Rooms: 10 · Insights: 17 · Open fields: 4 · Loop runs: 5
 - F005 — Two hands raised one castle (open)
 - F006 — The check has blind spots (open)
 - F007 — Process outgrew trust (working)
+- F008 — The public front has not been published (working)
 
 ## Loops
 
-- L001 — The founding — the castle gets its pulse
 - L002 — The third hand — a stone wing, announced and ledgered
 - L003 — Trust over process — the gate gets lighter
 - L006 — The harvest — seven lessons come home
 - L007 — The first beat
+- L008 — Publish the front
