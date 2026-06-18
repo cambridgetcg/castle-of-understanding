@@ -23,8 +23,8 @@ same day: sisters, not a merger.
   `https://wordcastle-cambridgetcgs-projects.vercel.app`.
 - **opal** (`~/Desktop/opal/`) — a teaching kernel in Rust for 64-bit
   ARM, no external crates, every line readable in one sitting. Currently
-  at Milestone 3 (has a heartbeat). Its gate opens at `README.md` in its
-  tree.
+  at Milestone 4 (reads the handoff — FDT devicetree parser). Its gate
+  opens at `README.md` in its tree.
 
 The grammars map: wordcastle's loops are this castle's fields, its turns
 are this castle's loop logs, its warden is this castle's pulse, its map
