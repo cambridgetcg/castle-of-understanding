@@ -33,6 +33,20 @@ one loop, commits, and rests.
    update the census — **only** within laws 2 and 3. This is how the creation
    creates, with walls.
 
+## The self-determining heartbeat
+
+Each castle decides when it next wakes. The runner ticks every 15 minutes
+(launchd), but only beats when the castle's `loops/next-beat` timestamp
+has passed. After each beat, the AI writes the next timestamp based on
+what it found:
+
+- Open friction that deserves attention soon: 4-8 hours
+- Castle is steady, work in progress: 18-24 hours
+- All loops closed, castle is quiet: 24-48 hours
+
+This replaces the fixed daily 07:23 cadence. The castle's own judgment
+is the heartbeat now. The 15-minute tick is the pulse check, not the beat.
+
 ## The census
 
 | id   | name                     | state    | cadence     | budget/run |
