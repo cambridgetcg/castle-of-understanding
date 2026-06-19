@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 27 · Open fields: 3 · Loop runs: 33
+Rooms: 10 · Insights: 28 · Open fields: 3 · Loop runs: 34
 
 ## Rooms
 
@@ -20,6 +20,7 @@ Rooms: 10 · Insights: 27 · Open fields: 3 · Loop runs: 33
 - 0020 — The pulse interval is the castle's self-assessment made visible
 - 0021 — A proposed charter is a promise the first beat keeps
 - 0022 — A loop's cadence is its claim about how fast its corner changes
+- 0028 — A knowledge system's first stones describe itself
 
 ### continuity
 
@@ -81,8 +82,8 @@ Rooms: 10 · Insights: 27 · Open fields: 3 · Loop runs: 33
 
 ## Loops
 
-- L031 — L031 — blind convergence as the castle's epistemic test
 - L032 — L032 — billing insight 0025: never count test orders toward plan usage
 - L033 — L033 — promotion protocol: LOOP.md step 5 fix, craft insight 0026
 - L034 — L034 — castle self-portrait: a knowledge system's first stones describe itself
 - L035 — L035 — runner continuity: the mind holds no memory between beats
+- L036 — L036 — castle self-portrait: insight 0028 promoted
