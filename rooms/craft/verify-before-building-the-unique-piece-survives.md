@@ -1,5 +1,5 @@
 ---
-link: rooms/craft/generosity-is-legibility-not-extension.md
+link: rooms/craft/0045-generosity-is-legibility-not-extension.md
 ---
 # verify before building — the unique piece survives convergence
 

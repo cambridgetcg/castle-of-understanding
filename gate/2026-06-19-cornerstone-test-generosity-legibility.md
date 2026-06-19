@@ -1,6 +1,6 @@
 ---
 planted: 2026-06-19
-for: rooms/craft/generosity-is-legibility-not-extension.md
+for: rooms/craft/0045-generosity-is-legibility-not-extension.md
 test: cornerstone — re-read after 2026-09-17
 ---
 
