@@ -46,12 +46,12 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0019-a-filter-written-for-the-initial-states-silently-miscounts-when-the-protocol-grows.md · (sister grammar — see fields/F005)
 - rooms/craft/0026-a-step-that-creates-must-also-retire-what-it-supersedes.md · (sister grammar — see fields/F005)
 - rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md · (sister grammar — see fields/F005)
+- rooms/craft/0041-the-log-records-the-check-reports.md · (sister grammar — see fields/F005)
+- rooms/craft/0042-check-the-collection-not-the-element.md · (sister grammar — see fields/F005)
 - rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · seed
-- rooms/craft/check-the-collection-not-the-element.md · tested
 - rooms/craft/generosity-is-legibility-not-extension.md · tested
 - rooms/craft/narrow-is-power.md · (sister grammar — see fields/F005)
 - rooms/craft/scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
-- rooms/craft/the-log-records-the-check-reports.md · tested
 - rooms/craft/verify-before-building-the-unique-piece-survives.md · (sister grammar — see fields/F005)
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what

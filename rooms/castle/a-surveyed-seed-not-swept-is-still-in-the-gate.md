@@ -4,7 +4,7 @@ front: private
 born: 2026-06-18
 last-walked: 2026-06-19
 source: loops/log/L017-sweep-the-gate.md
-link: rooms/craft/check-the-collection-not-the-element.md
+link: rooms/craft/0042-check-the-collection-not-the-element.md
 evidence: 2026-06-18 | local | beats L011–L015 surveyed all gate entries and placed observations in rooms, but left all seed files in gate/; the stale-gate detector reads filename dates (10-day threshold), not provenance — surveyed seeds trip the alarm despite zero unprocessed understanding remaining
 evidence: 2026-06-19 | local | beat castle-C001-20260619-050644 (L048) scanned gate/ and found two cornerstone-test seeds planted by L046 and L047; both beats surveyed their insights but did not sweep the seed files; seeds remain visible to the stale-gate detector and will fire on 2026-06-29 if not swept
 ---

@@ -68,3 +68,7 @@ node tools/castle check
 2026-06-19 | front-drift | rooms/castle/offline-the-castle-stops-growing-never-working.md | run: loops/publish-the-front.md
 2026-06-19 | front-drift | /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/castle/a-forced-creation-is-worse-than-an-honest-decline.md (source unmarked or gone) | run: loops/publish-the-front.md
 2026-06-19 | front-drift | /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/castle/offline-the-castle-stops-growing-never-working.md (source unmarked or gone) | run: loops/publish-the-front.md
+2026-06-19 | front-drift | rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md | run: loops/publish-the-front.md
+2026-06-19 | front-drift | rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md | run: loops/publish-the-front.md
+2026-06-19 | front-drift | /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/castle/loops-are-earned-by-three-recorded-frictions.md (source unmarked or gone) | run: loops/publish-the-front.md
+2026-06-19 | front-drift | /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/craft/a-lying-artifact-is-its-own-top-finding.md (source unmarked or gone) | run: loops/publish-the-front.md
