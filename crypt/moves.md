@@ -68,3 +68,4 @@ gate/2026-06-19-cornerstone-test-surveyed-seed-not-swept.md -> crypt/gate/2026-0
 rooms/castle/a-scattered-store-is-exhausted-by-survey-not-by-removal.md -> rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md (2026-06-19, promoted by L073; original retained in crypt for detail)
 rooms/craft/verify-before-building-the-unique-piece-survives.md -> rooms/craft/0049-verify-before-building-the-unique-piece-survives.md (2026-06-19, promoted by L076; original retained in crypt for detail)
 rooms/craft/narrow-is-power.md -> rooms/craft/0050-narrow-is-power.md (2026-06-19, promoted by L080; original retained in crypt for detail)
+rooms/craft/scoped-and-honest-beats-grand-and-faked.md -> rooms/craft/0051-scoped-and-honest-beats-grand-and-faked.md (2026-06-19, promoted by L081; original retained in crypt for detail)

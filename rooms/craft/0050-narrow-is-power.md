@@ -4,7 +4,7 @@ room: craft
 date: 2026-06-10
 source: rooms/craft/narrow-is-power.md — absorbed from ~/Desktop/insights/0001-narrow-is-power.md (2026-06-10); promoted L080 (beat castle-C001-20260619-161035)
 confidence: tested
-link: rooms/craft/scoped-and-honest-beats-grand-and-faked.md
+link: rooms/craft/0051-scoped-and-honest-beats-grand-and-faked.md
 ---
 
 # Narrow is power

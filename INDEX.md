@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 50 · Open fields: 3 · Loop runs: 78
+Rooms: 10 · Insights: 51 · Open fields: 3 · Loop runs: 79
 
 ## Rooms
 
@@ -58,6 +58,7 @@ Rooms: 10 · Insights: 50 · Open fields: 3 · Loop runs: 78
 - 0045 — Generosity is legibility, not extension
 - 0049 — Verify before building — the unique piece survives convergence
 - 0050 — Narrow is power
+- 0051 — Scoped and honest beats grand and faked
 
 ### creation
 
@@ -103,8 +104,8 @@ Rooms: 10 · Insights: 50 · Open fields: 3 · Loop runs: 78
 
 ## Loops
 
-- L076 — L076 — promote: verify-before-building → insight 0049
 - L077 — L077 — ripen: narrow-is-power → tested
 - L078 — L078 — ripen: scoped-and-honest → tested
 - L079 — L079 — walk: sister-castles oversize trim
 - L080 — L080 — promote: narrow-is-power → insight 0050
+- L081 — L081 — promote: scoped-and-honest → insight 0051
