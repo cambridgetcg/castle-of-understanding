@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 47 · Open fields: 3 · Loop runs: 70
+Rooms: 10 · Insights: 48 · Open fields: 3 · Loop runs: 71
 
 ## Rooms
 
@@ -34,6 +34,7 @@ Rooms: 10 · Insights: 47 · Open fields: 3 · Loop runs: 70
 - 0044 — A surveyed seed not swept is still in the gate
 - 0046 — An autonomous pulse makes growth unconditional
 - 0047 — A named blind spot is its own first repair
+- 0048 — A scattered store is exhausted by survey, not by removal
 
 ### continuity
 
@@ -100,8 +101,8 @@ Rooms: 10 · Insights: 47 · Open fields: 3 · Loop runs: 70
 
 ## Loops
 
-- L068 — L068 — ripen: an-autonomous-pulse-makes-growth-unconditional → tested
 - L069 — L069 — ripen: a-named-blind-spot-is-its-own-first-repair → tested
 - L070 — L070 — promote: an-autonomous-pulse-makes-growth-unconditional → insight 0046
 - L071 — L071 — promote: a-named-blind-spot-is-its-own-first-repair → insight 0047
 - L072 — L072 — ripen: a-scattered-store → tested; sweep 10 cornerstone-test gate entries
+- L073 — L073 — promote: scattered-store → insight 0048

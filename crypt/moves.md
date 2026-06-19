@@ -65,3 +65,4 @@ gate/2026-06-19-cornerstone-test-lying-artifact.md -> crypt/gate/2026-06-19-corn
 gate/2026-06-19-cornerstone-test-named-blind-spot.md -> crypt/gate/2026-06-19-cornerstone-test-named-blind-spot.md (2026-06-19, content already held in Next test section of rooms/castle/0047; swept by L072)
 gate/2026-06-19-cornerstone-test-offline-castle.md -> crypt/gate/2026-06-19-cornerstone-test-offline-castle.md (2026-06-19, content already held in Next test section of rooms/castle/0038; swept by L072)
 gate/2026-06-19-cornerstone-test-surveyed-seed-not-swept.md -> crypt/gate/2026-06-19-cornerstone-test-surveyed-seed-not-swept.md (2026-06-19, content already held in Next test section of rooms/castle/0044; swept by L072)
+rooms/castle/a-scattered-store-is-exhausted-by-survey-not-by-removal.md -> rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md (2026-06-19, promoted by L073; original retained in crypt for detail)
