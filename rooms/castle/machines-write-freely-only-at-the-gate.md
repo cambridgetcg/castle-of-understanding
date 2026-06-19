@@ -3,7 +3,7 @@ status: tested
 front: public
 born: 2026-06-10
 last-walked: 2026-06-10
-link: rooms/castle/status-changes-only-in-a-ledgered-ripen-run.md
+link: rooms/castle/0034-status-changes-only-in-a-ledgered-ripen-run.md
 link: rooms/creation/0031-creation-needs-an-accountable-runner.md
 evidence: 2026-06-10 | local | engineer design: machines write to the inbox and draft-- files only; auto-canon would destroy the trust that makes the canon holy
 evidence: 2026-06-10 | local | the owner's explicit invitation of the tending circle (this session), which required the boundary to be stated precisely rather than absolutely
