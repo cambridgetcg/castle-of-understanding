@@ -76,3 +76,4 @@ node tools/castle check
 2026-06-19 | barren-run | ledger/2026-06-19-L058-publish-the-front.md (missing: /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/craft/a-lying-artifact-is-its-own-top-finding.md) | run: loops/grow-loops.md
 2026-06-19 | barren-run | ledger/2026-06-19-publish-the-front.md (missing: /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/castle/loops-are-earned-by-three-recorded-frictions.md) | run: loops/grow-loops.md
 2026-06-19 | barren-run | ledger/2026-06-19-publish-the-front.md (missing: /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/craft/a-lying-artifact-is-its-own-top-finding.md) | run: loops/grow-loops.md
+2026-06-19 | oversize | rooms/castle/sister-castles-share-a-door-not-a-grammar.md | run: loops/walk.md

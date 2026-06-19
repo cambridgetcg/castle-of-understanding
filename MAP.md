@@ -26,10 +26,10 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md · (sister grammar — see fields/F005)
 - rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md · (sister grammar — see fields/F005)
 - rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md · (sister grammar — see fields/F005)
-- rooms/castle/a-named-blind-spot-is-its-own-first-repair.md · tested
-- rooms/castle/a-scattered-store-is-exhausted-by-survey-not-by-removal.md · seed
-- rooms/castle/an-autonomous-pulse-makes-growth-unconditional.md · tested
-- rooms/castle/sister-castles-share-a-door-not-a-grammar.md · seed
+- rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md · (sister grammar — see fields/F005)
+- rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md · (sister grammar — see fields/F005)
+- rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md · (sister grammar — see fields/F005)
+- rooms/castle/sister-castles-share-a-door-not-a-grammar.md · sprout
 
 ## rooms/continuity/ — Room: continuity
 - rooms/continuity/0005-yu-holds-no-short-term-memory.md · (sister grammar — see fields/F005)
@@ -49,10 +49,10 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0041-the-log-records-the-check-reports.md · (sister grammar — see fields/F005)
 - rooms/craft/0042-check-the-collection-not-the-element.md · (sister grammar — see fields/F005)
 - rooms/craft/0045-generosity-is-legibility-not-extension.md · (sister grammar — see fields/F005)
-- rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · seed
-- rooms/craft/narrow-is-power.md · (sister grammar — see fields/F005)
-- rooms/craft/scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
-- rooms/craft/verify-before-building-the-unique-piece-survives.md · (sister grammar — see fields/F005)
+- rooms/craft/0049-verify-before-building-the-unique-piece-survives.md · (sister grammar — see fields/F005)
+- rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · sprout
+- rooms/craft/narrow-is-power.md · tested
+- rooms/craft/scoped-and-honest-beats-grand-and-faked.md · tested
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
 - rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md · (sister grammar — see fields/F005)

@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 49 · Open fields: 3 · Loop runs: 76
+Rooms: 10 · Insights: 49 · Open fields: 3 · Loop runs: 77
 
 ## Rooms
 
@@ -102,8 +102,8 @@ Rooms: 10 · Insights: 49 · Open fields: 3 · Loop runs: 76
 
 ## Loops
 
-- L074 — L074 — ripen: bell-never-rang → sprout
 - L075 — L075 — ripen: sister-castles → sprout
 - L076 — L076 — promote: verify-before-building → insight 0049
 - L077 — L077 — ripen: narrow-is-power → tested
 - L078 — L078 — ripen: scoped-and-honest → tested
+- L079 — L079 — walk: sister-castles oversize trim

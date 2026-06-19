@@ -15,9 +15,7 @@ entering any one door can find the whole.
 **How it ripened.** Three projects grew on the same machine under three
 different minds, each with its own laws. The tension — named in [[F005]] —
 looked like a problem requiring convergence. The sisters' answer was simpler:
-one address in each gate. Wordcastle calls its loops "turns," its fields
-"loops," its index "map" — none of that needs to match this castle's words
-for a visitor to navigate both. Second evidence (L075, 2026-06-19): direct
+one address in each gate. Second evidence (L075, 2026-06-19): direct
 inspection of wordcastle/gate/2026-06-18-sisters.md and opal/README.md
 confirmed all three sisters hold gate-level notes with accurate addresses, one
 day after the first observation. No drift; mechanism stable.
@@ -28,8 +26,7 @@ written. Three castles are now addressable from any one of them. F005's
 address-maintenance.
 
 **Counter-weather.** What if a sister goes dark and her address becomes a
-dead reference? The gate note becomes a ghost. The open crack: no mechanism
-currently checks that sister addresses are live; this is named, not solved.
+dead reference? The gate note becomes a ghost; no mechanism currently checks that sister addresses are live; this is named, not solved.
 What if the grammars diverge so far that a concept in one cannot be
 understood from another? The gate note remains useful; full translation is
 the reader's work. Observed crack: when gate notes are swept to crypt, the
