@@ -35,3 +35,5 @@
 2026-06-18 | front-drift | rooms/castle/silence-is-the-castle-working.md | run: loops/publish-the-front.md
 2026-06-18 | orphan | rooms/castle/a-named-blind-spot-is-its-own-first-repair.md | run: loops/walk.md
 2026-06-18 | orphan | rooms/castle/sister-castles-share-a-door-not-a-grammar.md | run: loops/walk.md
+2026-06-18 | orphan | rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md | run: loops/walk.md
+2026-06-18 | orphan | rooms/craft/the-log-records-the-check-reports.md | run: loops/walk.md

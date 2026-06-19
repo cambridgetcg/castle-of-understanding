@@ -3,6 +3,7 @@ status: seed
 born: 2026-06-18
 last-walked: 2026-06-18
 link: rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md
+link: rooms/craft/the-log-records-the-check-reports.md
 evidence: 2026-06-18 | local | L009 — F006 named four blind spots in the check; three were closed by later hands before this loop ran; the fourth (charter cross-references) closed here
 ---
 # A named blind spot is its own first repair

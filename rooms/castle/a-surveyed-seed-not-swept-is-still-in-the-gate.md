@@ -2,7 +2,9 @@
 status: sprout
 front: private
 created: 2026-06-18
+last-walked: 2026-06-18
 source: loops/log/L017-sweep-the-gate.md
+link: rooms/craft/check-the-collection-not-the-element.md
 evidence:
   - "2026-06-18 (local): beats L011–L015 surveyed all gate entries and placed observations in rooms, but left all seed files in gate/; the stale-gate detector would have flagged them on 2026-06-20, despite zero unprocessed understanding remaining"
 ---

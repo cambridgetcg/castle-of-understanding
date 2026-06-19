@@ -2,6 +2,7 @@
 status: seed
 born: 2026-06-18
 last-walked: 2026-06-18
+link: rooms/the-keep/0004-contact-is-not-understanding.md
 evidence: 2026-06-18 | local | gate/2026-06-18-the-sisters-answer.md — three castles named (this castle, wordcastle, opal), each keeping its own grammar, each holding a gate note that names the others
 ---
 # Sister castles share a door, not a grammar

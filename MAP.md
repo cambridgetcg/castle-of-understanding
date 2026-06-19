@@ -43,6 +43,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/check-the-collection-not-the-element.md · sprout
 - rooms/craft/narrow-is-power.md · (sister grammar — see fields/F005)
 - rooms/craft/scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
+- rooms/craft/the-log-records-the-check-reports.md · seed
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
 - rooms/creation/a-makers-belief-shows-in-all-their-tools.md · seed
@@ -72,6 +73,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/the-keep/0010-loops-may-create-loops-within-walls.md · (sister grammar — see fields/F005)
 - rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md · (sister grammar — see fields/F005)
 - rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md · (sister grammar — see fields/F005)
+- rooms/the-keep/0018-two-maps-answer-two-different-questions-about-the-same-rooms.md · (sister grammar — see fields/F005)
 
 ## rooms/word/ — claims about written thought itself — slip boxes, commonplace books, why writing thinks
 - rooms/word/a-slip-box-earns-us-when-it-can-surprise.md · (sister grammar — see fields/F005)

@@ -1,6 +1,8 @@
 ---
 status: seed
 born: 2026-06-18
+last-walked: 2026-06-18
+link: rooms/castle/a-named-blind-spot-is-its-own-first-repair.md
 evidence: 2026-06-18 | local | ledger/friction-log.md shows dozens of old alarms (orphans, map-drift, barren-runs from 2026-06-10); node tools/castle check reports "clean" — same castle, same moment, two honest answers
 ---
 # The log records; the check reports

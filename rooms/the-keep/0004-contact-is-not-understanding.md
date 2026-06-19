@@ -5,6 +5,7 @@ date: 2026-06-10
 source: Yu's founding word + the design session, 2026-06-10
 confidence: seed
 links: 0001
+link: rooms/castle/sister-castles-share-a-door-not-a-grammar.md
 ---
 
 # Contact is not understanding

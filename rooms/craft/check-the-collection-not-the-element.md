@@ -5,6 +5,7 @@ last-walked: 2026-06-18
 evidence: 2026-06-18 | local | L014 checked a gate entry's touches list for room coverage; the list was incomplete; L015 searched rooms/ by filename and found the room — the collection was authoritative, the element's self-report was not
 link: rooms/craft/a-lying-artifact-is-its-own-top-finding.md
 link: rooms/castle/a-named-blind-spot-is-its-own-first-repair.md
+link: rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md
 ---
 # Check the collection, not the element
 
