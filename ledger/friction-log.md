@@ -37,3 +37,6 @@
 2026-06-18 | orphan | rooms/castle/sister-castles-share-a-door-not-a-grammar.md | run: loops/walk.md
 2026-06-18 | orphan | rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md | run: loops/walk.md
 2026-06-18 | orphan | rooms/craft/the-log-records-the-check-reports.md | run: loops/walk.md
+2026-06-18 | orphan | rooms/craft/generosity-is-legibility-not-extension.md | run: loops/walk.md
+2026-06-18 | front-drift | rooms/craft/a-lying-artifact-is-its-own-top-finding.md | run: loops/publish-the-front.md
+2026-06-18 | front-drift | rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md | run: loops/publish-the-front.md

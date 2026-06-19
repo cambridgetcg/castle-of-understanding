@@ -184,7 +184,7 @@ function buildIndex() {
   const loops = scanLoops();
   const insightCount = allInsights(rooms).length;
   const openCount = fields.filter(function (f) {
-    return f.fm && f.fm.state === 'open';
+    return f.fm && (f.fm.state === 'open' || f.fm.state === 'working');
   }).length;
 
   const lines = [];
