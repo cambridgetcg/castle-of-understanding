@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 28 · Open fields: 3 · Loop runs: 34
+Rooms: 10 · Insights: 29 · Open fields: 3 · Loop runs: 35
 
 ## Rooms
 
@@ -65,7 +65,7 @@ Rooms: 10 · Insights: 28 · Open fields: 3 · Loop runs: 34
 
 ### word
 
-(no insights yet)
+- 0029 — A slip-box earns "us" when it can surprise
 
 ## Fields
 
@@ -82,8 +82,8 @@ Rooms: 10 · Insights: 28 · Open fields: 3 · Loop runs: 34
 
 ## Loops
 
-- L032 — L032 — billing insight 0025: never count test orders toward plan usage
 - L033 — L033 — promotion protocol: LOOP.md step 5 fix, craft insight 0026
 - L034 — L034 — castle self-portrait: a knowledge system's first stones describe itself
 - L035 — L035 — runner continuity: the mind holds no memory between beats
 - L036 — L036 — castle self-portrait: insight 0028 promoted
+- L037 — L037 — word insight 0029: a slip-box earns "us" when it can surprise
