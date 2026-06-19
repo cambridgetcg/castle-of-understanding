@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 18 · Open fields: 1 · Loop runs: 19
+Rooms: 10 · Insights: 18 · Open fields: 0 · Loop runs: 20
 
 ## Rooms
 
@@ -64,18 +64,18 @@ Rooms: 10 · Insights: 18 · Open fields: 1 · Loop runs: 19
 
 - F001 — Understanding on this device is scattered (working)
 - F002 — The castle is newborn (working)
-- F003 — No word from the internet has entered yet (open)
+- F003 — No word from the internet has entered yet (working)
 - F004 — The loop has no pulse (harvested)
 - F005 — Two hands raised one castle (harvested)
 - F006 — The check has blind spots (harvested)
-- F007 — Process outgrew trust (working)
+- F007 — Process outgrew trust (harvested)
 - F008 — The public front has not been published (working)
 - F009 — Two craft stones make the same claim (harvested)
 
 ## Loops
 
-- L017 — Sweep the gate
 - L018 — The log records; the check reports
 - L019 — Two maps answer two different questions
 - L020 — Orphan walk and F009
 - L021 — L021 — resolve two craft stones, one claim
+- L022 — L022 — harvest F007: the door's weight

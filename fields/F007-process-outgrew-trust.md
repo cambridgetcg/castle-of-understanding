@@ -1,6 +1,6 @@
 ---
 id: F007
-state: working
+state: harvested
 opened: 2026-06-10
 ---
 
@@ -28,5 +28,4 @@ may close a walk in silence — "(unsaid)" recorded, never refused (the motor
 still answers in full); the unanswered sign became an oldest-3 ranking
 (friction report 16 → 8, all signal); the gate-note/log/ledger triple-write
 retired — the ledger is the one memory.
-Remaining: watch whether visiting hands actually move faster; let the weave
-([[F005]]) apply the same law to the other grammars.
+[[L022]] (2026-06-18, beat castle-C001-20260618-202434) — field reached its better state: the gate holds three bullets and one law, the pulse carries the bookkeeping. Harvested: insight laid in rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md. The long test (whether the door re-accumulates as the castle grows) is named as an open crack in the stone.
