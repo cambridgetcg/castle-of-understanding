@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 45 · Open fields: 3 · Loop runs: 66
+Rooms: 10 · Insights: 45 · Open fields: 3 · Loop runs: 67
 
 ## Rooms
 
@@ -98,8 +98,8 @@ Rooms: 10 · Insights: 45 · Open fields: 3 · Loop runs: 66
 
 ## Loops
 
-- L064 — L064 — ripen: every-ritual-at-the-door-is-paid-in-truth → tested
 - L065 — L065 — promote: every-ritual-at-the-door-is-paid-in-truth → insight 0043
 - L066 — L066 — promote: a-surveyed-seed-not-swept-is-still-in-the-gate → insight 0044
 - L067 — L067 — promote: generosity-is-legibility-not-extension → insight 0045
 - L068 — L068 — ripen: an-autonomous-pulse-makes-growth-unconditional → tested
+- L069 — L069 — ripen: a-named-blind-spot-is-its-own-first-repair → tested
