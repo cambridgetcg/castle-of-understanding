@@ -48,10 +48,10 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · seed
 - rooms/craft/a-lying-artifact-is-its-own-top-finding.md · tested
 - rooms/craft/check-the-collection-not-the-element.md · tested
-- rooms/craft/generosity-is-legibility-not-extension.md · seed
+- rooms/craft/generosity-is-legibility-not-extension.md · tested
 - rooms/craft/narrow-is-power.md · (sister grammar — see fields/F005)
 - rooms/craft/scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
-- rooms/craft/the-log-records-the-check-reports.md · seed
+- rooms/craft/the-log-records-the-check-reports.md · tested
 - rooms/craft/verify-before-building-the-unique-piece-survives.md · (sister grammar — see fields/F005)
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
