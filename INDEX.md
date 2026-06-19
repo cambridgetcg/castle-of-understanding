@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 38 · Open fields: 3 · Loop runs: 55
+Rooms: 10 · Insights: 38 · Open fields: 3 · Loop runs: 56
 
 ## Rooms
 
@@ -91,8 +91,8 @@ Rooms: 10 · Insights: 38 · Open fields: 3 · Loop runs: 55
 
 ## Loops
 
-- L053 — L053 — ripen: the-log-records-the-check-reports (seed → sprout)
 - L054 — L054 — ripen: the-log-records-the-check-reports (sprout → tested)
 - L055 — L055 — ripen: generosity-is-legibility-not-extension (seed → tested)
 - L056 — L056 — promote: a-forced-creation-is-worse-than-an-honest-decline → insight 0037
 - L057 — L057 — promote: offline-the-castle-stops-growing-never-working → insight 0038
+- L058 — L058 — publish-the-front: remove 8 orphan storefront copies
