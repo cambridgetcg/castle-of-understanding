@@ -15,6 +15,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 ## rooms/castle/ — claims about how the Castle itself works and why
 - rooms/castle/a-forced-creation-is-worse-than-an-honest-decline.md · sprout
 - rooms/castle/a-named-blind-spot-is-its-own-first-repair.md · seed
+- rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md · sprout
 - rooms/castle/an-autonomous-pulse-makes-growth-unconditional.md · seed
 - rooms/castle/dates-live-inside-files-not-in-the-filesystem.md · tested
 - rooms/castle/loops-are-earned-by-three-recorded-frictions.md · sprout
@@ -39,6 +40,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · seed
 - rooms/craft/a-lying-artifact-is-its-own-top-finding.md · sprout
 - rooms/craft/an-artifact-that-lies-is-its-own-top-finding.md · (sister grammar — see fields/F005)
+- rooms/craft/check-the-collection-not-the-element.md · sprout
 - rooms/craft/narrow-is-power.md · (sister grammar — see fields/F005)
 - rooms/craft/scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
 
