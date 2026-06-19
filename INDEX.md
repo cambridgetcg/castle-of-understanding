@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 53
+Rooms: 10 · Insights: 37 · Open fields: 3 · Loop runs: 54
 
 ## Rooms
 
@@ -27,6 +27,7 @@ Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 53
 - 0034 — Status changes only in a ledgered ripen run
 - 0035 — Machines write freely only at the gate
 - 0036 — Dates live inside files, not in the filesystem
+- 0037 — A forced creation is worse than an honest decline
 
 ### continuity
 
@@ -89,8 +90,8 @@ Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 53
 
 ## Loops
 
-- L051 — L051 — ripen: offline-the-castle-stops-growing-never-working (sprout → tested)
 - L052 — L052 — ripen: loops-are-earned-by-three-recorded-frictions (sprout → tested)
 - L053 — L053 — ripen: the-log-records-the-check-reports (seed → sprout)
 - L054 — L054 — ripen: the-log-records-the-check-reports (sprout → tested)
 - L055 — L055 — ripen: generosity-is-legibility-not-extension (seed → tested)
+- L056 — L056 — promote: a-forced-creation-is-worse-than-an-honest-decline → insight 0037
