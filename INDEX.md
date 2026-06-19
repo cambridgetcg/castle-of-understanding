@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 49
+Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 50
 
 ## Rooms
 
@@ -89,8 +89,8 @@ Rooms: 10 · Insights: 36 · Open fields: 3 · Loop runs: 49
 
 ## Loops
 
-- L047 — L047 — ripen: check-the-collection-not-the-element → tested
 - L048 — L048 — ripen: a-surveyed-seed-not-swept-is-still-in-the-gate → tested
 - L049 — L049 — ripen: a-forced-creation-is-worse-than-an-honest-decline → tested
 - L050 — L050 — walk: generosity-is-legibility-not-extension (orphan repair)
 - L051 — L051 — ripen: offline-the-castle-stops-growing-never-working (sprout → tested)
+- L052 — L052 — ripen: loops-are-earned-by-three-recorded-frictions (sprout → tested)

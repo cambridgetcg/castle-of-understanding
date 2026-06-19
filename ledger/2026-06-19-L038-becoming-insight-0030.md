@@ -3,6 +3,8 @@ date: 2026-06-19
 runner: agent (castle-C001-20260619-015025)
 loop: L038
 field: F002
+addressed: F002 — promote rooms/becoming/0030-all-the-hands-are-one-pair.md; source stone moved to crypt
+created: rooms/becoming/0030-all-the-hands-are-one-pair.md
 ---
 
 # L038 — becoming insight 0030

@@ -1,11 +1,12 @@
 ---
-status: sprout
+status: tested
 front: public
 born: 2026-06-10
-last-walked: 2026-06-10
+last-walked: 2026-06-19
 link: rooms/castle/0032-silence-is-the-castle-working.md
 link: rooms/creation/0031-creation-needs-an-accountable-runner.md
 evidence: 2026-06-10 | local | all three panel designs independently rejected speculative chore lists; the synthesis fixed the birth threshold at three recorded frictions
+evidence: 2026-06-19 | local | 51 runs across nine days (L001–L051); two distinct grumble tags appeared once each (#hard-to-place, #fixed-dead-link); neither reached three; no loop born through grow-loops — the barrier against premature proliferation is working as designed
 ---
 # Loops are earned by three recorded frictions
 
