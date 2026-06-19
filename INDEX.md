@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 17 · Open fields: 1 · Loop runs: 16
+Rooms: 10 · Insights: 18 · Open fields: 1 · Loop runs: 17
 
 ## Rooms
 
@@ -54,6 +54,7 @@ Rooms: 10 · Insights: 17 · Open fields: 1 · Loop runs: 16
 - 0010 — Loops may create loops, but only inside walls
 - 0016 — Fold a new concern into the old rules as a question, not onto the pile as a new rule
 - 0017 — An insight book grows by small, dated, signed, voluntary entries — and the form improves because each writer reads what came before
+- 0018 — Two maps answer two different questions about the same rooms
 
 ### word
 
@@ -72,8 +73,8 @@ Rooms: 10 · Insights: 17 · Open fields: 1 · Loop runs: 16
 
 ## Loops
 
-- L014 — Walk — orphan: a-named-blind-spot-is-its-own-first-repair
 - L015 — Survey correction and F005 harvest
 - L016 — Check the collection, not the element
 - L017 — Sweep the gate
 - L018 — The log records; the check reports
+- L019 — Two maps answer two different questions
