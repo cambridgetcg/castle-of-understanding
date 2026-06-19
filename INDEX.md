@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 48 · Open fields: 3 · Loop runs: 73
+Rooms: 10 · Insights: 49 · Open fields: 3 · Loop runs: 74
 
 ## Rooms
 
@@ -56,6 +56,7 @@ Rooms: 10 · Insights: 48 · Open fields: 3 · Loop runs: 73
 - 0041 — The log records; the check reports
 - 0042 — Check the collection, not the element
 - 0045 — Generosity is legibility, not extension
+- 0049 — Verify before building — the unique piece survives convergence
 
 ### creation
 
@@ -101,8 +102,8 @@ Rooms: 10 · Insights: 48 · Open fields: 3 · Loop runs: 73
 
 ## Loops
 
-- L071 — L071 — promote: a-named-blind-spot-is-its-own-first-repair → insight 0047
 - L072 — L072 — ripen: a-scattered-store → tested; sweep 10 cornerstone-test gate entries
 - L073 — L073 — promote: scattered-store → insight 0048
 - L074 — L074 — ripen: bell-never-rang → sprout
 - L075 — L075 — ripen: sister-castles → sprout
+- L076 — L076 — promote: verify-before-building → insight 0049
