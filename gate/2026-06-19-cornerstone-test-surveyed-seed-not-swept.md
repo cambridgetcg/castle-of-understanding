@@ -1,7 +1,7 @@
 ---
 born: 2026-06-19
 source: L048 ripen run
-points-to: rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md
+points-to: rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md
 ---
 
 # Cornerstone test — a-surveyed-seed-not-swept-is-still-in-the-gate

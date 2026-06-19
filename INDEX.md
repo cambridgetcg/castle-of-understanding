@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 42 · Open fields: 3 · Loop runs: 62
+Rooms: 10 · Insights: 44 · Open fields: 3 · Loop runs: 64
 
 ## Rooms
 
@@ -30,6 +30,8 @@ Rooms: 10 · Insights: 42 · Open fields: 3 · Loop runs: 62
 - 0037 — A forced creation is worse than an honest decline
 - 0038 — Offline, the Castle stops growing — never working
 - 0039 — Loops are earned by three recorded frictions
+- 0043 — Every ritual at the door is paid in truth
+- 0044 — A surveyed seed not swept is still in the gate
 
 ### continuity
 
@@ -95,8 +97,8 @@ Rooms: 10 · Insights: 42 · Open fields: 3 · Loop runs: 62
 
 ## Loops
 
-- L060 — L060 — promote: lying-artifact → insight 0040
-- L061 — L061 — promote: log-records → insight 0041
 - L062 — L062 — promote: check-collection → insight 0042
 - L063 — L063 — promote: publish-front → clear orphan storefront + forward crypt
 - L064 — L064 — ripen: every-ritual-at-the-door-is-paid-in-truth → tested
+- L065 — L065 — promote: every-ritual-at-the-door-is-paid-in-truth → insight 0043
+- L066 — L066 — promote: a-surveyed-seed-not-swept-is-still-in-the-gate → insight 0044

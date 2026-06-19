@@ -24,11 +24,11 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md · (sister grammar — see fields/F005)
 - rooms/castle/0038-offline-the-castle-stops-growing-never-working.md · (sister grammar — see fields/F005)
 - rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md · (sister grammar — see fields/F005)
+- rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md · (sister grammar — see fields/F005)
 - rooms/castle/a-named-blind-spot-is-its-own-first-repair.md · seed
 - rooms/castle/a-scattered-store-is-exhausted-by-survey-not-by-removal.md · seed
 - rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md · tested
 - rooms/castle/an-autonomous-pulse-makes-growth-unconditional.md · seed
-- rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md · tested
 - rooms/castle/sister-castles-share-a-door-not-a-grammar.md · seed
 
 ## rooms/continuity/ — Room: continuity
