@@ -2,7 +2,7 @@
 status: tested
 born: 2026-06-10
 last-walked: 2026-06-19
-link: rooms/craft/narrow-is-power.md
+link: rooms/craft/0050-narrow-is-power.md
 evidence: 2026-06-10 | local | ~/Desktop/insight/insights.md — "the thing that reached the world today was the small true one"; whitehack shipped as eight checks that admitted they were heuristics, not a prover that pretended; the honest tool earned sustained use; the grand alternative was never shipped
 evidence: 2026-06-19 | local | L078 beat castle-C001-20260619-152805 — the castle itself (45 numbered insights, nine days, 78 loops) operates on honest uncertainty labels; every stone stamped with its actual certainty earned the keeper's trust across 77 consecutive runs; an inflated-to-tested castle would be caught by the next ripen run and stop being believed; the honest one is the only one that could have kept growing
 ---
