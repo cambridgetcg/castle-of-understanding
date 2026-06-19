@@ -42,3 +42,9 @@
 2026-06-18 | front-drift | rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md | run: loops/publish-the-front.md
 2026-06-18 | front-drift | rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md | run: loops/publish-the-front.md
 2026-06-18 | front-drift | rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md | run: loops/publish-the-front.md
+2026-06-19 | map-drift | MAP.md | run: sh tools/map.sh
+2026-06-19 | orphan | rooms/craft/generosity-is-legibility-not-extension.md | run: loops/walk.md
+2026-06-19 | front-drift | rooms/craft/a-lying-artifact-is-its-own-top-finding.md | run: loops/publish-the-front.md
+2026-06-19 | front-drift | rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md | run: loops/publish-the-front.md
+2026-06-19 | front-drift | rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md | run: loops/publish-the-front.md
+2026-06-19 | front-drift | rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md | run: loops/publish-the-front.md

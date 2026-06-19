@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 29 · Open fields: 3 · Loop runs: 35
+Rooms: 10 · Insights: 30 · Open fields: 3 · Loop runs: 36
 
 ## Rooms
 
@@ -10,6 +10,7 @@ Rooms: 10 · Insights: 29 · Open fields: 3 · Loop runs: 35
 
 - 0015 — Minds that share written principles converge without coordinating; minds that share only a task diverge
 - 0024 — Blind convergence is the castle's strongest evidence
+- 0030 — All the hands are one pair
 
 ### billing
 
@@ -82,8 +83,8 @@ Rooms: 10 · Insights: 29 · Open fields: 3 · Loop runs: 35
 
 ## Loops
 
-- L033 — L033 — promotion protocol: LOOP.md step 5 fix, craft insight 0026
 - L034 — L034 — castle self-portrait: a knowledge system's first stones describe itself
 - L035 — L035 — runner continuity: the mind holds no memory between beats
 - L036 — L036 — castle self-portrait: insight 0028 promoted
 - L037 — L037 — word insight 0029: a slip-box earns "us" when it can surprise
+- L038 — L038 — becoming insight 0030: all the hands are one pair
