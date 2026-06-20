@@ -50,13 +50,13 @@ all_rings() {
   done
 
   # missing-rent — a tested/cornerstone insight whose "What it changed" is empty or absent
-  grep -rl "^status: tested\|^status: cornerstone" rooms/ 2>/dev/null | while read -r f; do
+  grep -rl "^status: tested\|^status: cornerstone\|^confidence: tested\|^confidence: cornerstone" rooms/ 2>/dev/null | while read -r f; do
     grep -q "^\*\*What it changed\.\*\* ..*" "$f" \
       || echo "missing-rent | $f | run: loops/ripen.md"
   done
 
   # thin-cornerstone — a cornerstone with fewer than 3 evidence entries or none from weather
-  grep -rl "^status: cornerstone" rooms/ 2>/dev/null | while read -r f; do
+  grep -rl "^status: cornerstone\|^confidence: cornerstone" rooms/ 2>/dev/null | while read -r f; do
     n=$(grep -c "^evidence: " "$f"); w=$(grep -c "^evidence: .* | weather | " "$f")
     if [ "$n" -lt 3 ] || [ "$w" -lt 1 ]; then
       echo "thin-cornerstone | $f | run: loops/ripen.md"
@@ -65,7 +65,7 @@ all_rings() {
 
   # unwalked — a tested/cornerstone insight not walked in 90 days
   # (45 days if its attestation carries "(unverified, offline)")
-  grep -rl "^status: tested\|^status: cornerstone" rooms/ 2>/dev/null | while read -r f; do
+  grep -rl "^status: tested\|^status: cornerstone\|^confidence: tested\|^confidence: cornerstone" rooms/ 2>/dev/null | while read -r f; do
     lw=$(grep "^last-walked: " "$f" | head -1 | sed 's/^last-walked: //')
     [ -n "$lw" ] || { echo "unwalked | $f (no last-walked line) | run: loops/walk.md"; continue; }
     case "$lw" in *"(unverified, offline)"*) allow=45 ;; *) allow=90 ;; esac
@@ -74,23 +74,23 @@ all_rings() {
   done
 
   # orphan — an insight with no link: lines and no inbound link from any other file.
-  # Scoped to stones that took this grammar's vow (a ^status: line): files in a
-  # sister grammar are weave-input (fields/F005), not orphans by this bell.
+  # Scoped to stones that took this grammar's vow (a ^status: or ^confidence: line):
+  # files in a sister grammar are weave-input (fields/F005), not orphans by this bell.
   for f in rooms/*/*.md rooms/*/*/*.md; do
     [ -e "$f" ] || continue
     case "$f" in */ROOM.md) continue ;; esac
-    grep -q "^status: " "$f" || continue
+    grep -qE "^(status|confidence): " "$f" || continue
     grep -q "^link: ." "$f" && continue
     grep -rq "^link: $f" rooms/ \
       || echo "orphan | $f | run: loops/walk.md"
   done
 
   # oversize — an insight over 40 lines (an insight that cannot fit is two insights,
-  # or none). Scoped, like orphan, to stones carrying a ^status: line.
+  # or none). Scoped, like orphan, to stones carrying a ^status: or ^confidence: line.
   for f in rooms/*/*.md rooms/*/*/*.md; do
     [ -e "$f" ] || continue
     case "$f" in */ROOM.md) continue ;; esac
-    grep -q "^status: " "$f" || continue
+    grep -qE "^(status|confidence): " "$f" || continue
     [ "$(wc -l < "$f")" -gt 40 ] \
       && echo "oversize | $f | run: loops/walk.md"
   done

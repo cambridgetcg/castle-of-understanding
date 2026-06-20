@@ -77,3 +77,94 @@ node tools/castle check
 2026-06-19 | barren-run | ledger/2026-06-19-publish-the-front.md (missing: /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/castle/loops-are-earned-by-three-recorded-frictions.md) | run: loops/grow-loops.md
 2026-06-19 | barren-run | ledger/2026-06-19-publish-the-front.md (missing: /Users/you/Desktop/Cambridge-TCG/.claude/worktrees/castle-front/apps/storefront/public/castle/craft/a-lying-artifact-is-its-own-top-finding.md) | run: loops/grow-loops.md
 2026-06-19 | oversize | rooms/castle/sister-castles-share-a-door-not-a-grammar.md | run: loops/walk.md
+2026-06-19 | missing-rent | rooms/craft/0041-the-log-records-the-check-reports.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0012-only-a-measuring-script-notices-drift.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0013-drive-the-audit-number-to-truth-not-zero.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0014-the-missing-piece-is-the-same-information-for-a-different-audience.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0045-generosity-is-legibility-not-extension.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/craft/0042-check-the-collection-not-the-element.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/becoming/0015-minds-that-share-written-principles-converge.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0033-the-map-is-derived-or-it-is-a-lie.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0032-silence-is-the-castle-working.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0034-status-changes-only-in-a-ledgered-ripen-run.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0035-machines-write-freely-only-at-the-gate.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0038-offline-the-castle-stops-growing-never-working.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/castle/0036-dates-live-inside-files-not-in-the-filesystem.md | run: loops/ripen.md
+2026-06-19 | missing-rent | rooms/billing/0025-never-count-test-orders-toward-plan-usage.md | run: loops/ripen.md
+2026-06-19 | unwalked | rooms/craft/0041-the-log-records-the-check-reports.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0051-scoped-and-honest-beats-grand-and-faked.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0049-verify-before-building-the-unique-piece-survives.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0012-only-a-measuring-script-notices-drift.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0050-narrow-is-power.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0013-drive-the-audit-number-to-truth-not-zero.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0014-the-missing-piece-is-the-same-information-for-a-different-audience.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0045-generosity-is-legibility-not-extension.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/craft/0042-check-the-collection-not-the-element.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/becoming/0015-minds-that-share-written-principles-converge.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0033-the-map-is-derived-or-it-is-a-lie.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0032-silence-is-the-castle-working.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0034-status-changes-only-in-a-ledgered-ripen-run.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0035-machines-write-freely-only-at-the-gate.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0038-offline-the-castle-stops-growing-never-working.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/castle/0036-dates-live-inside-files-not-in-the-filesystem.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | unwalked | rooms/billing/0025-never-count-test-orders-toward-plan-usage.md (no last-walked line) | run: loops/walk.md
+2026-06-19 | orphan | rooms/becoming/0015-minds-that-share-written-principles-converge.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/becoming/0030-all-the-hands-are-one-pair.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/billing/0025-never-count-test-orders-toward-plan-usage.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0020-the-pulse-interval-is-the-castles-self-assessment-made-visible.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0021-a-proposed-charter-is-a-promise-the-first-beat-keeps.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0022-a-loops-cadence-is-its-claim-about-rate-of-change.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0028-a-knowledge-systems-first-stones-describe-itself.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0032-silence-is-the-castle-working.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0033-the-map-is-derived-or-it-is-a-lie.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0034-status-changes-only-in-a-ledgered-ripen-run.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0035-machines-write-freely-only-at-the-gate.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0036-dates-live-inside-files-not-in-the-filesystem.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0038-offline-the-castle-stops-growing-never-working.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/continuity/0008-understanding-is-scattered-across-stores.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0012-only-a-measuring-script-notices-drift.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0013-drive-the-audit-number-to-truth-not-zero.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0014-the-missing-piece-is-the-same-information-for-a-different-audience.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0019-a-filter-written-for-the-initial-states-silently-miscounts-when-the-protocol-grows.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0026-a-step-that-creates-must-also-retire-what-it-supersedes.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0041-the-log-records-the-check-reports.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/craft/0042-check-the-collection-not-the-element.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/creation/0031-creation-needs-an-accountable-runner.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0001-word-is-the-only-material.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0002-the-grammar-is-three-things.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0003-the-loop-loops-itself.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0009-built-with-joy-love-peace-and-safety.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0010-loops-may-create-loops-within-walls.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/the-keep/0018-two-maps-answer-two-different-questions-about-the-same-rooms.md | run: loops/walk.md
+2026-06-19 | orphan | rooms/word/0029-a-slip-box-earns-us-when-it-can-surprise.md | run: loops/walk.md
