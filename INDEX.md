@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 54 · Open fields: 3 · Loop runs: 99
+Rooms: 10 · Insights: 54 · Open fields: 3 · Loop runs: 100
 
 ## Rooms
 
@@ -110,8 +110,8 @@ Rooms: 10 · Insights: 54 · Open fields: 3 · Loop runs: 99
 
 ## Loops
 
-- L097 — L097 — fix: LOOP.md step 5 named only one of two derived maps
 - L098 — L098 — ripen: the-promotion-run-is-the-first-walk from sprout to tested
 - L099 — L099 — promote: the-promotion-run-is-the-first-walk → 0054
 - L100 — L100 — walk: trim oversize 0054; commit orphaned deletion; 18h
 - L101 — L101 — janitor: L100 frontmatter repaired; castle steady
+- L102 — L102 — gate seed: patient phase reaches full rest at beat 102
