@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 125
+Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 126
 
 ## Rooms
 
@@ -114,8 +114,8 @@ Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 125
 
 ## Loops
 
-- L123 — L123 — ripen: uncommitted word can vanish (seed → tested)
 - L124 — L124 — ripen: contact is not understanding (seed → tested)
 - L125 — L125 — ripen: provenance is what makes a note trustworthy (seed → tested)
 - L126 — L126 — ripen: a gate you have never watched fail is decoration (seed → tested)
 - L127 — L127 — ripen: a knowledge system's first stones describe itself (seed → tested)
+- L128 — L128 — ripen: creation needs an accountable runner (seed → tested)
