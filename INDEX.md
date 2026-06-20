@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 112
+Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 113
 
 ## Rooms
 
@@ -113,8 +113,8 @@ Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 112
 
 ## Loops
 
-- L110 — (untitled)
 - L111 — L111 — janitor: 10 missing ledger entries; LOOP.md step 6 extended
 - L112 — L112 — ripen: the loop loops itself → tested
 - L113 — L113 — ripen: loops may create loops within walls → tested
 - L114 — L114 — seed: patient phase and full rest are different states
+- L115 — L115 — ripen: 0020 pulse-interval promoted from seed to sprout
