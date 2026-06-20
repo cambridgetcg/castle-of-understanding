@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 51 · Open fields: 3 · Loop runs: 91
+Rooms: 10 · Insights: 52 · Open fields: 3 · Loop runs: 92
 
 ## Rooms
 
@@ -35,6 +35,7 @@ Rooms: 10 · Insights: 51 · Open fields: 3 · Loop runs: 91
 - 0046 — An autonomous pulse makes growth unconditional
 - 0047 — A named blind spot is its own first repair
 - 0048 — A scattered store is exhausted by survey, not by removal
+- 0052 — The commit is the last safety
 
 ### continuity
 
@@ -107,8 +108,8 @@ Rooms: 10 · Insights: 51 · Open fields: 3 · Loop runs: 91
 
 ## Loops
 
-- L089 — L089 — walk: founding cluster (0001–0031, the-keep, word, becoming, creation, castle, craft)
 - L090 — L090 — ripen: missing-rent cleared; LOOP.md promotion protocol fixed; F012 harvested
 - L091 — L091 — commit before next-beat: F013 harvested
 - L092 — L092 — publish-front: 5 drifted stones; staged gate deletion committed
 - L093 — L093 — ripen: commit-is-the-last-safety seed → tested
+- L094 — L094 — promote: commit-is-the-last-safety → 0052
