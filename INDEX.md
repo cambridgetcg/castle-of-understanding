@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 51 · Open fields: 4 · Loop runs: 88
+Rooms: 10 · Insights: 51 · Open fields: 3 · Loop runs: 89
 
 ## Rooms
 
@@ -103,12 +103,12 @@ Rooms: 10 · Insights: 51 · Open fields: 4 · Loop runs: 88
 - F010 — The promotion protocol leaves orphans (harvested)
 - F011 — Numbered stones are invisible to the bell (harvested)
 - F012 — Promote runs leave stones unwalked and without formal links (harvested)
-- F013 — The loop does not name commit before next-beat (open)
+- F013 — The loop does not name commit before next-beat (harvested)
 
 ## Loops
 
-- L086 — L086 — walk: castle mechanics cluster (0032–0039)
 - L087 — L087 — walk: craft cluster (0040–0051 and 0012–0014)
 - L088 — L088 — walk: castle, the-keep, becoming, and billing cluster
 - L089 — L089 — walk: founding cluster (0001–0031, the-keep, word, becoming, creation, castle, craft)
 - L090 — L090 — ripen: missing-rent cleared; LOOP.md promotion protocol fixed; F012 harvested
+- L091 — L091 — commit before next-beat: F013 harvested

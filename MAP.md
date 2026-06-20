@@ -29,6 +29,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md · (sister grammar — see fields/F005)
 - rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md · (sister grammar — see fields/F005)
 - rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md · (sister grammar — see fields/F005)
+- rooms/castle/commit-is-the-last-safety.md · seed
 - rooms/castle/sister-castles-share-a-door-not-a-grammar.md · sprout
 
 ## rooms/continuity/ — Room: continuity
@@ -53,6 +54,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0050-narrow-is-power.md · (sister grammar — see fields/F005)
 - rooms/craft/0051-scoped-and-honest-beats-grand-and-faked.md · (sister grammar — see fields/F005)
 - rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md · sprout
+- rooms/craft/the-promotion-run-is-the-first-walk.md · (sister grammar — see fields/F005)
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
 - rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md · (sister grammar — see fields/F005)

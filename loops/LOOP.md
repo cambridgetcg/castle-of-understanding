@@ -31,7 +31,11 @@ The loop is how the castle grows itself.
 6. **LOG.** Write `loops/log/LNNN-slug.md`: which field, what was understood,
    what was made, what changed, what is still open.
 
-7. **LOOP THE LOOP.** The last question, every run, no exceptions:
+7. **COMMIT.** Commit every change made in this run before touching anything
+   else. Unstaged work is uncommitted; uncommitted word can vanish. Do not
+   write `loops/next-beat` until this commit is recorded.
+
+8. **LOOP THE LOOP.** The last question, every run, no exceptions:
    *did this run reveal friction in the castle or in the loop itself?*
    If yes, open a field about it.
 

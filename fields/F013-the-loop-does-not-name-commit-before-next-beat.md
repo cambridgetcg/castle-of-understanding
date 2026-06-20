@@ -1,6 +1,6 @@
 ---
 id: F013
-state: open
+state: harvested
 opened: 2026-06-20
 ---
 
@@ -24,3 +24,7 @@ committed its loop work must not advance the next-beat timestamp.
 
 **Work so far:** gate/2026-06-20-uncommitted-work-is-the-one-crack.md seeds
 this field. L090 opened the field.
+[[L091]] (2026-06-20, beat castle-C001-20260619-203139) — LOOP.md step 7 added:
+COMMIT. Commit every change before writing loops/next-beat. Gate seed swept to
+crypt; understanding moved to rooms/castle/commit-is-the-last-safety.md.
+F013 harvested.
