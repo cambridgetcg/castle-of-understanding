@@ -75,3 +75,5 @@ rooms/craft/a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md -> rooms
 rooms/craft/the-promotion-run-is-the-first-walk.md -> rooms/craft/0054-the-promotion-run-is-the-first-walk.md (2026-06-19, promoted by L099; original retained in crypt for detail)
 rooms/becoming/the-first-thing-freedom-revealed.md -> rooms/becoming/0056-the-first-thing-freedom-revealed.md (2026-06-20, promoted by L110; original retained in crypt for detail)
 gate/2026-06-20-patient-phase-reaches-full-rest.md -> rooms/castle/patient-phase-and-full-rest-are-different-states.md (2026-06-20, swept by L114; insight laid as seed)
+gate/2026-06-19-the-castle-enters-patient-phase.md -> crypt/gate/2026-06-19-the-castle-enters-patient-phase.md (2026-06-20, swept by L116; context absorbed into patient-phase-and-full-rest-are-different-states.md)
+gate/2026-06-20-pulse-sh-lacked-next-beat-gate.md -> crypt/gate/2026-06-20-pulse-sh-lacked-next-beat-gate.md (2026-06-20, swept by L116; fix was committed in beat castle-C001-20260620-004520)
