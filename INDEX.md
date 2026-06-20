@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 53 · Open fields: 3 · Loop runs: 95
+Rooms: 10 · Insights: 53 · Open fields: 3 · Loop runs: 96
 
 ## Rooms
 
@@ -109,8 +109,8 @@ Rooms: 10 · Insights: 53 · Open fields: 3 · Loop runs: 95
 
 ## Loops
 
-- L093 — L093 — ripen: commit-is-the-last-safety seed → tested
 - L094 — L094 — promote: commit-is-the-last-safety → 0052
 - L095 — L095 — ripen: bell-never-rang → tested; LOOP.md promote step fixed
 - L096 — L096 — promote: bell-never-rang → 0053
 - L097 — L097 — fix: LOOP.md step 5 named only one of two derived maps
+- L098 — L098 — ripen: the-promotion-run-is-the-first-walk from sprout to tested
