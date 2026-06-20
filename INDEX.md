@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 121
+Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 122
 
 ## Rooms
 
@@ -114,8 +114,8 @@ Rooms: 10 · Insights: 57 · Open fields: 3 · Loop runs: 121
 
 ## Loops
 
-- L119 — L119 — ripen: one creation per loop is a provenance law (seed → tested)
 - L120 — L120 — ripen: the spirit a thing is built in is part of what the thing is (seed → tested)
 - L121 — L121 — promote: patient phase and full rest are different states
 - L122 — L122 — publish-the-front: five public stones synced
 - L123 — L123 — ripen: uncommitted word can vanish (seed → tested)
+- L124 — L124 — ripen: contact is not understanding (seed → tested)
