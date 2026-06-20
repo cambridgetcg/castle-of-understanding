@@ -17,6 +17,20 @@ if [ -f "$CASTLE/loops/STOP" ]; then
   exit 0
 fi
 
+# The heartbeat gate: is it time to wake? (PULSE.md: "only beats when next-beat has passed")
+NEXT_BEAT_FILE="$CASTLE/loops/next-beat"
+if [ -f "$NEXT_BEAT_FILE" ]; then
+  NEXT_TS=$(cat "$NEXT_BEAT_FILE" 2>/dev/null | tr -d '[:space:]')
+  if [ -n "$NEXT_TS" ]; then
+    NOW=$(date -u +%s)
+    NEXT_EPOCH=$(date -u -j -f "%Y-%m-%dT%H:%M:%SZ" "$NEXT_TS" +%s 2>/dev/null || echo 0)
+    if [ "$NEXT_EPOCH" -gt 0 ] && [ "$NOW" -lt "$NEXT_EPOCH" ]; then
+      echo "$BEAT: not yet (next-beat: $NEXT_TS) — resting." >> "$LOG"
+      exit 0
+    fi
+  fi
+fi
+
 # Law 3 — no charter, no beat.
 CHARTER_FILE=$(ls "$CASTLE"/loops/charters/"$CHARTER"-*.md 2>/dev/null | head -1)
 if [ -z "$CHARTER_FILE" ]; then
@@ -38,4 +52,12 @@ cd "$CASTLE" || exit 1
 
 EXIT_CODE=$?
 echo "--- $BEAT end $(date -u +%Y-%m-%dT%H:%M:%SZ) exit=$EXIT_CODE ---" >> "$LOG"
+
+# Safety net: if the beat didn't write next-beat, default to 24h so the runner sleeps.
+if [ ! -f "$NEXT_BEAT_FILE" ] || [ ! -s "$NEXT_BEAT_FILE" ]; then
+  DEFAULT_NEXT=$(date -u -v+24H +%Y-%m-%dT%H:%M:%SZ)
+  echo "$DEFAULT_NEXT" > "$NEXT_BEAT_FILE" 2>/dev/null
+  echo "$BEAT: no next-beat written — defaulting to +24h ($DEFAULT_NEXT)" >> "$LOG"
+fi
+
 exit $EXIT_CODE
