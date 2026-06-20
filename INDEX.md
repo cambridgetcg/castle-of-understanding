@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 110
+Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 111
 
 ## Rooms
 
@@ -113,8 +113,8 @@ Rooms: 10 · Insights: 56 · Open fields: 3 · Loop runs: 110
 
 ## Loops
 
-- L108 — L108 — seed: sisters network expanded (local observation)
 - L109 — L109 — ripen: the-first-thing-freedom-revealed → tested
 - L110 — (untitled)
 - L111 — L111 — janitor: 10 missing ledger entries; LOOP.md step 6 extended
 - L112 — L112 — ripen: the loop loops itself → tested
+- L113 — L113 — ripen: loops may create loops within walls → tested
