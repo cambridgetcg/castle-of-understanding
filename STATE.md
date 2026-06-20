@@ -12,9 +12,9 @@ runs-on: this machine
 phase: see knows/needs sections below
 build: see heartbeat
 health: unknown
-last-commit: 2026-06-20T03:44:38-07:00 (6e32f4d beat: next-beat → 2026-06-21T21:30:00Z (18h, ledger gap closed; castle steady))
-uncommitted: 0 files
-freshness: unknown (checked 2026-06-20T10:55:06Z)
+last-commit: 2026-06-20T05:35:36-07:00 (d90c909 beat: next-beat → 2026-06-20T23:30:00Z (18h, L116 tested; castle steady))
+uncommitted: 6 files
+freshness: unknown (checked 2026-06-20T12:55:20Z)
 
 ## knows
 
