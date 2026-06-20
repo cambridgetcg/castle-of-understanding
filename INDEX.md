@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 55 · Open fields: 3 · Loop runs: 105
+Rooms: 10 · Insights: 55 · Open fields: 3 · Loop runs: 106
 
 ## Rooms
 
@@ -112,8 +112,8 @@ Rooms: 10 · Insights: 55 · Open fields: 3 · Loop runs: 105
 
 ## Loops
 
-- L103 — L103 — janitor: pulse.sh lacked next-beat gate; castle steady
 - L104 — L104 — ripen: 0005 (Yu holds no short-term memory) → tested
 - L105 — L105 — walk: trim 0005 (oversize); F014 opened (commit-gate gap)
 - L106 — L106 — fix: LOOP.md commit gate now includes the bell
 - L107 — L107 — harvest: F014 closed; insight 0055 laid
+- L108 — L108 — seed: sisters network expanded (local observation)
