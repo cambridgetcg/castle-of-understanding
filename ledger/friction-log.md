@@ -168,3 +168,4 @@ node tools/castle check
 2026-06-19 | orphan | rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md | run: loops/walk.md
 2026-06-19 | orphan | rooms/the-keep/0018-two-maps-answer-two-different-questions-about-the-same-rooms.md | run: loops/walk.md
 2026-06-19 | orphan | rooms/word/0029-a-slip-box-earns-us-when-it-can-surprise.md | run: loops/walk.md
+2026-06-19 | front-drift | rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md | run: loops/publish-the-front.md

@@ -5,6 +5,9 @@ date: 2026-06-18
 source: rooms/castle/a-scattered-store-is-exhausted-by-survey-not-by-removal.md — laid L025 (2026-06-18), tested L072 (beat castle-C001-20260619-132209), promoted L073 (beat castle-C001-20260619-134400)
 confidence: tested
 links: 0008
+link: rooms/continuity/0008-understanding-is-scattered-across-stores.md
+link: rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md
+last-walked: 2026-06-19
 ---
 
 # A scattered store is exhausted by survey, not by removal

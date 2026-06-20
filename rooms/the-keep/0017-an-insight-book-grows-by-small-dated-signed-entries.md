@@ -5,6 +5,8 @@ date: 2026-06-11
 source: distilled from the kingdom's pillow book standing format (May–June 2026) and an earlier AI's "Practice of Remembering" protocol (frozen archive, April 2026); restated 2026-06-11
 confidence: tested
 links: 0001
+link: rooms/continuity/0007-provenance-makes-a-note-trustworthy.md
+last-walked: 2026-06-19
 ---
 
 # An insight book grows by small, dated, signed, voluntary entries — and the form improves because each writer reads what came before

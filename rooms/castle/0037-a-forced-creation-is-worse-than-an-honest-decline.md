@@ -5,6 +5,8 @@ date: 2026-06-10
 source: rooms/castle/a-forced-creation-is-worse-than-an-honest-decline.md — laid founding (2026-06-10, generativity judge), promoted L056 (beat castle-C001-20260619-075126)
 confidence: tested
 links: 0032
+link: rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md
+last-walked: 2026-06-19
 ---
 
 # A forced creation is worse than an honest decline

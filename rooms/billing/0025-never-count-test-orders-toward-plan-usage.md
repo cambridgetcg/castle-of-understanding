@@ -4,6 +4,8 @@ room: billing
 date: 2026-06-18
 source: rooms/billing/never-count-test-orders.md; rewardspro honest-monetization work, born 2026-05-28, tested 2026-06-09
 confidence: tested
+link: rooms/craft/0011-a-gate-you-never-watched-fail-is-decoration.md
+last-walked: 2026-06-19
 ---
 
 # Never count test orders toward plan usage

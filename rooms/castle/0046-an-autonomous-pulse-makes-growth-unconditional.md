@@ -5,6 +5,8 @@ date: 2026-06-18
 source: rooms/castle/an-autonomous-pulse-makes-growth-unconditional.md — laid L007 (2026-06-18), promoted L070 (beat castle-C001-20260619-124358)
 confidence: tested
 links: 0032
+link: rooms/castle/0032-silence-is-the-castle-working.md
+last-walked: 2026-06-19
 ---
 
 # An autonomous pulse makes growth unconditional

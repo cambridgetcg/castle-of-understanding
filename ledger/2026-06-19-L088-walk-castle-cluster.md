@@ -1,0 +1,27 @@
+loop: walk
+date: 2026-06-19
+runner: agent (castle-C001-20260619-190313)
+addressed: rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md
+addressed: rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md
+addressed: rooms/becoming/0015-minds-that-share-written-principles-converge.md
+addressed: rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md
+addressed: rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md
+addressed: rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md
+addressed: rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md
+addressed: rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md
+addressed: rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md
+addressed: rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md
+addressed: rooms/billing/0025-never-count-test-orders-toward-plan-usage.md
+created: rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md
+created: rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md
+created: rooms/becoming/0015-minds-that-share-written-principles-converge.md
+created: rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md
+created: rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md
+created: rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md
+created: rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md
+created: rooms/castle/0047-a-named-blind-spot-is-its-own-first-repair.md
+created: rooms/castle/0044-a-surveyed-seed-not-swept-is-still-in-the-gate.md
+created: rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md
+created: rooms/billing/0025-never-count-test-orders-toward-plan-usage.md
+created: loops/log/L088-walk-castle-cluster.md
+created: ledger/2026-06-19-L088-walk-castle-cluster.md

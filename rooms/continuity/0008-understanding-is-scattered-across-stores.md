@@ -5,6 +5,7 @@ date: 2026-06-10
 source: session memory survey, 2026-06-10
 confidence: seed
 links: 0005, 0007
+link: rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md
 ---
 
 # Understanding on this device is scattered across many stores

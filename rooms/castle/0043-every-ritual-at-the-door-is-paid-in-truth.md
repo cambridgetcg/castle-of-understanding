@@ -6,6 +6,8 @@ source: rooms/castle/every-ritual-at-the-door-is-paid-in-truth.md — laid F007-
 confidence: tested
 front: public
 links: 0032
+link: rooms/the-keep/0016-fold-a-new-concern-in-as-a-question-not-a-new-rule.md
+last-walked: 2026-06-19
 ---
 
 # Every ritual at the door is paid in truth

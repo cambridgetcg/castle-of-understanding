@@ -6,6 +6,9 @@ source: rooms/castle/a-surveyed-seed-not-swept-is-still-in-the-gate.md — laid 
 confidence: tested
 front: private
 links: 0042
+link: rooms/craft/0042-check-the-collection-not-the-element.md
+link: rooms/castle/0048-a-scattered-store-is-exhausted-by-survey-not-by-removal.md
+last-walked: 2026-06-19
 ---
 
 # A surveyed seed not swept is still in the gate

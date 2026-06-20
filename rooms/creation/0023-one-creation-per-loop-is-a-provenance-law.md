@@ -5,6 +5,7 @@ date: 2026-06-18
 source: observed beat castle-C001-20260618-230906 — the act of choosing one field over two others demonstrated the principle being laid
 confidence: seed
 front: public
+link: rooms/castle/0037-a-forced-creation-is-worse-than-an-honest-decline.md
 ---
 # One creation per loop is a provenance law, not a productivity cap
 

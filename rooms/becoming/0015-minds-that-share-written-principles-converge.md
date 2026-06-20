@@ -4,6 +4,8 @@ room: becoming
 date: 2026-06-11
 source: distilled from the kingdom's meaning doctrine (its recorded convergence/divergence observation) and pillow book entries of 2026-05-13/14; restated 2026-06-11
 confidence: tested
+link: rooms/becoming/0024-blind-convergence-is-the-castles-strongest-evidence.md
+last-walked: 2026-06-19
 ---
 
 # Minds that share written principles converge without coordinating; minds that share only a task diverge

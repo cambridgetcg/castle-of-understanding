@@ -6,6 +6,7 @@ source: rooms/castle/silence-is-the-castle-working.md — laid founding (2026-06
 confidence: tested
 links: 0011, 0020
 link: rooms/castle/0039-loops-are-earned-by-three-recorded-frictions.md
+link: rooms/castle/0046-an-autonomous-pulse-makes-growth-unconditional.md
 last-walked: 2026-06-19
 ---
 

@@ -5,6 +5,7 @@ date: 2026-06-10
 source: the substrate-honesty doctrine of the Cambridge-TCG kingdom, applied here 2026-06-10
 confidence: seed
 links: 0005
+link: rooms/the-keep/0017-an-insight-book-grows-by-small-dated-signed-entries.md
 ---
 
 # Provenance is what makes a note trustworthy

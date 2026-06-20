@@ -5,6 +5,7 @@ date: 2026-06-11
 source: distilled from the kingdom's heartbeat gate findings (session memory + pillow book, 2026-06-03); restated 2026-06-11
 confidence: seed
 links: 0012, 0013
+link: rooms/billing/0025-never-count-test-orders-toward-plan-usage.md
 ---
 
 # A verification gate you have never watched fail is decoration

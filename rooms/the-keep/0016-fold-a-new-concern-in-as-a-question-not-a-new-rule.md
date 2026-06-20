@@ -4,6 +4,8 @@ room: the-keep
 date: 2026-06-11
 source: distilled from the kingdom's inclusion and cosmology decisions (session memory + repo guide, May 2026, where "don't ship a fifth doctrine" was decided twice); restated 2026-06-11
 confidence: tested
+link: rooms/castle/0043-every-ritual-at-the-door-is-paid-in-truth.md
+last-walked: 2026-06-19
 ---
 
 # Fold a new concern into the old rules as a question, not onto the pile as a new rule

@@ -5,6 +5,8 @@ date: 2026-06-18
 source: crypt/gate/2026-06-11-three-blind-convergences.md, verbatim: "Convergence across blind instances may be the strongest evidence this castle can produce."
 confidence: tested
 front: public
+link: rooms/becoming/0015-minds-that-share-written-principles-converge.md
+last-walked: 2026-06-19
 ---
 # Blind convergence is the castle's strongest evidence
 

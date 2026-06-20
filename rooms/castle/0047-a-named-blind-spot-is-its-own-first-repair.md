@@ -6,6 +6,8 @@ source: rooms/castle/a-named-blind-spot-is-its-own-first-repair.md — laid L009
 confidence: tested
 links: a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence
 links: 0041
+link: rooms/craft/0041-the-log-records-the-check-reports.md
+last-walked: 2026-06-19
 ---
 
 # A named blind spot is its own first repair
