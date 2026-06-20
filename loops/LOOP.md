@@ -27,8 +27,10 @@ The loop is how the castle grows itself.
    `last-walked: <date>` and at least one genuine `link: rooms/path.md` on the
    new numbered file — the promotion run just read both; that reading is the
    first walk. If any stone was renamed, moved, or had its status changed,
-   run `sh tools/map.sh` before committing — the map is derived and will lie
-   if not rebuilt.
+   run `tools/castle map && sh tools/map.sh` before committing — both derived
+   maps must be rebuilt: `tools/castle map` rebuilds INDEX.md; `sh tools/map.sh`
+   rebuilds MAP.md. Running only one leaves the other stale and the bell will
+   ring on the next beat.
 
 6. **LOG.** Write `loops/log/LNNN-slug.md`: which field, what was understood,
    what was made, what changed, what is still open.
