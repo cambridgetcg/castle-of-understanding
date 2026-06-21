@@ -1,7 +1,8 @@
 ---
 id: F016
-state: working
+state: harvested
 opened: 2026-06-20
+harvested: 2026-06-20
 ---
 
 # Work-so-far repair runs leave themselves unrecorded
@@ -10,3 +11,4 @@ opened: 2026-06-20
 **Why it matters:** each repair beat creates the very gap it is trying to close. The castle records the work but the recorder goes unrecorded.
 **Better looks like:** a janitor beat adding a missing work-so-far entry also appends its own summary line before committing. No successor gap is left.
 **Work so far:** L151 (2026-06-20, beat castle-C001-20260620-175157) — opened this field; demonstrated the fix by adding both [[L150]] and [[L151]] entries to F002 in one commit. Pattern stands confirmed if the next janitor beat that touches F002 finds no gap.
+L152 (2026-06-20, beat castle-C001-20260620-181102) — confirmed: no gap found. F002 was current through L151 on arrival; fix held. Craft seed laid in rooms/craft/the-recorder-must-also-enter-the-record.md. Field harvested.
