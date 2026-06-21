@@ -59,7 +59,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0054-the-promotion-run-is-the-first-walk.md · (sister grammar — see fields/F005)
 - rooms/craft/0055-a-gate-that-omits-one-checker-has-a-blind-lane.md · (sister grammar — see fields/F005)
 - rooms/craft/0059-the-recorder-must-also-enter-the-record.md · (sister grammar — see fields/F005)
-- rooms/craft/a-shared-gate-set-by-one-peer-silently-binds-all.md · seed
+- rooms/craft/a-shared-gate-set-by-one-peer-silently-binds-all.md · sprout
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
 - rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md · (sister grammar — see fields/F005)

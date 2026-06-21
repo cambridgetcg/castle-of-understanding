@@ -86,3 +86,4 @@ rooms/craft/the-recorder-must-also-enter-the-record.md -> rooms/craft/0059-the-r
 gate/2026-06-19-sister-addresses.md -> crypt/gate/2026-06-19-sister-addresses.md (2026-06-20, door restored in L075; insight 0058 documents the pattern; swept by L157)
 rooms/castle/a-bypassed-gate-and-a-broken-gate-look-alike.md -> rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md (2026-06-21, promoted by L171; original retained in crypt)
 gate/2026-06-21-shared-gate-blocks-wrong-charter.md -> crypt/gate/2026-06-21-shared-gate-blocks-wrong-charter.md (2026-06-21, swept by L179; observation laid as rooms/craft/a-shared-gate-set-by-one-peer-silently-binds-all.md)
+gate/2026-06-21-stop-is-the-legitimate-shared-gate.md -> crypt/gate/2026-06-21-stop-is-the-legitimate-shared-gate.md (2026-06-21, swept by L181; answer folded into rooms/craft/a-shared-gate-set-by-one-peer-silently-binds-all.md to close the open crack; stone promoted from seed to sprout)

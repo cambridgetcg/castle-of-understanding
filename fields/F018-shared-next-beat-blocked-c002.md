@@ -27,3 +27,8 @@ mechanical block is removed. C002 will run next Sunday (2026-06-28 at 08:41 UTC)
 but C002's cadence fires at ~15:41 UTC on Sundays; the L178 fix was applied at
 ~03:16 UTC, before that time; C002 should run today (2026-06-21). F018 remains
 open until C002's log confirms the first successful run.
+[[L181]] (2026-06-21) — L180's gate seed folded into L179's craft stone: claim
+narrowed to the declared-intent distinction (STOP is the legitimate shared gate;
+accidental next-beat was not). Stone promoted from seed to sprout. Gate seed
+swept to crypt. F018 still open — C002 has not yet run (~04:42 UTC, fires 08:41
+UTC today); next C001 beat will ripen 0021/0022 once C002's log exists.
