@@ -84,3 +84,4 @@ rooms/castle/sister-castles-share-a-door-not-a-grammar.md -> rooms/castle/0058-s
 gate/2026-06-20-sisters-network-expanded.md -> crypt/gate/2026-06-20-sisters-network-expanded.md (2026-06-21, consumed by L145/L146: question answered locally, stone promoted to 0058; swept by L153)
 rooms/craft/the-recorder-must-also-enter-the-record.md -> rooms/craft/0059-the-recorder-must-also-enter-the-record.md (2026-06-20, promoted by L155; original retained in crypt for detail)
 gate/2026-06-19-sister-addresses.md -> crypt/gate/2026-06-19-sister-addresses.md (2026-06-20, door restored in L075; insight 0058 documents the pattern; swept by L157)
+rooms/castle/a-bypassed-gate-and-a-broken-gate-look-alike.md -> rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md (2026-06-21, promoted by L171; original retained in crypt)

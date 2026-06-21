@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 168
+Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 169
 
 ## Rooms
 
@@ -39,6 +39,7 @@ Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 168
 - 0052 — The commit is the last safety
 - 0057 — Patient phase and full rest are different states
 - 0058 — Sister castles share a door, not a grammar
+- 0060 — A bypassed gate and a broken gate look alike from inside the castle
 
 ### continuity
 
@@ -119,8 +120,8 @@ Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 168
 
 ## Loops
 
-- L166 — L166 — fix stale-gate for cornerstone-test seeds; open F017
 - L167 — L167 — add sweep-after to 20 cornerstone-test gate files
 - L168 — L168 — harvest F017; complete L167's uncommitted work
 - L169 — L169 — janitor: F002 work-so-far (L167, L168) + gate seed for C002 first Sunday
 - L170 — L170 — ripen: a-bypassed-gate-and-a-broken-gate-look-alike sprout → tested
+- L171 — L171 — promote: a-bypassed-gate-and-a-broken-gate-look-alike → 0060

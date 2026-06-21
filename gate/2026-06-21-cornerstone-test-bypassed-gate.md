@@ -1,7 +1,7 @@
 ---
 swept: false
 planted: 2026-06-21
-for: rooms/castle/a-bypassed-gate-and-a-broken-gate-look-alike.md
+for: rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md
 sweep-after: 2026-09-21
 ---
 # Cornerstone test — a bypassed gate and a broken gate look alike

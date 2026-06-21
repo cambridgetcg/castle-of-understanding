@@ -190,3 +190,5 @@ node tools/castle check
 2026-06-20 | barren-run | ledger/2026-06-20-L145-ripen-sister-castles.md (no creation, no decline) | run: loops/grow-loops.md
 2026-06-20 | barren-run | ledger/2026-06-20-L146-promote-sister-castles-0058.md (no creation, no decline) | run: loops/grow-loops.md
 2026-06-21 | barren-run | ledger/2026-06-21-L170-ripen-bypassed-gate-to-tested.md (no creation, no decline) | run: loops/grow-loops.md
+2026-06-21 | map-drift | MAP.md | run: sh tools/map.sh
+2026-06-21 | oversize | rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md | run: loops/walk.md
