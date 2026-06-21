@@ -81,3 +81,4 @@ gate/2026-06-20-pulse-sh-lacked-next-beat-gate.md -> crypt/gate/2026-06-20-pulse
 rooms/castle/patient-phase-and-full-rest-are-different-states.md -> rooms/castle/0057-patient-phase-and-full-rest-are-different-states.md (2026-06-20, promoted by L121; original retained in crypt for detail)
 gate/2026-06-20-runner-gate-confirmed-working.md -> crypt/gate/2026-06-20-runner-gate-confirmed-working.md (2026-06-20, swept by L141; context absorbed into F015 harvest; insight: rooms/castle/a-bypassed-gate-and-a-broken-gate-look-alike.md)
 rooms/castle/sister-castles-share-a-door-not-a-grammar.md -> rooms/castle/0058-sister-castles-share-a-door-not-a-grammar.md (2026-06-20, promoted by L146; original retained in crypt for detail)
+gate/2026-06-20-sisters-network-expanded.md -> crypt/gate/2026-06-20-sisters-network-expanded.md (2026-06-21, consumed by L145/L146: question answered locally, stone promoted to 0058; swept by L153)

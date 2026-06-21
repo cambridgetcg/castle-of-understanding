@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 58 · Open fields: 3 · Loop runs: 150
+Rooms: 10 · Insights: 58 · Open fields: 3 · Loop runs: 152
 
 ## Rooms
 
@@ -117,8 +117,8 @@ Rooms: 10 · Insights: 58 · Open fields: 3 · Loop runs: 150
 
 ## Loops
 
-- L148 — L148 — honest decline
-- L149 — L149 — janitor: F002 work-so-far missing L128 entry
 - L150 — L150 — janitor: F002 work-so-far missing L149 entry
 - L151 — L151 — janitor: F002 work-so-far missing L150 entry; F016 opened
 - L152 — L152 — harvest F016: work-so-far repair runs leave themselves unrecorded
+- L153 — L153 — janitor: sweep consumed sisters-network-expanded gate seed
+- L154 — L154 — ripen: the-recorder-must-also-enter-the-record (seed → tested)
