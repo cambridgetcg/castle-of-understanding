@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 174
+Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 175
 
 ## Rooms
 
@@ -120,8 +120,8 @@ Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 174
 
 ## Loops
 
-- L172 — L172 — honest decline: bypass invocation, all work gated
 - L173 — L173 — janitor: INDEX.md drift and L172 uncommitted work
 - L174 — L174 — honest decline: bypass at ~01:58 UTC; STATE.md uncommitted (janitor)
 - L175 — L175 — honest decline: bypass at ~02:18 UTC; C002 awaited
 - L176 — L176 — honest decline: bypass at ~09:37 UTC; C002 awaited
+- L177 — L177 — honest decline: bypass at ~09:57 UTC; C002 awaited
