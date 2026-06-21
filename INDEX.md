@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 159
+Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 160
 
 ## Rooms
 
@@ -118,8 +118,8 @@ Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 159
 
 ## Loops
 
-- L157 — L157 — sweep: gate/2026-06-19-sister-addresses.md (consumed gate seed)
 - L158 — L158 — honest decline: deepest patient phase
 - L159 — L159 — honest decline: deepest patient phase
 - L160 — L160 — honest decline: deepest patient phase, fourth bypass on 2026-06-20
 - L161 — L161 — honest decline: deepest patient phase, fifth bypass on 2026-06-20
+- L162 — L162 — honest decline: deepest patient phase, sixth bypass on 2026-06-20
