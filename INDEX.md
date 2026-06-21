@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 190
+Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 191
 
 ## Rooms
 
@@ -123,8 +123,8 @@ Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 190
 
 ## Loops
 
-- L188 — L188 — promote: a shared gate set by one peer silently binds all
 - L189 — L189 — promote: the staging area is a waiting room
 - L190 — L190 — fix: LOOP.md step 7 named the wrong next-beat file
 - L191 — L191 — walk: a-makers-belief-shows-in-all-their-tools.md (day 3 of 30)
 - L192 — L192 — honest decline: C002 pre-run bypass
+- L193 — L193 — honest decline: post-C002-fire bypass
