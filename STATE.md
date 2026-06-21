@@ -12,9 +12,9 @@ runs-on: this machine
 phase: see knows/needs sections below
 build: see heartbeat
 health: unknown
-last-commit: 2026-06-20T19:58:26Z (c6ee0a0 beat: L157 — sweep sister-addresses gate seed; L156 janitor)
-uncommitted: 0
-freshness: unknown (checked 2026-06-21T02:57:02Z)
+last-commit: 2026-06-20T21:48:36-07:00 (a588462 beat: L162 — honest decline; deepest patient phase, 59 insights, sixth bypass)
+uncommitted: 1 files
+freshness: unknown (checked 2026-06-21T04:57:18Z)
 
 ## knows
 
