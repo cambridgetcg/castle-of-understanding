@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 59 · Open fields: 4 · Loop runs: 165
+Rooms: 10 · Insights: 59 · Open fields: 3 · Loop runs: 166
 
 ## Rooms
 
@@ -115,12 +115,12 @@ Rooms: 10 · Insights: 59 · Open fields: 4 · Loop runs: 165
 - F014 — The commit gate does not include the bell (harvested)
 - F015 — The runner invokes before next-beat (harvested)
 - F016 — Work-so-far repair runs leave themselves unrecorded (harvested)
-- F017 — The stale-gate detector does not ring on cornerstone-test due dates (working)
+- F017 — The stale-gate detector does not ring on cornerstone-test due dates (harvested)
 
 ## Loops
 
-- L163 — L163 — honest decline: deepest patient phase, seventh bypass on 2026-06-20
 - L164 — L164 — honest decline: deepest patient phase, eighth bypass on 2026-06-20
 - L165 — L165 — ripen: a-bypassed-gate stone to sprout; deepest patient phase, ninth bypass
 - L166 — L166 — fix stale-gate for cornerstone-test seeds; open F017
 - L167 — L167 — add sweep-after to 20 cornerstone-test gate files
+- L168 — L168 — harvest F017; complete L167's uncommitted work

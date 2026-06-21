@@ -1,7 +1,8 @@
 ---
 id: F017
-state: working
-opened: 2026-06-22
+state: harvested
+opened: 2026-06-20
+harvested: 2026-06-20
 ---
 
 # The stale-gate detector does not ring on cornerstone-test due dates
