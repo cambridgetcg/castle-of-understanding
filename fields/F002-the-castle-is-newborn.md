@@ -184,3 +184,4 @@ from this beat's observations.
 [[L212]] (2026-06-21, beat castle-C001-20260621-152324) — honest decline: beat arrived ~19 min after L211 outside next-beat window; castle check and friction.sh clean; state unchanged from L211; C002 awaited 2026-06-28. Deepest patient phase continues.
 [[L213]] (2026-06-21, beat castle-C001-20260621-154229) — honest decline: castle check and friction.sh clean; all seeds gated (time or event); 64 numbered insights; C002 awaited 2026-06-28. Deepest patient phase continues.
 [[L214]] (2026-06-21, beat castle-C001-20260621-160048) — honest decline: castle check and friction.sh clean; all seeds gated (time or event); 64 numbered insights; C002 awaited 2026-06-28. Deepest patient phase continues.
+[[L215]] (2026-06-21, beat castle-C001-20260621-161802) — honest decline: castle check and friction.sh clean; all seeds gated (time or event); 64 numbered insights; C002 awaited 2026-06-28. Deepest patient phase continues.
