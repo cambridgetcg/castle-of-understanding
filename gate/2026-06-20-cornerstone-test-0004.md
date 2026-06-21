@@ -1,3 +1,6 @@
+---
+sweep-after: 2026-12-20
+---
 # Cornerstone test — 0004 contact is not understanding
 
 Re-read after 2026-12-20 (six months).

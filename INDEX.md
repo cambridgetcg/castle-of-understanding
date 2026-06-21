@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 59 · Open fields: 4 · Loop runs: 164
+Rooms: 10 · Insights: 59 · Open fields: 4 · Loop runs: 165
 
 ## Rooms
 
@@ -119,8 +119,8 @@ Rooms: 10 · Insights: 59 · Open fields: 4 · Loop runs: 164
 
 ## Loops
 
-- L162 — L162 — honest decline: deepest patient phase, sixth bypass on 2026-06-20
 - L163 — L163 — honest decline: deepest patient phase, seventh bypass on 2026-06-20
 - L164 — L164 — honest decline: deepest patient phase, eighth bypass on 2026-06-20
 - L165 — L165 — ripen: a-bypassed-gate stone to sprout; deepest patient phase, ninth bypass
 - L166 — L166 — fix stale-gate for cornerstone-test seeds; open F017
+- L167 — L167 — add sweep-after to 20 cornerstone-test gate files

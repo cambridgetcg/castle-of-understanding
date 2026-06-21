@@ -1,3 +1,6 @@
+---
+sweep-after: 2026-09-19
+---
 # Cornerstone test — narrow-is-power
 
 Planted: 2026-06-19 (L077, beat castle-C001-20260619-150643)

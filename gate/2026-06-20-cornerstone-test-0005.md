@@ -2,6 +2,7 @@
 planted: 2026-06-20
 beat: castle-C001-20260620-010541
 re-read-after: 2026-09-17
+sweep-after: 2026-09-17
 ---
 
 # Cornerstone test — 0005 (Yu holds no short-term memory)

@@ -2,6 +2,7 @@
 date: 2026-06-20
 about: 0008 — understanding on this device is scattered across many stores
 re-read-after: 2026-12-20
+sweep-after: 2026-12-20
 ---
 
 Cornerstone test for rooms/continuity/0008-understanding-is-scattered-across-stores.md.

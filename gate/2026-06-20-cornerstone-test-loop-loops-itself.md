@@ -2,6 +2,7 @@
 date: 2026-06-20
 re-read: 2026-09-17
 source: L112 ripen of 0003
+sweep-after: 2026-09-17
 ---
 
 # Cornerstone test: the loop loops itself (0003)

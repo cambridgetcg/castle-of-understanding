@@ -1,6 +1,7 @@
 ---
 planted: 2026-06-19
 link: rooms/continuity/0027-the-runner-also-holds-no-continuity-between-beats.md
+sweep-after: 2026-09-17
 ---
 
 # Cornerstone test for 0027 — the runner holds no continuity

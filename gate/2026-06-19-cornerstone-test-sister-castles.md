@@ -1,3 +1,6 @@
+---
+sweep-after: 2026-09-17
+---
 cornerstone test — rooms/castle/0058-sister-castles-share-a-door-not-a-grammar.md
 
 Status as of 2026-06-20: ripened to tested (L145). Network has expanded from

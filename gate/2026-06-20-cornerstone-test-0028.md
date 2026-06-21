@@ -1,3 +1,6 @@
+---
+sweep-after: 2026-12-20
+---
 # Cornerstone test seed — 0028 (a knowledge system's first stones describe itself)
 
 Planted 2026-06-20, L127. Re-read after 2026-12-20.

@@ -2,6 +2,7 @@
 planted: 2026-06-19
 re-read-after: 2026-09-17
 link: rooms/craft/0053-a-bell-that-never-rang-at-its-keeper-is-not-yet-evidence.md
+sweep-after: 2026-09-17
 ---
 
 # Cornerstone test — bell-never-rang → tested

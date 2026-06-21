@@ -2,6 +2,7 @@
 date: 2026-06-20
 planted-by: beat castle-C001-20260620-084351 (L125)
 re-read-after: 2026-12-20
+sweep-after: 2026-12-20
 ---
 
 # Cornerstone test — 0007 provenance is what makes a note trustworthy

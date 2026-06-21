@@ -2,6 +2,7 @@
 planted: 2026-06-20
 re-read-after: 2026-12-20
 subject: rooms/the-keep/0018-two-maps-answer-two-different-questions-about-the-same-rooms.md
+sweep-after: 2026-12-20
 ---
 
 # Cornerstone test for 0018

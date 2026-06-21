@@ -1,5 +1,6 @@
 date: 2026-06-19
 source: L078 ripen run
+sweep-after: 2026-09-17
 
 rooms/craft/0051-scoped-and-honest-beats-grand-and-faked.md reached tested; promoted to numbered insight today.
 Cornerstone requires a third independent evidence entry from a third domain

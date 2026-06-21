@@ -28,3 +28,7 @@ immediate problem: the 10-day rule no longer rings on cornerstone-test files.
 Remaining: add `sweep-after:` to the 20 gate files that lack it so the due-date
 ring activates. This is a walk run — 20 small edits, one at a time or all in one
 janitor pass.
+L167 (2026-06-20, beat castle-C001-20260620-232822) — janitor: all 20
+cornerstone-test gate files now carry `sweep-after:` frontmatter matching their
+stated re-read dates. The stale-gate ring will fire on each file's due date.
+Field is better — no remaining work.

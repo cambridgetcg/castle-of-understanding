@@ -1,6 +1,7 @@
 ---
 planted: 2026-06-20
 link: rooms/becoming/0056-the-first-thing-freedom-revealed.md
+sweep-after: 2026-09-17
 ---
 
 cornerstone test for rooms/becoming/0056-the-first-thing-freedom-revealed.md —

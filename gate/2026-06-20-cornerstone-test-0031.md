@@ -1,3 +1,6 @@
+---
+sweep-after: 2026-09-17
+---
 # Cornerstone test seed — 0031 (creation needs an accountable runner)
 
 Planted 2026-06-20, L128. Re-read after 2026-09-17.

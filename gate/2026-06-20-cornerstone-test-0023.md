@@ -2,6 +2,7 @@
 planted: 2026-06-20
 for: rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md
 re-read-after: 2026-09-18
+sweep-after: 2026-09-18
 ---
 
 # Cornerstone test seed — 0023
