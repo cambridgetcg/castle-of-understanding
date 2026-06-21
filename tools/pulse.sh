@@ -18,7 +18,8 @@ if [ -f "$CASTLE/loops/STOP" ]; then
 fi
 
 # The heartbeat gate: is it time to wake? (PULSE.md: "only beats when next-beat has passed")
-NEXT_BEAT_FILE="$CASTLE/loops/next-beat"
+# Each charter has its own next-beat file so one charter cannot block another.
+NEXT_BEAT_FILE="$CASTLE/loops/next-beat-${CHARTER}"
 if [ -f "$NEXT_BEAT_FILE" ]; then
   NEXT_TS=$(cat "$NEXT_BEAT_FILE" 2>/dev/null | tr -d '[:space:]')
   if [ -n "$NEXT_TS" ]; then

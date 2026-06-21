@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 175
+Rooms: 10 · Insights: 60 · Open fields: 4 · Loop runs: 176
 
 ## Rooms
 
@@ -117,11 +117,12 @@ Rooms: 10 · Insights: 60 · Open fields: 3 · Loop runs: 175
 - F015 — The runner invokes before next-beat (harvested)
 - F016 — Work-so-far repair runs leave themselves unrecorded (harvested)
 - F017 — The stale-gate detector does not ring on cornerstone-test due dates (harvested)
+- F018 — The shared next-beat gate blocked C002 (working)
 
 ## Loops
 
-- L173 — L173 — janitor: INDEX.md drift and L172 uncommitted work
 - L174 — L174 — honest decline: bypass at ~01:58 UTC; STATE.md uncommitted (janitor)
 - L175 — L175 — honest decline: bypass at ~02:18 UTC; C002 awaited
 - L176 — L176 — honest decline: bypass at ~09:37 UTC; C002 awaited
 - L177 — L177 — honest decline: bypass at ~09:57 UTC; C002 awaited
+- L178 — L178 — fix: shared next-beat gate blocked C002
