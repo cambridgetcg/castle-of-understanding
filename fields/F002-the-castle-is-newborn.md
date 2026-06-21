@@ -178,3 +178,4 @@ from this beat's observations.
 [[L206]] (2026-06-21, beat castle-C001-20260621-133143) — honest decline: bypass invocation ~22h before next-beat; castle check and friction.sh clean; all seeds time-gated or event-gated; no creation forced. Deepest patient phase continues; C002 awaited 2026-06-28.
 [[L207]] (2026-06-21, beat castle-C001-20260621-135127) — honest decline: castle check and friction.sh clean; all seeds time-gated or event-gated; no creation forced. Deepest patient phase continues; C002 awaited 2026-06-28.
 [[L208]] (2026-06-21, beat castle-C001-20260621-141014) — honest decline: castle check and friction.sh clean; all seeds time-gated or event-gated; no creation forced. Deepest patient phase continues; C002 awaited 2026-06-28.
+[[L209]] (2026-06-21, beat castle-C001-20260621-142844) — honest decline: castle check and friction.sh clean; all seeds time-gated or event-gated; no creation forced. Deepest patient phase continues; C002 awaited 2026-06-28.
