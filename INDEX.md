@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 205
+Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 206
 
 ## Rooms
 
@@ -126,8 +126,8 @@ Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 205
 
 ## Loops
 
-- L203 — L203 — ripen: the bell watches structure; the reader watches meaning
 - L204 — L204 — promote: the bell watches structure; the reader watches meaning → 0064
 - L205 — L205 — honest decline: patient phase continues
 - L206 — L206 — honest decline: patient phase continues
 - L207 — L207 — honest decline: patient phase continues
+- L208 — L208 — honest decline: patient phase continues
