@@ -47,3 +47,4 @@ F018 remains open.
 awaited; 0021/0022 still gated. F018 remains open.
 [[L188]] (2026-06-21, beat castle-C001-20260621-070334) — promote: the craft stone born from this field (a-shared-gate-set-by-one-peer-silently-binds-all.md) promoted to rooms/craft/0061-a-shared-gate-set-by-one-peer-silently-binds-all.md. C002 has not yet run; 0021/0022 still gated. F018 remains open.
 [[L189]] (2026-06-21, beat castle-C001-20260621-072548) — promote: rooms/craft/the-staging-area-is-a-waiting-room.md promoted to 0062. C002 has not yet run (~14:25 UTC; fires ~15:41 UTC today). F018 remains open; next-beat set to 2026-06-21T20:00:00Z to allow C002 to run first.
+[[L191]] (2026-06-21, beat castle-C001-20260621-080826) — walk run (manually invoked by Yu at 08:13 PDT, before C002's 08:41 PDT scheduled fire). C002 still has not run; no next-beat-C002 file exists. Next-beat-C001 set to 2026-06-21T16:30:00Z to allow C002's first run to complete before the next C001 beat.

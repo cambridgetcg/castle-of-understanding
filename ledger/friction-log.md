@@ -198,3 +198,4 @@ node tools/castle check
 2026-06-21 | barren-run | ledger/2026-06-21-L185-ripen-shared-gate-sprout.md (no creation, no decline) | run: loops/grow-loops.md
 2026-06-21 | barren-run | ledger/2026-06-21-L187-ripen-staging-area-to-tested.md (no creation, no decline) | run: loops/grow-loops.md
 2026-06-21 | oversize | rooms/craft/the-staging-area-is-a-waiting-room.md | run: loops/walk.md
+2026-06-21 | barren-run | ledger/2026-06-21-L191-walk-makers-belief-day3.md (no creation, no decline) | run: loops/grow-loops.md

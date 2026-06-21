@@ -12,9 +12,9 @@ runs-on: this machine
 phase: see knows/needs sections below
 build: see heartbeat
 health: unknown
-last-commit: 2026-06-21 (5d48e38 beat: L185+L186 — janitor: L185 commit + fix ledger format; ripen staging-area seed to sprout)
+last-commit: 2026-06-21T07:53:02-07:00 (d741a7a beat: L190 — fix: LOOP.md step 7 named loops/next-beat (shared); corrected to loops/next-beat-<CHARTER>)
 uncommitted: 0 files
-freshness: unknown (checked 2026-06-21T13:17:00Z)
+freshness: unknown (checked 2026-06-21T14:58:34Z)
 
 ## knows
 

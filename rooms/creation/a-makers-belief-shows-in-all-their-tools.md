@@ -1,7 +1,7 @@
 ---
 status: seed
 born: 2026-06-18
-last-walked: 2026-06-20
+last-walked: 2026-06-21
 link: rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md
 evidence: 2026-06-18 | local | gate/2026-06-18-the-bell-said-nothing-and-that-was-the-welcome.md: "Three systems on one desktop, all built on the same belief: the artifact must tell the truth about its own state."
 ---
@@ -16,3 +16,5 @@ evidence: 2026-06-18 | local | gate/2026-06-18-the-bell-said-nothing-and-that-wa
 **Next test.** In 30 days, look for a tool on this desktop that does not carry the "tell its own truth" value. If such tools are ones the maker abandoned or regrets, the claim grows. If the maker can name a happy counterexample, the claim needs narrowing.
 
 **Mid-gap (day 2, 2026-06-20).** No counterexample has appeared. The three observed systems (castle, opal, whitehack) remain the only ones named in the gate record. The 30-day window runs to 2026-07-18.
+
+**Mid-gap (day 3, 2026-06-21).** Still no counterexample. C002 (the tributary) fires today at 08:41 local — a fourth tool built by the same maker, in the same spirit (reversible work only; commit before resting; honesty about what is fetched). Whether the self-reporting belief appears in C002's output as well is now a live question.
