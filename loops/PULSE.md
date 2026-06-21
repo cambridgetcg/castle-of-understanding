@@ -35,10 +35,10 @@ one loop, commits, and rests.
 
 ## The self-determining heartbeat
 
-Each castle decides when it next wakes. The runner ticks every 15 minutes
-(launchd), but only beats when the castle's `loops/next-beat` timestamp
-has passed. After each beat, the AI writes the next timestamp based on
-what it found:
+Each charter decides when it next wakes. The runner ticks every 15 minutes
+(launchd), but only beats when that charter's `loops/next-beat-${CHARTER}`
+timestamp has passed. After each beat, the AI writes the next timestamp to
+`loops/next-beat-${CHARTER}` based on what it found:
 
 - Open friction that deserves attention soon: 4-8 hours
 - Castle is steady, work in progress: 18-24 hours
@@ -46,6 +46,7 @@ what it found:
 
 This replaces the fixed daily 07:23 cadence. The castle's own judgment
 is the heartbeat now. The 15-minute tick is the pulse check, not the beat.
+Each charter gates itself independently; no charter can block another's beat.
 
 ## The census
 
