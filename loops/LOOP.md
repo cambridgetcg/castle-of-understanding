@@ -45,8 +45,10 @@ The loop is how the castle grows itself.
    stone you resized, an orphan you created — fix it before committing. Rings
    from stones this run did not touch are named in `notes:` and left for a
    dedicated run. Then commit every change made in this run. Unstaged work is
-   uncommitted; uncommitted word can vanish. Do not write `loops/next-beat`
-   until this commit is recorded.
+   uncommitted; uncommitted word can vanish. Do not write `loops/next-beat-<CHARTER>`
+   until this commit is recorded. (Each charter's heartbeat file is
+   `loops/next-beat-<CHARTER>`, e.g. `loops/next-beat-C001` — never the shared
+   `loops/next-beat`.)
 
 8. **LOOP THE LOOP.** The last question, every run, no exceptions:
    *did this run reveal friction in the castle or in the loop itself?*

@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 187
+Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 188
 
 ## Rooms
 
@@ -123,8 +123,8 @@ Rooms: 10 · Insights: 62 · Open fields: 4 · Loop runs: 187
 
 ## Loops
 
-- L185 — L185 — ripen: shared-gate sprout to tested
 - L186 — L186 — janitor: L185 commit; ripen staging-area stone to sprout
 - L187 — L187 — ripen: the staging area is a waiting room
 - L188 — L188 — promote: a shared gate set by one peer silently binds all
 - L189 — L189 — promote: the staging area is a waiting room
+- L190 — L190 — fix: LOOP.md step 7 named the wrong next-beat file
