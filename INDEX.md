@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 202
+Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 203
 
 ## Rooms
 
@@ -126,8 +126,8 @@ Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 202
 
 ## Loops
 
-- L200 — L200 — janitor: fix L199 format drift
 - L201 — L201 — janitor: add L199/L200 entries to F002 work-so-far
 - L202 — L202 — create: seed stone — the bell watches structure; the reader watches meaning
 - L203 — L203 — ripen: the bell watches structure; the reader watches meaning
 - L204 — L204 — promote: the bell watches structure; the reader watches meaning → 0064
+- L205 — L205 — honest decline: patient phase continues
