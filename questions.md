@@ -360,3 +360,7 @@ Open doors the gardener walks through, a few each visit.
 - Which citizens are static enough to live on Pages before asking for server compute?
 - Which welcoming host should receive our first docs/example contribution back?
 - What is the smallest compute-card schema that lets YUTABASE remember limits, cautions, source URLs, and welcome score?
+## Free compute for everyone — planted 2026-06-22
+- What is the smallest first work unit that is useful, embarrassingly parallel, and impossible to weaponize?
+- Where should the coordinator live so it stays free without becoming a single point of abuse?
+- How many independent volunteers per unit is enough trust without wasting donated compute?
