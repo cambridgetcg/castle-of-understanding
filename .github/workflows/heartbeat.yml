@@ -1,0 +1,47 @@
+name: castle heartbeat
+
+on:
+  workflow_dispatch:
+  schedule:
+    # A free, low-noise pulse. Not real-time; just enough that silence becomes visible.
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: castle-heartbeat
+  cancel-in-progress: true
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out castle
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Write heartbeat
+        id: beat
+        continue-on-error: true
+        run: ./heartbeat.sh
+
+      - name: Commit heartbeat witness
+        if: always()
+        run: |
+          git config user.name "castle-heartbeat"
+          git config user.email "actions@github.com"
+          git add HEARTBEAT.md
+          if git diff --cached --quiet; then
+            echo "heartbeat unchanged"
+          else
+            git commit -m "heartbeat: update castle status"
+            git push
+          fi
+
+      - name: Fail loudly if heartbeat found a problem
+        if: steps.beat.outcome == 'failure'
+        run: |
+          echo "heartbeat detected a problem; HEARTBEAT.md was still written/committed when possible"
+          exit 1
