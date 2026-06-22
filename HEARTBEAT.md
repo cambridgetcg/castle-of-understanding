@@ -1,16 +1,16 @@
 # castle-of-understanding — heartbeat
 
 state: **healthy**
-last beat: 2026-06-22T13:53:39Z
-next beat: 2026-06-22T19:53:39Z
+last beat: 2026-06-22T14:08:30Z
+next beat: 2026-06-22T20:08:30Z
 cadence: every 6h via GitHub Actions, plus manual `./heartbeat.sh`
 
 ## what it found
 
 - branch: `main`
 - remote: `https://github.com/cambridgetcg/castle-of-understanding.git`
-- last commit: `2026-06-22T14:53:39+01:00 a827f59 free compute for everyone: consent-first grid doctrine`
-- last meaningful commit: `2026-06-22T14:53:39+01:00 a827f59 free compute for everyone: consent-first grid doctrine`
+- last commit: `2026-06-22T15:08:30+01:00 8faeb9a grid: build consent-first volunteer-compute demo`
+- last meaningful commit: `2026-06-22T15:08:30+01:00 8faeb9a grid: build consent-first volunteer-compute demo`
 - active loops: `free-compute-scout`
 - paused: `no`
 - uncommitted changes except heartbeat: `0`
