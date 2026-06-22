@@ -58,3 +58,4 @@ awaited; 0021/0022 still gated. F018 remains open.
 [[L224]] (2026-06-21, beat castle-C001-20260621-200903) — honest decline: bypass; castle check clean; friction.sh clean; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
 [[L225]] (2026-06-21, beat castle-C001-20260621-202737) — honest decline: bypass; castle check clean; friction.sh clean; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
 [[L226]] (2026-06-22, beat castle-C001-20260621-204535) — honest decline: bypass; castle check clean; friction.sh clean; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
+[[L227]] (2026-06-22, beat castle-C001-20260621-210743) — honest decline: bypass; castle check clean; friction.sh clean; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
