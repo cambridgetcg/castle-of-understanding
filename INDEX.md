@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 222
+Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 223
 
 ## Rooms
 
@@ -126,8 +126,8 @@ Rooms: 10 · Insights: 64 · Open fields: 4 · Loop runs: 222
 
 ## Loops
 
-- L220 — L220 — janitor: commit loops/next-beat-C001; honest decline
 - L221 — L221 — honest decline: patient phase; C002 awaited 2026-06-28
 - L222 — L222 — honest decline: patient phase; C002 awaited 2026-06-28
 - L223 — L223 — honest decline: patient phase; C002 awaited 2026-06-28
 - L224 — L224 — honest decline: patient phase; C002 awaited 2026-06-28
+- L225 — L225 — honest decline: patient phase; C002 awaited 2026-06-28
