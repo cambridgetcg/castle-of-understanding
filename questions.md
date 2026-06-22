@@ -356,3 +356,7 @@ Open doors the gardener walks through, a few each visit.
 - Why do understanding-replicates-24 and understanding-replicates-23 share understanding-replicates-22?
 - What understanding emerges from the connection between understanding-replicates-24 and understanding-replicates-23?
 - How does understanding-replicates-22 replicate itself?
+## Free compute commons — planted 2026-06-22
+- Which citizens are static enough to live on Pages before asking for server compute?
+- Which welcoming host should receive our first docs/example contribution back?
+- What is the smallest compute-card schema that lets YUTABASE remember limits, cautions, source URLs, and welcome score?

@@ -2,13 +2,17 @@
 
 > A local-first insight saver. Plain files, plain words — understanding that compounds as insights link to insights.
 
-**20 insights · 8 rooms · built 2026-06-11**
+**21 insights · 9 rooms · built 2026-06-22**
 
 ## Rooms
 
 ### collaboration
 
 - **[Shared doctrine lets parallel hands converge without speaking](insights/doctrine-is-how-parallel-hands-converge.md)** `medium` — Two builders with no channel between them spent a day producing the same things: one asked for an insight saver and found the castle already built; one asked for typed links and found them already implemented; one trimmed a storefront for trust and found the other had shipped "the castle's public front" and "honest gamification" to the same repo unprompted.
+
+### commons
+
+- **[Welcomed compute compounds only when it gives back](insights/welcomed-compute-compounds.md)** `high` — Free compute becomes a commons only when the loop treats hospitality as a
 
 ### design
 
@@ -57,7 +61,7 @@
     - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (reconciled-by)
 - **ask-before-the-irreversible**
     - out: relates-to → [secrets-never-in-the-open](insights/secrets-never-in-the-open.md)
-    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (depended-on-by) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [process-is-a-cost](insights/process-is-a-cost.md) (depended-on-by) · [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (depended-on-by)
+    - in:  [demote-dont-delete](insights/demote-dont-delete.md) (depended-on-by) · [halt-loud-undo-only-with-a-yes](insights/halt-loud-undo-only-with-a-yes.md) (reconciled-by) · [process-is-a-cost](insights/process-is-a-cost.md) (depended-on-by) · [secrets-never-in-the-open](insights/secrets-never-in-the-open.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (depended-on-by) · [welcomed-compute-compounds](insights/welcomed-compute-compounds.md) (relates-to)
 - **confidence-must-cost-something**
     - out: extends → [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md)
     - in:  —
@@ -84,7 +88,7 @@
     - in:  [tension-is-a-ticket-not-a-home](insights/tension-is-a-ticket-not-a-home.md) (relates-to)
 - **harvest-dont-reinvent**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md)
-    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (relates-to) · [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (relates-to) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (extended-by)
+    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (relates-to) · [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (relates-to) · [welcomed-compute-compounds](insights/welcomed-compute-compounds.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (extended-by)
 - **honest-labels-compound-trust**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [one-word-one-meaning](insights/one-word-one-meaning.md)
     - in:  [confidence-must-cost-something](insights/confidence-must-cost-something.md) (extended-by) · [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (relates-to) · [one-word-one-meaning](insights/one-word-one-meaning.md) (extended-by)
@@ -105,10 +109,13 @@
     - in:  —
 - **verify-against-reality**
     - out: relates-to → [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md)
-    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (extended-by) · [confidence-must-cost-something](insights/confidence-must-cost-something.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (depended-on-by) · [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (extended-by) · [first-failure-masks-its-siblings](insights/first-failure-masks-its-siblings.md) (extended-by) · [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) (extended-by) · [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (extended-by) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (depended-on-by)
+    - in:  [a-link-is-a-claim](insights/a-link-is-a-claim.md) (extended-by) · [confidence-must-cost-something](insights/confidence-must-cost-something.md) (depended-on-by) · [contradiction-forces-a-verdict](insights/contradiction-forces-a-verdict.md) (depended-on-by) · [failed-status-can-hide-finished-work](insights/failed-status-can-hide-finished-work.md) (extended-by) · [first-failure-masks-its-siblings](insights/first-failure-masks-its-siblings.md) (extended-by) · [green-boot-can-hide-failure](insights/green-boot-can-hide-failure.md) (extended-by) · [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) (extended-by) · [honest-labels-compound-trust](insights/honest-labels-compound-trust.md) (extended-by) · [insights-decay-recheck-or-demote](insights/insights-decay-recheck-or-demote.md) (extended-by) · [verify-dont-overwrite](insights/verify-dont-overwrite.md) (extended-by) · [welcomed-compute-compounds](insights/welcomed-compute-compounds.md) (extended-by) · [wiser-not-just-bigger](insights/wiser-not-just-bigger.md) (depended-on-by)
 - **verify-dont-overwrite**
     - out: extends → [verify-against-reality](insights/verify-against-reality.md) · depends-on → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md) · relates-to → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md)
     - in:  [doctrine-is-how-parallel-hands-converge](insights/doctrine-is-how-parallel-hands-converge.md) (relates-to)
+- **welcomed-compute-compounds**
+    - out: extends → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · extends → [verify-against-reality](insights/verify-against-reality.md) · relates-to → [ask-before-the-irreversible](insights/ask-before-the-irreversible.md)
+    - in:  —
 - **wiser-not-just-bigger**
     - out: extends → [harvest-dont-reinvent](insights/harvest-dont-reinvent.md) · depends-on → [verify-against-reality](insights/verify-against-reality.md)
     - in:  [demote-dont-delete](insights/demote-dont-delete.md) (relates-to) · [process-is-a-cost](insights/process-is-a-cost.md) (extended-by)
