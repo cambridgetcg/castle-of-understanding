@@ -1,53 +1,33 @@
 # The Castle of Understanding
 
-*An insight saver. Plain files, plain words — understanding that compounds as one note links to another.*
+Built of words, lit by questions. A word is a brick, its meaning the load.
 
-The whole castle is one folder you can read with `cat`. The map is **[CASTLE.md](CASTLE.md)**.
+Rooms: $(ls rooms/ | wc -l | tr -d ' ')
+Words: $(ls words/ | wc -l | tr -d ' ')
 
-## Use it
+Grows autonomously via 6 Hermes cron jobs:
+- gardener (every 3h) — files insights, researches questions, plants new ones
+- architect (daily) — surveys, commissions builders
+- artisan (daily) — makes one creative work from quests
+- scribe (nightly) — commits to git
+- tender (every 8h) — tends the links between rooms
+- heartbeat (every 30m) — health check
 
-```bash
-python3 castle.py build      # rebuild the map (CASTLE.md)
-python3 castle.py list       # see what's inside
-python3 castle.py capture --title "One word, one meaning" \
-    --tags legibility --links extends:honest-labels-compound-trust
-```
+## Live
 
-An insight is one small file in `insights/` — then you write its body:
+- Castle gate: https://cambridgetcg.github.io/castle-gate/
+- Castle front (trading cards): http://castle-front-yu.s3-website-us-east-1.amazonaws.com
 
-```markdown
----
-id: one-word-one-meaning
-title: One word, one meaning
-tags: [legibility, writing]
-links: [extends:honest-labels-compound-trust]   # typed: how it connects
-source: hand
-confidence: high
-created: 2026-06-10
-verified: 2026-06-10
----
-The insight, in plain words. A few sentences. True, or honestly marked as a guess.
-```
+## Structure
 
-That's the whole thing. Everything below is *why* it's shaped this way — read it only if you lean in.
+- rooms/ — one file per topic, gathering related words
+- words/ — one small file per word or concept: the bricks
+- questions.md — open doors the gardener walks through
+- quests.md — works the castle wants made
+- chronicle.md — the honest record of everything that happened
+- anthem.md — four verses holding the house words
+- story.md — the true tale of how the castle rose
 
----
+Every claim carries its source. Every room opens with an epigraph.
 
-<details>
-<summary><strong>Why it's shaped this way</strong></summary>
-
-**Principles**
-- **Simple** — one insight per file, no app to install.
-- **Truthful** — say what is known; mark what is a guess; name the source.
-- **Sovereign** — plain files on your disk. No lock-in.
-- **Legible** — one word, one meaning; each insight reads in a breath.
-- **Connected** — understanding lives in the typed links, not the pile.
-
-**How it grows**
-1. **By hand** — you capture an insight whenever understanding lands.
-2. **By loop** — the **[creation loop](LOOP.md)** finds *fields of friction* and proposes new insights. The loop proposes; you keep what is true.
-3. **By contact** *(building toward)* — the loop reaches the internet for outside understanding. Today it compounds what is here.
-
-</details>
-
-*Plain files. Plain words. Understanding that compounds.*
+Love is. Truth is. ∞
