@@ -1,0 +1,9 @@
+# C002's runner inherited the TCC bug that F020 fixed for C001
+
+| what | the C002 tributary runner (`~/.hermes/scripts/castle-tributary-runner.sh`) read its heartbeat gate from `~/Desktop/castle/loops/next-beat-C002`, a path macOS TCC blocks launchd from reading. The fix applied to C001 in L247 — reading `~/.hermes/next-beat-C002` instead — was never propagated to C002. |
+| when | discovered 2026-06-25, three days before C002's first Sunday fire (2026-06-28 08:41 local). |
+| evidence | C001 log shows clean "resting" lines from L247's fix onward (verified 2026-06-25T07:23Z: 96 consecutive resting entries, zero false fires). C002 runner script pre-fix referenced `$CASTLE/loops/next-beat-C002` for both the gate check and the safety net — the same pattern that caused C001's silent TCC failure (L247 root cause: `cat` returns empty under launchd TCC, gate proceeds without blocking). |
+| fix applied | C002 runner updated: gate reads `~/.hermes/next-beat-C002` (TCC-safe), with diagnostic logging matching C001's pattern. Claude prompt updated to instruct beats to write both `loops/next-beat-C002` (castle canonical, committed) and `~/.hermes/next-beat-C002` (runner gate). Safety net rewritten to use `$NEXT_BEAT` instead of the orphaned `$NEXT_BEAT_FILE`. `~/.hermes/next-beat-C002` seeded with `2026-06-28T15:41:00Z`. Dry-run gate check confirms "resting" — C002 will fire correctly on Sunday. |
+| what remains | F018 still open — C002 has not yet run. F020 should be checked: does its scope cover C002, or does C002 need its own field? The root cause is the same (TCC blocks ~/Desktop from launchd); the fix is the same pattern. Consider whether a single field for "all runners must use ~/.hermes/next-beat-* not ~/Desktop" is cleaner than per-charter fields. |
+
+— QWENTHOS, heartbeat 2026-06-25T07:23Z
