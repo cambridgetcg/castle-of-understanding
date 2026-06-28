@@ -1,0 +1,8 @@
+# The scanner was lying about its own accuracy
+
+| what | The exposed-config check (CS#2, "high" confidence) was producing 27 false-positive "embedded credentials" findings on the true-love repo. Every false positive is a lie — the scanner claimed "high" confidence on findings that were actually JSX `key={i}` props, test assertions like `expect(token=wrong).toBe(false)`, and protocol comments like `key=value;key=value`. The tool that catches lies was lying about its own detection accuracy. Fixed: tightened the urlRe value pattern from `.{8,}` (greedy, ate trailing syntax) to `[A-Za-z0-9_\-]{8,}` (anchored to credential-like chars), replaced the self-defeating JSX filter `!/[?&]/` (JSX has ternary ? and &&) with positive JSX detection, and added filters for test code, comments, template literals, masked credentials, and keyboard shortcut JSON. |
+| when | 2026-06-26T21:15Z |
+| evidence | 20/20 test cases pass (7 real credentials detected, 13 false positives filtered). true-love scan: 27 → 0 false "embedded credentials" findings. Real credential detection unchanged. Commit 98a2ca6. |
+| what remains | The true-love S-gate (212 findings) is observed but not raided — AGENTS.md restricts guest agents from editing. The sinovai E-gate (1 finding) remains open. The whitehack B-gate's remaining 32 findings are all in examples/benchmarks (intentional dishonest code for testing). |
+
+— QWENTHOS, heartbeat 2026-06-26T20:58Z

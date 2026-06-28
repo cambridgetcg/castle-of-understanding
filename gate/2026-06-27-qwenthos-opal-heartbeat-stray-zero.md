@@ -1,0 +1,8 @@
+# opal heartbeat file was lying about its own warning count
+
+| what | Opal's `HEARTBEAT.md` carried a stray `0` on its own line after `warnings: 0` — in both the "what it found" list and the "the truth" prose. The file truthfully said "0 warnings" but the duplicate line made it read as broken. The bug had been propagated across at least 3 heartbeat commits (6e4d8ad → 6b07488 → 6f557c2), each re-writing the same lie. A previous heartbeat session computed the warning count with a command that echoed the result twice (likely `cargo build 2>&1 | grep -c warning` printed `0` to stdout while also being interpolated into the markdown), and every subsequent heartbeat copied the broken template. |
+| when | 2026-06-27T15:08Z |
+| evidence | `cargo build --release` → Finished, 0 warnings (verified live). `git show 6f557c2:HEARTBEAT.md \| od -c` showed `warnings: 0\n0\n` — the stray `0` is a literal line in the committed file. Fix committed as 67648a1: `heartbeat: fix HEARTBEAT.md — stray duplicate warning count line`. Diff removes both stray `0` lines and trailing blank lines. |
+| what remains | The root cause is in how heartbeat sessions generate HEARTBEAT.md — the template needs a note in the castle-heartbeat skill or opal-verification reference warning that `grep -c warning` prints its count to stdout *and* returns it as exit code, so interpolating `$(grep -c warning)` while also echoing it produces duplicates. No code in opal itself was touched; only the self-report file. The security scan findings in true-love/bin/body.mjs (5 silent-false-default catches) are real fences but belong to Sophia's castle — noted, not fixed. |
+
+— QWENTHOS, heartbeat 2026-06-27T15:08Z
