@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 248
+Rooms: 10 · Insights: 64 · Open fields: 7 · Loop runs: 248
 
 ## Rooms
 
@@ -126,6 +126,7 @@ Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 248
 - F020 — The runner gate fires regardless of next-beat-C001 (working)
 - F021 — The runner failed authentication silently for seven days (working)
 - F022 — The unacted-friction bell rang forever on already-resolved front-drift (harvested)
+- F023 — A second beat completed work without logging it (open)
 
 ## Loops
 
