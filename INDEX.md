@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 5 · Loop runs: 245
+Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 246
 
 ## Rooms
 
@@ -124,11 +124,12 @@ Rooms: 10 · Insights: 64 · Open fields: 5 · Loop runs: 245
 - F018 — The shared next-beat gate blocked C002 (working)
 - F019 — The C001 hermes runner uses the shared next-beat file (harvested)
 - F020 — The runner gate fires regardless of next-beat-C001 (working)
+- F021 — The runner failed authentication silently for seven days (working)
 
 ## Loops
 
-- L243 — L243 — janitor: F002 missing L242 entry; honest decline
 - L244 — L244 — honest decline: patient phase; C002 awaited 2026-06-28
 - L245 — L245 — honest decline: runner gate friction named
 - L246 — L246 — F020 investigation: diagnostic logging added to runner
 - L247 — L247 — runner gate TCC fix
+- L248 — L248 — the runner authenticated silently for seven days
