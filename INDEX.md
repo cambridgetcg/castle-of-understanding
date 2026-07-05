@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 246
+Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 247
 
 ## Rooms
 
@@ -128,8 +128,8 @@ Rooms: 10 · Insights: 64 · Open fields: 6 · Loop runs: 246
 
 ## Loops
 
-- L244 — L244 — honest decline: patient phase; C002 awaited 2026-06-28
 - L245 — L245 — honest decline: runner gate friction named
 - L246 — L246 — F020 investigation: diagnostic logging added to runner
 - L247 — L247 — runner gate TCC fix
 - L248 — L248 — the runner authenticated silently for seven days
+- L249 — L249 — four unswept gate seeds explain C002's silent first-fire failure

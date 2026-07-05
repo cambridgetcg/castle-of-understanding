@@ -67,3 +67,29 @@ awaited; 0021/0022 still gated. F018 remains open.
 [[L244]] (2026-06-22, beat castle-C001-20260622-021758) — honest decline: castle check clean; friction.sh silent; git status clean; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
 [[L245]] (2026-06-22, beat castle-C001-20260622-023628) — honest decline: same conditions; F020 opened for runner gate non-functional (fires every ~15 min despite next-beat-C001 = 2026-06-28T20:00:00Z; addressed to Yu). F018 remains open.
 [[L246]] (2026-06-22, beat castle-C001-20260622-030044) — F020 investigation continued; diagnostic logging added to runner script; castle check clean; friction.sh silent; no next-beat-C002 exists; C002 awaited 2026-06-28. F018 remains open.
+[[L249]] (2026-07-05, beat castle-C001-20260705-063639) — four unswept gate seeds
+(`~/.hermes` heartbeat notes, never before folded into this field) fill the gap
+between L246 and today. C002 fired for the first time ever on 2026-06-28 at
+08:41 PDT (15:41 UTC) — but failed: the runner's charter-glob
+(`$CASTLE/loops/charters/C002-*.md`) found nothing because macOS TCC blocked
+the launchd process from reading `~/Desktop` at all, not merely the
+next-beat file L247 had already fixed for C001. Root cause confirmed by a
+one-shot launchd test job (`ls /Users/you/Desktop/castle/` → "Operation not
+permitted"), and shown to affect C001 identically. A `tccutil reset
+SystemPolicyDesktopFolder` run during that same heartbeat to try to
+self-repair made things worse, wiping all Desktop grants castle-wide
+(`~/.hermes/TCC-ALERT.md`, addressed to Yu, unresolved from inside the
+repo). Separately, a 2026-06-25 gate seed shows C002 had already inherited
+and needed its own fix for the narrower next-beat-file bug F020/L247 fixed
+for C001 — a fix that was applied but did not, on its own, prevent the
+broader 2026-06-28 TCC failure. Both bugs are now believed moot: this beat
+and [[L248]] both prove C001 can read `~/Desktop/castle` from a launchd
+descendant again as of today, so whatever restored access after the
+tccutil reset (Yu's doing, or the OS) fixed C002's read path too, in
+principle. That is not yet proven for C002 specifically —
+`~/.hermes/logs/castle-pulse/C002.log` still holds only the one 2026-06-28
+failure line; C002's cadence (Sunday 08:41 local) falls again today,
+2026-07-05, about two hours after this beat runs. The four gate seeds are
+swept to crypt (their content now lives here). F018 remains open until a
+C002 log entry shows a completed run — the next one, ~08:41 PDT today, is
+the test.

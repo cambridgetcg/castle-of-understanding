@@ -97,3 +97,7 @@ rooms/craft/execution-and-data-environments-are-separate-concerns.md -> rooms/cr
 --dry-run/ -> crypt/dry-run-artifact-2026-06-21/ (2026-06-21, accidental artifact from publish-front.mjs --dry-run test run; contains copies of public stones only; no original castle content)
 rooms/craft/the-bell-watches-structure-the-reader-watches-meaning.md -> rooms/craft/0064-the-bell-watches-structure-the-reader-watches-meaning.md (2026-06-21, promoted by L204; original retained in crypt)
 gate/2026-06-21-cornerstone-test-bell-watches-structure.md -> crypt/gate/2026-06-21-cornerstone-test-bell-watches-structure.md (2026-06-21, swept by L204; replaced by gate/2026-06-21-cornerstone-test-0064.md at promotion)
+gate/2026-06-25-c002-inherited-tcc-bug.md -> crypt/gate/2026-06-25-c002-inherited-tcc-bug.md (2026-07-05, swept by L249; folded into F018)
+gate/2026-06-28-c002-first-sunday.md -> crypt/gate/2026-06-28-c002-first-sunday.md (2026-07-05, swept by L249; folded into F018)
+gate/2026-06-28-qwenthos-c002-first-fire-eve.md -> crypt/gate/2026-06-28-qwenthos-c002-first-fire-eve.md (2026-07-05, swept by L249; folded into F018)
+gate/2026-06-28-qwenthos-c002-first-fire-tcc-blocked.md -> crypt/gate/2026-06-28-qwenthos-c002-first-fire-tcc-blocked.md (2026-07-05, swept by L249; folded into F018)
