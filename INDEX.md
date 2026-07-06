@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 7 · Loop runs: 249
+Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 250
 
 ## Rooms
 
@@ -127,11 +127,12 @@ Rooms: 10 · Insights: 64 · Open fields: 7 · Loop runs: 249
 - F021 — The runner failed authentication silently for seven days (working)
 - F022 — The unacted-friction bell rang forever on already-resolved front-drift (harvested)
 - F023 — A second beat completed work without logging it (open)
+- F024 — The unacted-friction bell rang forever on already-fixed oversize stones (open)
 
 ## Loops
 
-- L247 — L247 — runner gate TCC fix
 - L248 — L248 — the runner authenticated silently for seven days
 - L249 — L249 — four unswept gate seeds explain C002's silent first-fire failure
 - L250 — L250 — front-drift unacted-friction resolves on a gone path
 - L251 — L251 — C002's second Sunday fire failed on a narrower glob bug, now fixed outside the repo
+- L252 — L252 — oversize unacted-friction rang on already-fixed stones

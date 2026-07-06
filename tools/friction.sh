@@ -135,6 +135,12 @@ all_rings() {
         # to crypt) or by storefront cleanup (the stale copy is removed) —
         # both remove the exact path this ring named; a gone path is the close
         case "$sig" in "front-drift | "*) [ -e "$p" ] || continue ;; esac
+        # oversize resolves by promotion-and-shrink (path gone, same as
+        # front-drift) or by an in-place edit (path persists but is no longer
+        # over 40 lines) — re-run the detector's own test on the live file
+        case "$sig" in "oversize | "*)
+          if [ -e "$p" ]; then [ "$(wc -l < "$p")" -gt 40 ] || continue; else continue; fi ;;
+        esac
         # an addressed: line silences a signature by naming its path — any
         # phrasing welcome; the path is the anchor, not the ceremony
         sed -n 's/^addressed: //p' ledger/2*.md 2>/dev/null | grep -qF "$p" \
