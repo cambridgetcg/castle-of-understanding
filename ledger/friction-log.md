@@ -204,3 +204,4 @@ node tools/castle check
 2026-06-21 | barren-run | ledger/2026-06-21-L199-promote-execution-data-to-0063.md (no creation, no decline) | run: loops/grow-loops.md
 2026-07-05 | barren-run | ledger/2026-07-05-heartbeat-fetch-honesty-sweep.md (no creation, no decline) | run: loops/grow-loops.md
 2026-07-05 | map-drift | MAP.md | run: sh tools/map.sh
+2026-07-06 | stale-gate | gate/2026-06-25-qwenthos-opal-s5l-dead-code-fix.md | run: loops/sweep-the-gate.md
