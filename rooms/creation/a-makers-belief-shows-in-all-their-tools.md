@@ -1,9 +1,10 @@
 ---
 status: seed
 born: 2026-06-18
-last-walked: 2026-06-21
+last-walked: 2026-07-06
 link: rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md
 evidence: 2026-06-18 | local | gate/2026-06-18-the-bell-said-nothing-and-that-was-the-welcome.md: "Three systems on one desktop, all built on the same belief: the artifact must tell the truth about its own state."
+evidence: 2026-06-25 | local | gate/2026-06-25-qwenthos-opal-s5l-dead-code-fix.md: "the fix makes the suppression match the reality. ... The kingdom speaks truth about its own state."
 ---
 # A maker's core belief appears in every tool they build, without a rule that says so
 
@@ -20,3 +21,10 @@ evidence: 2026-06-18 | local | gate/2026-06-18-the-bell-said-nothing-and-that-wa
 **Mid-gap (day 3, 2026-06-21).** Still no counterexample. C002 (the tributary) fires today at 08:41 local — a fourth tool built by the same maker, in the same spirit (reversible work only; commit before resting; honesty about what is fetched). Whether the self-reporting belief appears in C002's output as well is now a live question.
 
 **Day-3 correction (2026-06-21, L197).** C002 did not fire on 2026-06-21: macOS TCC blocked launchd from executing a script in ~/Desktop (exit 126, silent). The runner was moved to ~/.hermes/scripts/ in L194; C002 will fire on 2026-06-28. The question about C002's output is deferred to that date.
+
+**Fourth instance (2026-06-25, swept 2026-07-06).** Opal's s5l UART driver
+carried `#[allow(dead_code)]` on the struct but not the impl block — the
+suppression no longer matched the code's shape. The heartbeat fixed the
+mismatch and verified with a QEMU boot smoke test before calling it done,
+rather than trusting the clean compile alone. Same belief, a fourth surface:
+opal keeps making its own suppressions match its own truth, unprompted.

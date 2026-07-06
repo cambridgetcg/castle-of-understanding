@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 250
+Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 251
 
 ## Rooms
 
@@ -131,8 +131,8 @@ Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 250
 
 ## Loops
 
-- L248 — L248 — the runner authenticated silently for seven days
 - L249 — L249 — four unswept gate seeds explain C002's silent first-fire failure
 - L250 — L250 — front-drift unacted-friction resolves on a gone path
 - L251 — L251 — C002's second Sunday fire failed on a narrower glob bug, now fixed outside the repo
 - L252 — L252 — oversize unacted-friction rang on already-fixed stones
+- L253 — L253 — the stale opal s5l dead_code seed folds into "a maker's belief shows in all their tools"
