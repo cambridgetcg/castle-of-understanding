@@ -155,6 +155,28 @@ all_rings() {
           fi
           ;;
         esac
+        # barren-run resolves by a later mend that added the missing
+        # created:/declined: line, by the named created: path now existing
+        # or gaining a crypt/moves.md forwarding line, or by the missing
+        # path turning out to hold a space or " | " — the detector's own
+        # sign that it is a sister-grammar/multi-path entry, weave-input
+        # rather than a real ring (same reasoning mend-the-bell already
+        # applies live, generalized here to the historical log)
+        case "$sig" in "barren-run | "*)
+          bp="${p%% (*}"
+          if [ ! -e "$bp" ]; then continue; fi
+          case "$p" in
+            *"(missing: "*)
+              mp="${p#*(missing: }"; mp="${mp%)}"
+              case "$mp" in *" | "*|*" "*) continue ;; esac
+              { [ -e "$mp" ] || grep -qF "$mp ->" crypt/moves.md 2>/dev/null; } && continue
+              ;;
+            *)
+              grep -q "^created: .\|^declined: ." "$bp" 2>/dev/null && continue
+              ;;
+          esac
+          ;;
+        esac
         # an addressed: line silences a signature by naming its path — any
         # phrasing welcome; the path is the anchor, not the ceremony
         sed -n 's/^addressed: //p' ledger/2*.md 2>/dev/null | grep -qF "$p" \

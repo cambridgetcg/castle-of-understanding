@@ -51,6 +51,22 @@ match; only `orphan` currently has one live unacted-friction signature
 (rule of three not yet met) and fixing `unwalked` safely needs the same
 annotation-stripping `barren-run` already does. Named, not fixed, this
 beat — narrower is honest here.
+[[L257]] (2026-07-07, beat castle-C001-20260707-092903) — counted the live
+`barren-run` unacted-friction signatures: 21, all sharing the shape L252
+already named (a mend resolved the underlying fault but never wrote an
+`addressed:` line). Extended `tools/friction.sh`'s `unacted-friction` block
+with a `barren-run` case, same shape as `oversize`/`unwalked`: `(no
+creation, no decline)` re-runs the detector's own `created:`/`declined:`
+test on the live file (verified by hand against all 17 such filenames —
+each now has a mend-added line); `(missing: X)` re-checks whether `X` now
+exists, has a `crypt/moves.md` forwarding line, or itself carries a space
+or `" | "` — the live detector's own sign of a foreign-grammar, multi-path
+entry that was never a genuine ring. Verified: `sh tools/friction.sh`
+unacted-friction rings drop 23 -> 2 (1 `orphan`, 1 `missing-rent` remain,
+neither at rule-of-three); `tools/castle check` clean. With `front-drift`,
+`oversize`, `unwalked`, and `barren-run` all self-healing now, the
+`unacted-friction` block covers every sub-detector that has ever actually
+produced a chronic signature in `ledger/friction-log.md`.
 [[L254]] (2026-07-06, beat castle-C001-20260706-153447) — counted the live
 unwalked unacted-friction signatures before waiting for the room stone's
 2026-10-06 Next test: 20+, not 3 — most were stones L086 already walked on
