@@ -1,12 +1,12 @@
 # castle — heartbeat
 
 state: **active**
-last beat: 2026-07-08T19:10:29Z
-next beat: 2026-07-09T19:10:33Z
+last beat: 2026-07-08T21:19:28Z
+next beat: 2026-07-09T21:19:31Z
 
 ## what it found
 
-- last commit: 2026-07-08T12:10:27-07:00 (66f15a3) — "gate: the heart that beats after the beat — post-commit hook is missing" (0 hours ago)
+- last commit: 2026-07-08T14:19:28-07:00 (b173f0d) — "walk: post-commit hook -- the heart beats after every commit (L260)" (0 hours ago)
 - uncommitted changes: 0
 - untracked files: 0
 - bell is silent
