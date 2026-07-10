@@ -14,9 +14,9 @@ runs-on: this machine
 phase: see knows/needs sections below
 build: see heartbeat
 health: unknown
-last-commit: 2026-06-21T07:53:02-07:00 (d741a7a beat: L190 — fix: LOOP.md step 7 named loops/next-beat (shared); corrected to loops/next-beat-<CHARTER>)
-uncommitted: 0 files
-freshness: unknown (checked 2026-06-21T14:58:34Z)
+last-commit: 2026-07-10T12:39:26-07:00 (34892d5 — "beat: regenerate HEARTBEAT.md after gate seed: STATE.md not in heartbeat regeneration pipeline — fourth lie (kherme)")
+uncommitted: 5 files
+freshness: checked 2026-07-10T21:44:39Z
 
 ## knows
 

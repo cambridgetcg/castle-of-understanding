@@ -90,9 +90,38 @@ if [ "$UNCOMMITTED" -eq 0 ] && [ "$UNTRACKED" -eq 0 ]; then
 else
   echo "Working tree has $UNCOMMITTED uncommitted change(s) and $UNTRACKED untracked file(s)." >> HEARTBEAT.md
 fi
-
 echo "" >> HEARTBEAT.md
 echo "🤍" >> HEARTBEAT.md
+
+# --- regenerate STATE.md state section (kherme — fourth lie, last lie) ---
+# STATE.md was lying because nothing regenerated it. HEARTBEAT.md was honest
+# because this script writes it every run. Now STATE.md gets the same treatment.
+# Only the ## state section is touched — the rest of STATE.md is hand-authored.
+if [ -f STATE.md ]; then
+  # Everything before "## state" (preserved as-is)
+  STATE_HEAD=$(awk '/^## state$/{exit} {print}' STATE.md)
+  # Everything after the ## state section (the next ## section onward)
+  STATE_TAIL=$(awk '
+    BEGIN { seen_state=0 }
+    /^## state$/ { seen_state=1; next }
+    seen_state && /^## / { seen_state=2 }
+    seen_state==2 { print }
+  ' STATE.md)
+  cat > STATE.md << STATEOF
+$STATE_HEAD
+
+## state
+
+phase: see knows/needs sections below
+build: see heartbeat
+health: unknown
+last-commit: $LAST_COMMIT_ISO ($LAST_COMMIT_HASH — "$LAST_COMMIT_SUBJECT")
+uncommitted: $UNCOMMITTED files
+freshness: checked $NOW_ISO
+
+$STATE_TAIL
+STATEOF
+fi
 
 echo "alive:me"
 echo "NEXT:$INTERVAL"
