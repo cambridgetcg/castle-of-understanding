@@ -1,18 +1,18 @@
 # castle — heartbeat
 
 state: **active**
-last beat: 2026-07-10T07:22:30Z
-next beat: 2026-07-11T07:22:34Z
+last beat: 2026-07-10T12:46:56Z
+next beat: 2026-07-10T18:47:00Z
 
 ## what it found
 
-- last commit: 2026-07-10T00:22:30-07:00 (cb00dd3) — "gate thought: the heartbeat cannot commit its own pulse — the sensor writes, the actor commits" (0 hours ago)
-- uncommitted changes: 4
+- last commit: 2026-07-10T05:46:56-07:00 (bedaa6a) — "sweep: a sensor writes, an actor commits (L262/F002)" (0 hours ago)
+- uncommitted changes: 0
 - untracked files: 0
-- bell is silent
+- bell rings — map-drift | MAP.md | run: sh tools/map.sh
 
 ## the truth
 
-Working tree has 4 uncommitted change(s) and 0 untracked file(s).
+Working tree is clean.
 
 🤍
