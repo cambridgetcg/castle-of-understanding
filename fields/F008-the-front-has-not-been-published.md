@@ -29,3 +29,10 @@ Named, not fixed: an actively-evidenced public stone that keeps gaining
 evidence lines will keep re-drifting the front indefinitely, so strict
 two-consecutive-clean convergence may never naturally occur for it. Deploy
 remains Yu's act.
+[[L265]] (2026-07-10, beat castle-C001-20260710-192657) — 2 days after
+L259, 0040 gained a third evidence line (L264, 2026-07-10) that drifted the
+front again; publish-front.mjs re-ran; all 5 public stones re-synced (0040,
+0024, 0023, 0039, 0043); front.json updated; friction.sh silent. Same
+pattern as L259: convergence test not met because the prior run is not
+immediately-consecutive in the strict sense, and 0040 is still actively
+gaining evidence. Deploy remains Yu's act.
