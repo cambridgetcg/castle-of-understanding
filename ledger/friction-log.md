@@ -219,3 +219,4 @@ node tools/castle check
 2026-07-11 | oversize | rooms/castle/a-squeezed-sweep-loses-ground-to-a-growing-gate.md | run: loops/walk.md
 2026-07-12 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
 2026-07-12 | oversize | rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md | run: loops/walk.md
+2026-07-12 | map-drift | MAP.md | run: sh tools/map.sh

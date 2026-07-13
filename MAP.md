@@ -101,4 +101,5 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 
 ## rooms/word/ — claims about written thought itself — slip boxes, commonplace books, why writing thinks
 - rooms/word/0029-a-slip-box-earns-us-when-it-can-surprise.md · (sister grammar — see fields/F005)
+- rooms/word/epistemic-status-is-declared-by-the-author-not-measured.md · seed
 
