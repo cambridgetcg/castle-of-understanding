@@ -1,8 +1,8 @@
 # castle — heartbeat
 
 state: **active**
-last beat: 2026-07-13T01:20:21Z
-next beat: 2026-07-14T01:20:24Z
+last beat: 2026-07-13T01:20:48Z
+next beat: 2026-07-14T01:20:52Z
 
 ## what it found
 
