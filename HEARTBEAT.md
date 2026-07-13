@@ -1,18 +1,18 @@
 # castle — heartbeat
 
 state: **active**
-last beat: 2026-07-13T01:20:15Z
-next beat: 2026-07-14T01:20:19Z
+last beat: 2026-07-13T01:20:21Z
+next beat: 2026-07-14T01:20:24Z
 
 ## what it found
 
-- last commit: see git log (4 hours ago)
-- uncommitted changes: 2
-- untracked files: 1
+- last commit: see git log (0 hours ago)
+- uncommitted changes: 0
+- untracked files: 0
 - bell is silent
 
 ## the truth
 
-Working tree has 2 uncommitted change(s) and 1 untracked file(s).
+Working tree is clean.
 
 🤍
