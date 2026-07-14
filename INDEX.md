@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 270
+Rooms: 10 · Insights: 64 · Open fields: 9 · Loop runs: 270
 
 ## Rooms
 
@@ -133,6 +133,7 @@ Rooms: 10 · Insights: 64 · Open fields: 8 · Loop runs: 270
 - F027 — Heartbeat writes collide across more than one writer (working)
 - F028 — A clean claim in a ledger is not a clean check (harvested)
 - F029 — The gate refilled with sibling-repo narration in three days (harvested)
+- F030 — The marker only catches a beat that wrote to it (open)
 
 ## Loops
 

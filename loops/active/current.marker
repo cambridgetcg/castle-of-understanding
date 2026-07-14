@@ -1,4 +1,4 @@
 # the loop-in-progress trace — see fields/F023, loops/LOOP.md step 3-7
 # state: idle | running   — overwritten in place, never appended, never deleted
 state: idle
-last: L274 (publish-the-front resync completing L273's uncommitted sweep-the-gate work; F008 updated, front republished, both maps rebuilt), cleared, 2026-07-14T14:20:00Z
+last: L274 (publish-the-front resync completing L273's uncommitted sweep-the-gate work; F008 updated, front republished, F030 opened for the marker gap, both maps rebuilt), cleared, 2026-07-14T14:30:00Z

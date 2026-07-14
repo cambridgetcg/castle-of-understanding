@@ -38,3 +38,14 @@ ledger entry. 0040 is still actively gaining evidence (five lines now,
 roughly one every few days), so the two-consecutive-clean convergence test
 named in F008 is unlikely to resolve on its own; this is a standing,
 named pattern, not a new problem to fix.
+
+**Loop the loop (step 8).** This run itself revealed friction in the loop
+mechanism: L273 finished UNDERSTAND through LOG cleanly but was never
+committed, and `loops/active/current.marker` still read `state: idle, last:
+L272` on arrival — it had not been touched during L273's run at all. The
+`stalled-loop` detector built for exactly this failure shape ([[F023]])
+only fires when the marker reads `state: running`, so it printed nothing;
+this beat found L273's stranded work only by noticing `git status` was
+dirty, the same manual-archaeology path the marker was built to replace.
+Opened [[F030]] to watch for a second and third instance before designing
+a fix.
