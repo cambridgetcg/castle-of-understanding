@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 9 · Loop runs: 271
+Rooms: 10 · Insights: 64 · Open fields: 9 · Loop runs: 272
 
 ## Rooms
 
@@ -137,8 +137,8 @@ Rooms: 10 · Insights: 64 · Open fields: 9 · Loop runs: 271
 
 ## Loops
 
-- L271 — L271 — heartbeat writes collide across more than one writer
 - L272 — L272 — a clean claim in a ledger is not a clean check
 - L273 — L273 — gate refilled with sibling-repo narration, swept
 - L274 — L274 — publish-the-front: resync after 0040's fifth evidence line
 - L275 — L275 — ripen: a-marker-a-beat-leaves-behind-survives-the-beat
+- L276 — L276 — honest decline: quiet castle, no field pulls
