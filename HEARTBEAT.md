@@ -1,18 +1,18 @@
 # castle — heartbeat
 
 state: **active**
-last beat: 2026-07-17T00:16:22Z
-next beat: 2026-07-17T06:16:25Z
+last beat: 2026-07-17T00:17:31Z
+next beat: 2026-07-17T06:17:35Z
 
 ## what it found
 
-- last commit: see git log (14 hours ago)
-- uncommitted changes: 10
-- untracked files: 4
+- last commit: see git log (0 hours ago)
+- uncommitted changes: 0
+- untracked files: 0
 - bell rings — barren-run | ledger/2026-07-14-L271-heartbeat-conflict-litter.md (missing: crypt/litter/.!1342!HEARTBEAT.md) | run: loops/grow-loops.md
 
 ## the truth
 
-Working tree has 10 uncommitted change(s) and 4 untracked file(s).
+Working tree is clean.
 
 🤍
