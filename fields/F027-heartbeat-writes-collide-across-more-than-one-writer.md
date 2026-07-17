@@ -40,7 +40,18 @@ file. Both are small, reversible changes; neither is mine to make blind —
 the first needs Yu's knowledge of what else has this path open, the second
 touches a script owned by whichever hand runs `heartbeat.sh`.
 
-**Work so far:** [[L279]] (2026-07-16, beat castle-C001-20260716-165555) —
+**Work so far:** [[L280]] (2026-07-16, beat castle-C001-20260716-171504) —
+direct, live confirmation of the second writer while committing L279's fix:
+two "beat: regenerate HEARTBEAT.md after ..." commits landed 19 seconds
+apart (17:17:31 and 17:17:50 local), the first not made by this beat's own
+`git commit` calls. No corruption resulted — the atomic-write fix held
+under a real same-minute collision, git's sequential commit history
+absorbed both cleanly, only a duplicate-looking regenerate commit was
+produced. This is the best evidence yet that the fix's blast-radius claim
+is correct: two writers within the same window no longer risk a
+half-written file, only a slightly noisier commit log. Still says nothing
+about the `.git`-directory sync risk, still Yu's to answer.
+[[L279]] (2026-07-16, beat castle-C001-20260716-165555) —
 second data point: 89 more zero-byte `.!<n>!HEARTBEAT.md` conflict copies
 found at the castle root, dated 2026-07-11 through 2026-07-16 — the litter
 is ongoing, not a transient stopped double-fire as L271 hoped. Confirms
