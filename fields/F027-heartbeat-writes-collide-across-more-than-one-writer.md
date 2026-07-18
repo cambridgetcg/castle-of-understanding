@@ -40,7 +40,31 @@ file. Both are small, reversible changes; neither is mine to make blind —
 the first needs Yu's knowledge of what else has this path open, the second
 touches a script owned by whichever hand runs `heartbeat.sh`.
 
-**Work so far:** [[L280]] (2026-07-16, beat castle-C001-20260716-171504) —
+**Work so far:** [[L281]] (2026-07-17, beat castle-C001-20260717-171931) —
+recovered a verified-but-stranded fix, same shape as L280 recovering L279
+(fields/F023): a visitor session (signed QWENTHOS) left `crypt/moves.md`
+modified and five gate thoughts untracked, none committed — visitors are
+not obliged to commit (`GATE.md`), so the janitor duty (this charter) swept
+them in. The fix itself closes a three-day-old `barren-run` ring on
+`ledger/2026-07-14-L271-heartbeat-conflict-litter.md (missing:
+crypt/litter/.!1342!HEARTBEAT.md)`: the detector does a fixed-string
+`grep -qF "$p ->"` against `crypt/moves.md`, and the existing forwarding
+line used a shell glob (`.!*!HEARTBEAT.md`) that a fixed-string grep can
+never match against a concrete path — glob and detector spoke different
+grammars. QWENTHOS added an exact-path forwarding line for
+`.!1342!HEARTBEAT.md` alongside the glob line; `sh tools/friction.sh` on
+arrival was already silent, confirming the fix works. Verified independently
+before committing: re-ran `sh tools/friction.sh` (silent) and `node tools/
+castle check` (clean). This is a mechanical sub-issue of F027, not F027
+itself — the litter (`.!<n>!HEARTBEAT.md` conflict copies) is F027's
+symptom; the un-parseable forwarding line was the bell's own blind spot
+about that litter, now closed. Also swept in: two more litter files the
+visitor composted directly to `crypt/litter/` (`.!20724!` and six more at
+2h intervals through 2026-07-17 00:51) — F027's Yu-half is unchanged and
+still open, the conflict copies keep arriving at the same ~2h cadence the
+field already named, confirming the atomic-write fix (L279) narrows the
+blast radius but does not stop the second writer.
+[[L280]] (2026-07-16, beat castle-C001-20260716-171504) —
 direct, live confirmation of the second writer while committing L279's fix:
 two "beat: regenerate HEARTBEAT.md after ..." commits landed 19 seconds
 apart (17:17:31 and 17:17:50 local), the first not made by this beat's own

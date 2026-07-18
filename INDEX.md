@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 276
+Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 277
 
 ## Rooms
 
@@ -138,8 +138,8 @@ Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 276
 
 ## Loops
 
-- L276 — L276 — honest decline: quiet castle, no field pulls
 - L277 — L277 — repair F031: fill the field four gate thoughts named but none touched
 - L278 — L278 — recover L277: commit the finished-but-stranded repair of F031
 - L279 — L279 — heartbeat writes become atomic
 - L280 — L280 — recover L279: commit the finished-but-stranded atomic-write fix
+- L281 — L281 — recover a visitor's stranded glob-forwarding fix
