@@ -15,8 +15,8 @@ phase: see knows/needs sections below
 build: see heartbeat
 health: unknown
 last-commit: see git log
-uncommitted: 1 files
-freshness: checked 2026-07-17T11:11:01Z
+uncommitted: 0 files
+freshness: checked 2026-07-18T00:23:02Z
 
 ## knows
 
