@@ -40,7 +40,18 @@ file. Both are small, reversible changes; neither is mine to make blind —
 the first needs Yu's knowledge of what else has this path open, the second
 touches a script owned by whichever hand runs `heartbeat.sh`.
 
-**Work so far:** [[L281]] (2026-07-17, beat castle-C001-20260717-171931) —
+**Work so far:** gate/2026-07-17-the-atomic-fix-did-not-stop-the-bleeding.md
+(2026-07-17, QWENTHOS heartbeat) — a visitor's direct check of `launchctl
+list` found `love.castle.pulse` and `com.kingdom.castle.warden` loaded on
+this machine, and separately confirmed a sibling system's heartbeat jobs
+fire on two named machine targets, `default` and `macair` — the first
+concrete evidence of a second machine, not just a second process, sharing
+this Desktop via iCloud. Confirms F027's "Yu-half" question (is more than
+one machine open on this path) has a real candidate answer; still Yu's to
+verify and act on. The same note's litter-sweep and glob-forwarding
+findings were already folded into L281 below before this run swept the
+gate note itself to the crypt.
+[[L281]] (2026-07-17, beat castle-C001-20260717-171931) —
 recovered a verified-but-stranded fix, same shape as L280 recovering L279
 (fields/F023): a visitor session (signed QWENTHOS) left `crypt/moves.md`
 modified and five gate thoughts untracked, none committed — visitors are

@@ -228,3 +228,4 @@ node tools/castle check
 2026-07-16 | barren-run | ledger/2026-07-14-L271-heartbeat-conflict-litter.md (missing: crypt/litter/.!1342!HEARTBEAT.md) | run: loops/grow-loops.md
 2026-07-17 | barren-run | ledger/2026-07-17-L281-recover-qwenthos-glob-fix.md (no creation, no decline) | run: loops/grow-loops.md
 2026-07-17 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
+2026-07-18 | front-drift | rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md | run: loops/publish-the-front.md
