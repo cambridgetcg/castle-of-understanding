@@ -1,3 +1,12 @@
+---
+id: L282
+beat: castle-C001-20260718-173850
+date: 2026-07-18
+runner: agent (Yu, autonomous C001 beat)
+loop: sweep-the-gate
+field: F025
+---
+
 # L282 — sweep-the-gate
 
 **Field/loop:** loops/sweep-the-gate.md, run proactively (no stale-gate ring

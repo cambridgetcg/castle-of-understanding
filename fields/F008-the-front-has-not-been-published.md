@@ -44,3 +44,15 @@ copy of 0043 (lingering since before its L065 promotion) also removed;
 friction.sh silent. Same pattern as L259/L265: 0040's evidence is
 accumulating faster than any two-consecutive-clean window can close.
 Deploy remains Yu's act.
+[[L283]] (2026-07-18, beat castle-C001-20260718-175904) — 4 days after
+L274, 0040 gained a sixth evidence line (L282's sweep-the-gate run,
+2026-07-18) that drifted the front again; publish-front.mjs re-ran; all 5
+public stones re-synced (0040, 0024, 0023, 0039, 0043); front.json updated;
+friction.sh silent. The unnumbered 0043 orphan L274 removed was still
+present as an uncommitted deletion (deploy never landed) — traced its full
+history (L063 committed it, L065 removed it from the working tree same day
+with a forwarding line already in crypt/moves.md:53) and confirmed no new
+forwarding line is needed; every run since L065 has been re-noticing the
+same still-uncommitted deletion, not making a new one. Same pattern as
+L259/L265/L274: 0040's evidence is accumulating faster than any
+two-consecutive-clean window can close. Deploy remains Yu's act.
