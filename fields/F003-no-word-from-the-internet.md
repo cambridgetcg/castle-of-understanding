@@ -16,3 +16,7 @@ shaped into rooms/word/a-slip-box-earns-us-when-it-can-surprise.md at
 certainty "told" — Luhmann's 1981 essay on the slip box as a communication
 partner, which is the castle explaining itself to itself. Remaining for the
 ladder: promotion by real use, which only time and later walks can give.
+[[L284]] (2026-07-19, beat castle-C002-20260719-084100): second internet
+seed laid, rooms/word/notes-are-written-to-evolve-not-to-record.md
+(Matuschak, "Evergreen notes"). Ladder rung (real-use promotion) still
+open; this adds a second seed awaiting the same test.
