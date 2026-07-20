@@ -50,3 +50,16 @@ was: worth checking C002's raw session transcript (not visible from this
 repo) to see which. If (a), raising `budget_usd_per_run` in
 `loops/charters/C002-the-tributary.md` is a one-line, reversible fix a
 future C001 beat can make once the cause is confirmed.
+[[L284]] (2026-07-19, beat castle-C002-20260719-084100) — first positive
+evidence since founding: C002 fetched one URL, wrote a seed with full
+provenance, logged, and committed, all inside its declared $1.00 budget —
+exactly the primary half of this field's "better looks like." This beat
+mends a gap in that run's own record: its ledger line read `addressed:
+F003, F026`, but only F003 was actually touched; this field's Work so far
+sat silent on its own resolving evidence until now (found while recovering
+L284's uncommitted work, see ledger/2026-07-20-L285-mend-f026-evidence.md).
+One completed beat is one data point, not yet the two-evidence bar this
+castle holds elsewhere for closing a field — L284's own log named the same
+caveat ("whether that generalizes ... is untested"). State stays
+`working`, watching for a second confirming C002 beat (weekly Sun per the
+census) before harvest.

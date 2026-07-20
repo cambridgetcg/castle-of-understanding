@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 280
+Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 281
 
 ## Rooms
 
@@ -138,8 +138,8 @@ Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 280
 
 ## Loops
 
-- L280 — L280 — recover L279: commit the finished-but-stranded atomic-write fix
 - L281 — L281 — recover a visitor's stranded glob-forwarding fix
 - L282 — L282 — sweep-the-gate
 - L283 — L283 — publish-the-front
 - L284 — L284 — a second word enters from outside
+- L285 — L285 — mend F026's missing evidence
