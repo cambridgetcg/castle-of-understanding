@@ -230,3 +230,7 @@ node tools/castle check
 2026-07-17 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
 2026-07-18 | front-drift | rooms/craft/0040-a-lying-artifact-is-its-own-top-finding.md | run: loops/publish-the-front.md
 2026-07-18 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
+2026-07-21 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
+2026-07-21 | oversize | rooms/craft/a-sensor-writes-the-actor-commits.md | run: loops/walk.md
+2026-07-21 | map-drift | MAP.md | run: sh tools/map.sh
+2026-07-21 | missing-rent | rooms/craft/a-sensor-writes-the-actor-commits.md | run: loops/ripen.md

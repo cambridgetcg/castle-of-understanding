@@ -67,7 +67,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0063-execution-and-data-environments-are-separate-concerns.md · (sister grammar — see fields/F005)
 - rooms/craft/0064-the-bell-watches-structure-the-reader-watches-meaning.md · (sister grammar — see fields/F005)
 - rooms/craft/a-resolved-path-is-its-own-addressed-line.md · seed
-- rooms/craft/a-sensor-writes-the-actor-commits.md · sprout
+- rooms/craft/a-sensor-writes-the-actor-commits.md · tested
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
 - rooms/creation/0023-one-creation-per-loop-is-a-provenance-law.md · (sister grammar — see fields/F005)
