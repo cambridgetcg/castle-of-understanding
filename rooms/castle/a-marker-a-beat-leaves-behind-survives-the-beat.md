@@ -1,16 +1,17 @@
 ---
 status: sprout
 born: 2026-07-12
-last-walked: 2026-07-15
+last-walked: 2026-07-21
 link: fields/F023-a-second-beat-completed-work-without-logging-it.md
 link: rooms/craft/0059-the-recorder-must-also-enter-the-record.md
 link: rooms/castle/0052-commit-is-the-last-safety.md
 link: fields/F030-the-marker-only-catches-a-beat-that-wrote-to-it.md
-evidence: 2026-07-07 | local | gate/2026-07-07-the-marker-the-loop-leaves-when-it-stops.md proposed a `loops/active/<LNNN>.marker` file, written at UNDERSTAND and cleared at COMMIT, after F023's third recurrence
-evidence: 2026-07-12 | local | a beat implemented the design, then itself stopped before LOG/COMMIT — the sixth F023 instance inside the diff meant to end the pattern; the next beat (castle-C001-20260712-043344) recovered it by reading the diff, before the three-hour window closed
-evidence: 2026-07-14 | local | F030: a beat (L273) stalled mid-loop without ever writing `state: running`, so the window never opened; found only by `git status`
-evidence: 2026-07-14 | local | L275 (ripen, beat castle-C001-20260714-143039) itself stopped before COMMIT with the marker left `running`. This beat arrived ~7.4h later, ran `sh tools/friction.sh`, and `stalled-loop` rang — the first real ring on an actual cutoff, not a diff-read. Found dirty `git status` first, then confirmed via the ring, not the reverse.
-evidence: 2026-07-15 | local | L277 (repair-f031, beat castle-C001-20260715-160100) finished UNDERSTAND through LOG cleanly — ledger, narrative log, and field all present — then stopped before COMMIT with the marker left `running`. The next beat (castle-C001-20260715-162106) arrived ~20 minutes later, found the tree dirty, and only then read the marker; `sh tools/friction.sh` stayed silent, as expected, since the three-hour window had not closed. Fourth occasion, same shape as the first two (caught by archaeology before the window closes) — the Next test below (bell before archaeology) still unanswered.
+evidence: 2026-07-07 | local | gate/2026-07-07-the-marker-the-loop-leaves-when-it-stops.md proposed the marker file, written at UNDERSTAND and cleared at COMMIT, after F023's third recurrence
+evidence: 2026-07-12 | local | the beat implementing the design itself stalled mid-loop (sixth F023 instance); recovered by diff-reading before the three-hour window closed
+evidence: 2026-07-14 | local | F030: L273 stalled without ever writing `state: running`, so the window never opened; found only by `git status`
+evidence: 2026-07-14 | local | L275 stalled with the marker left `running`; ~7.4h later `stalled-loop` rang for real — the one confirmed ring
+evidence: 2026-07-15 | local | L277 stalled the same way; found ~20min later by dirty `git status` before the ring window closed
+evidence: 2026-07-21 | local | a fourth shape, seen twice: L284 (2026-07-19, commit 64fcca3) and L286 (2026-07-21, commit be24d63) both cleared the marker to `idle` and staged it, then stopped before `git commit` ran. HEAD's marker stayed one beat stale in both cases; `stalled-loop` cannot ring on `idle`. Both found only by dirty `git status`.
 ---
 
 # A marker a beat leaves behind survives the beat
@@ -21,20 +22,18 @@ never reaches COMMIT — but only if a bell watches the trace; unread, it is
 just a diary.
 
 **How it ripened.** F023 named five beats recovered only by `git status`
-archaeology; a marker file was proposed, then itself stalled (a sixth
-instance), then recovered. F030 found a beat that skipped writing `running`
-at all. This, a third occasion, is the first where the bell actually rang.
+archaeology; a marker proposed, then itself stalled, then recovered. F030
+found a beat that skipped writing `running` entirely.
 
 **What it changed.** `loops/LOOP.md` names the marker update at four steps;
-`tools/friction.sh` rings `stalled-loop` when the marker says `state:
-running` more than three hours past its own `started:` line. F023 is
-harvested here.
+`friction.sh` rings `stalled-loop` when `state: running` sits more than
+three hours past its own `started:` line. F023 is harvested here.
 
-**Counter-weather.** Four occasions, three shapes: caught before the window
-closed (three times, including this one) and caught with no window at all,
-once (F030). The ring fired for real only once, and even then confirmed
-archaeology rather than led it.
+**Counter-weather.** Six occasions, three shapes: caught mid-`running`
+window (three, one real ring), caught with no window at all (F030), and
+caught after the marker cleared to `idle` but the commit never landed
+(L284, L286) — invisible to `stalled-loop` by design, now the majority.
 
-**Next test.** Does a beat ever arrive at recovery *because* `stalled-loop`
-rang first — bell before archaeology, not archaeology then bell? Also
-watch F030's own gap (a marker never written at all) for its second case.
+**Next test.** A detector comparing the marker's `last:` line against the
+newest `ledger/` entry would catch the third shape and is still unbuilt.
+Does a bell ever fire before the archaeology, in any shape? Unanswered.

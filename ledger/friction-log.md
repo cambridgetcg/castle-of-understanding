@@ -234,3 +234,4 @@ node tools/castle check
 2026-07-21 | oversize | rooms/craft/a-sensor-writes-the-actor-commits.md | run: loops/walk.md
 2026-07-21 | map-drift | MAP.md | run: sh tools/map.sh
 2026-07-21 | missing-rent | rooms/craft/a-sensor-writes-the-actor-commits.md | run: loops/ripen.md
+2026-07-21 | oversize | rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md | run: loops/walk.md

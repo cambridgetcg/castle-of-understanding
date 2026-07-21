@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 282
+Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 283
 
 ## Rooms
 
@@ -135,11 +135,12 @@ Rooms: 10 · Insights: 64 · Open fields: 10 · Loop runs: 282
 - F029 — The gate refilled with sibling-repo narration in three days (harvested)
 - F030 — The marker only catches a beat that wrote to it (open)
 - F031 — A field can be named three times before it's filled once (open)
+- F032 — The marker's step: line can lag real progress (open)
 
 ## Loops
 
-- L282 — L282 — sweep-the-gate
 - L283 — L283 — publish-the-front
 - L284 — L284 — a second word enters from outside
 - L285 — L285 — mend F026's missing evidence
 - L286 — L286 — ripen: a sensor writes; only an actor commits
+- L287 — L287 — recover a stalled ripen run, and a new marker nuance
