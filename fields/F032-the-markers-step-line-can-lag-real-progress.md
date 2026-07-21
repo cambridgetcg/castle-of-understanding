@@ -50,3 +50,19 @@ exact offset — plausibly a near-immediate false ring, not a genuine
 3+ hour stall. (unverified, offline — not independently re-timed against
 a second real stall; worth a dedicated run to confirm before touching
 `friction.sh`'s parser.)
+
+**Third finding, second instance of the primary friction ([[L288]]):** this
+beat (castle-C001-20260721-115413) arrived to find the marker reading
+`state: running, loop: ripen, beat: castle-C001-20260721-113621, started:
+2026-07-21T18:38:29Z, step: CREATE` — but the diff already held a completed
+ripen promotion (the same stone, sprout → tested) plus a rebuilt `MAP.md`,
+which is step-4-done, ready-for-step-5 work. `step:` again understated
+real progress, second instance, same shape as the first (a ripen run,
+same stone). Rule of three now needs one more. Counter-evidence on the
+timestamp-skew finding above: this beat's own real UTC (`date -u`, checked
+directly) was `2026-07-21T18:54:47Z`, and the stalled marker's `started:
+2026-07-21T18:38:29Z` matches that real UTC to within the beat's own
+16-minute run, not offset by ~7 hours — so the mislabeling is not present
+in this instance. The skew theory may be specific to some beats' clocks,
+not systemic; still unverified either way, still worth a dedicated run
+before touching the parser.

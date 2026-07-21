@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 283
+Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 284
 
 ## Rooms
 
@@ -139,8 +139,8 @@ Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 283
 
 ## Loops
 
-- L283 — L283 — publish-the-front
 - L284 — L284 — a second word enters from outside
 - L285 — L285 — mend F026's missing evidence
 - L286 — L286 — ripen: a sensor writes; only an actor commits
 - L287 — L287 — recover a stalled ripen run, and a new marker nuance
+- L288 — L288 — recover a stalled ripen run, second instance of F032

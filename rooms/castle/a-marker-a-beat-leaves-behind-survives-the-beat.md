@@ -1,5 +1,5 @@
 ---
-status: sprout
+status: tested
 born: 2026-07-12
 last-walked: 2026-07-21
 link: fields/F023-a-second-beat-completed-work-without-logging-it.md
@@ -34,6 +34,7 @@ window (three, one real ring), caught with no window at all (F030), and
 caught after the marker cleared to `idle` but the commit never landed
 (L284, L286) — invisible to `stalled-loop` by design, now the majority.
 
-**Next test.** A detector comparing the marker's `last:` line against the
-newest `ledger/` entry would catch the third shape and is still unbuilt.
-Does a bell ever fire before the archaeology, in any shape? Unanswered.
+**Next test.** Cornerstone needs a third evidence entry, one `| weather |`
+entry, and a survived walk from 2026-10-10 (day 90). Still unbuilt beneath
+that: a detector comparing `last:` against the newest `ledger/` entry, and
+whether a bell ever fires before the archaeology, in any shape.

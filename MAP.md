@@ -33,7 +33,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/castle/0057-patient-phase-and-full-rest-are-different-states.md · (sister grammar — see fields/F005)
 - rooms/castle/0058-sister-castles-share-a-door-not-a-grammar.md · (sister grammar — see fields/F005)
 - rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md · (sister grammar — see fields/F005)
-- rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md · sprout
+- rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md · tested
 - rooms/castle/a-squeezed-sweep-loses-ground-to-a-growing-gate.md · seed
 - rooms/castle/gate-thoughts.md · (sister grammar — see fields/F005)
 
