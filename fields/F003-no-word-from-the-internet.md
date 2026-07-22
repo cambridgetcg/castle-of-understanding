@@ -27,3 +27,6 @@ accumulated evidence across two genuinely separate fields, F022 and F024) —
 answers the stone's own named Next test. Cornerstone gate seed planted
 (re-read after 2026-10-17). The first word-room internet-contact seed
 (0029) remains at confidence: seed, still awaiting its own real-use test.
+[[L290]] (2026-07-22, beat castle-C001-20260722-150333): walk — the same
+stone had grown oversize (46 lines) during L289's promotion; re-distilled
+to 38 lines, same facts kept, no meaning lost.

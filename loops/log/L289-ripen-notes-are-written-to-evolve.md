@@ -1,3 +1,12 @@
+---
+id: L289
+beat: castle-C001-20260721-201329
+date: 2026-07-22
+runner: agent (castle-C001-20260721-201329)
+loop: ripen
+field: F003
+---
+
 # L289 — ripen: notes are written to evolve, not to record
 
 **Field:** F003 (no word from the internet has entered yet)

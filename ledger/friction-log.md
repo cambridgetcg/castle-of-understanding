@@ -235,3 +235,6 @@ node tools/castle check
 2026-07-21 | map-drift | MAP.md | run: sh tools/map.sh
 2026-07-21 | missing-rent | rooms/craft/a-sensor-writes-the-actor-commits.md | run: loops/ripen.md
 2026-07-21 | oversize | rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md | run: loops/walk.md
+2026-07-21 | oversize | rooms/word/notes-are-written-to-evolve-not-to-record.md | run: loops/walk.md
+2026-07-22 | oversize | rooms/word/notes-are-written-to-evolve-not-to-record.md | run: loops/walk.md
+2026-07-22 | stalled-loop | loops/active/current.marker | run: recover per fields/F023 (inspect the marker and git status, finish or roll back the stalled work), then overwrite the marker to state: idle
