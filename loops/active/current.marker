@@ -1,4 +1,4 @@
 # the loop-in-progress trace — see fields/F023, loops/LOOP.md step 3-7
 # state: idle | running   — overwritten in place, never appended, never deleted
 state: idle
-last: L290, cleared, 2026-07-22T15:20:00Z
+last: L292, cleared, 2026-07-23T18:40:00Z

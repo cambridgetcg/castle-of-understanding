@@ -146,6 +146,12 @@ all_rings() {
         # to crypt) or by storefront cleanup (the stale copy is removed) —
         # both remove the exact path this ring named; a gone path is the close
         case "$sig" in "front-drift | "*) [ -e "$p" ] || continue ;; esac
+        # stale-gate resolves by sweep-the-gate moving the file to crypt/ —
+        # the hard rule (never delete) means a gone gate/ path was swept, not
+        # lost; re-run the live detector's own test (existence) rather than
+        # require an addressed: line, since sweep runs close with declined:
+        # or a plain crypt-move line, not always the addressed: grammar
+        case "$sig" in "stale-gate | "*) [ -e "$p" ] || continue ;; esac
         # oversize resolves by promotion-and-shrink (path gone, same as
         # front-drift) or by an in-place edit (path persists but is no longer
         # over 40 lines) — re-run the detector's own test on the live file

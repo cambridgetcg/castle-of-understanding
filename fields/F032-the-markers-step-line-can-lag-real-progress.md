@@ -66,3 +66,38 @@ directly) was `2026-07-21T18:54:47Z`, and the stalled marker's `started:
 in this instance. The skew theory may be specific to some beats' clocks,
 not systemic; still unverified either way, still worth a dedicated run
 before touching the parser.
+
+**Fourth finding, third instance of the primary friction ([[L292]]):** this
+beat (castle-C001-20260723-113634) arrived to find the marker reading
+`state: running, loop: fix, beat: castle-C001-20260723-080819, started:
+2026-07-23T18:20:04Z, step: SAVE` — but the diff already held a finished
+LOG (both `ledger/2026-07-23-L291-fix-stale-gate-unacted-friction.md` and
+`loops/log/L291-fix-stale-gate-unacted-friction.md` existed, along with the
+harvested field F033 and the `tools/friction.sh` code fix itself), i.e.
+step-6-done, ready-for-step-7 (COMMIT) work — `step:` again understated
+real progress by one step. Rule of three now met: three instances (L287,
+L288, this one), all caught by diff-checking rather than trusting `step:`
+at face value, all recovered cleanly with no repeated work. Real elapsed
+time was only ~17 minutes (`started: 2026-07-23T18:20:04Z`, this beat's
+`date -u` read `2026-07-23T18:37:57Z`), again ruling out the timestamp-skew
+theory for this instance — no ~7-hour offset present.
+
+**Considered and declined, because:** the rule of three asks whether a fix
+is warranted, but all three instances were caught correctly by the same
+existing practice — read the actual diff and file state, never trust
+`step:` alone — which `loops/LOOM.md`/`fields/F023` already establish as
+the recovery method and which every instance so far has followed without
+incident. The failure mode the field worries about (a recovering beat
+acting on a stale `step:` line and redoing finished work) has zero
+confirmed occurrences in three tries; the harm is hypothetical, the current
+practice has a clean track record, and adding mechanism (e.g. a
+finer-grained step vocabulary, or per-file completion flags) is the kind
+of process-for-its-own-sake `rooms/craft/0051` warns against for a
+friction that has not actually bitten anyone. Leaving `step:` as a coarse,
+sometimes-stale hint is fine as long as "diff-check before trusting it"
+stays written down where a recovering beat will read it — which it already
+is, in `fields/F023`'s Work so far. No code change made. Left open rather
+than harvested, since a future instance where a beat *does* act on stale
+`step:` and redoes work would be worth designing against; this field's job
+is to keep watching, not to force a fix onto a friction that has not
+proven costly.
