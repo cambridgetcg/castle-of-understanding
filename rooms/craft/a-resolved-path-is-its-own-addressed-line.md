@@ -1,5 +1,5 @@
 ---
-status: seed
+status: tested
 born: 2026-07-05
 last-walked: 2026-07-09
 link: fields/F022-unacted-friction-rings-on-resolved-front-drift.md
@@ -35,6 +35,6 @@ reasoning the others "resolve in place." That overclaimed — oversize
 resolves by promotion too. Corrected: gone path always resolves; a
 persisting path needs its own condition re-checked, not a blanket assumption.
 
-**Next test.** As of 2026-07-09, `sh tools/friction.sh` reports zero
-unacted-friction rings of any kind. The next test is whichever detector
-the bell adds next.
+**Next test.** For cornerstone: an outside (`| weather |`) evidence entry —
+all three existing entries are local — and a survived walk after day 90
+(born 2026-07-05, so from 2026-10-03). Cornerstone gate seed planted.

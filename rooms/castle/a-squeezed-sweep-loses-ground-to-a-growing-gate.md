@@ -1,5 +1,5 @@
 ---
-status: seed
+status: tested
 born: 2026-07-11
 last-walked: 2026-07-11
 link: fields/F025-the-gate-is-overflowing-with-unswept-thoughts.md
@@ -33,6 +33,7 @@ when the gate was near-empty. The claim holds only once input has already
 outpaced casual clearing; spotting that threshold before committing budget
 is still judgment, not a mechanical test.
 
-**Next test.** Watch the next gate-overflow field: if it too is cleared
-only by a dedicated run, never a squeezed one, that is a second point
-toward promotion.
+**Next test.** For cornerstone: a third evidence entry (weather preferred —
+does this scheduling lesson match published advice on backlog processing
+outside the castle) and a survived walk after day 90 (born 2026-07-11, so
+from 2026-10-09). Cornerstone gate seed planted.

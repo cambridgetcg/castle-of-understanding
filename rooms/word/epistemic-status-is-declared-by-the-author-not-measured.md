@@ -1,5 +1,5 @@
 ---
-status: seed
+status: sprout
 born: 2026-07-12
 last-walked: 2026-07-12
 link: rooms/word/0029-a-slip-box-earns-us-when-it-can-surprise.md

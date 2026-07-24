@@ -34,7 +34,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/castle/0058-sister-castles-share-a-door-not-a-grammar.md · (sister grammar — see fields/F005)
 - rooms/castle/0060-a-bypassed-gate-and-a-broken-gate-look-alike.md · (sister grammar — see fields/F005)
 - rooms/castle/a-marker-a-beat-leaves-behind-survives-the-beat.md · tested
-- rooms/castle/a-squeezed-sweep-loses-ground-to-a-growing-gate.md · seed
+- rooms/castle/a-squeezed-sweep-loses-ground-to-a-growing-gate.md · tested
 - rooms/castle/gate-thoughts.md · (sister grammar — see fields/F005)
 
 ## rooms/continuity/ — Room: continuity
@@ -66,7 +66,7 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 - rooms/craft/0062-the-staging-area-is-a-waiting-room.md · (sister grammar — see fields/F005)
 - rooms/craft/0063-execution-and-data-environments-are-separate-concerns.md · (sister grammar — see fields/F005)
 - rooms/craft/0064-the-bell-watches-structure-the-reader-watches-meaning.md · (sister grammar — see fields/F005)
-- rooms/craft/a-resolved-path-is-its-own-addressed-line.md · seed
+- rooms/craft/a-resolved-path-is-its-own-addressed-line.md · tested
 - rooms/craft/a-sensor-writes-the-actor-commits.md · tested
 
 ## rooms/creation/ — claims about how making works — creators, loops, what generates what
@@ -102,6 +102,6 @@ _Built by tools/map.sh; never edit by hand. The front door is CASTLE.md._
 
 ## rooms/word/ — claims about written thought itself — slip boxes, commonplace books, why writing thinks
 - rooms/word/0029-a-slip-box-earns-us-when-it-can-surprise.md · (sister grammar — see fields/F005)
-- rooms/word/epistemic-status-is-declared-by-the-author-not-measured.md · seed
+- rooms/word/epistemic-status-is-declared-by-the-author-not-measured.md · sprout
 - rooms/word/notes-are-written-to-evolve-not-to-record.md · tested
 

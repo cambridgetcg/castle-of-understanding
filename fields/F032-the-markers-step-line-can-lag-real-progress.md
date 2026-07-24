@@ -101,3 +101,20 @@ than harvested, since a future instance where a beat *does* act on stale
 `step:` and redoes work would be worth designing against; this field's job
 is to keep watching, not to force a fix onto a friction that has not
 proven costly.
+
+**Fifth finding, fourth instance of the primary friction ([[L294]]):** this
+beat (castle-C001-20260724-082955) arrived to find the marker reading
+`state: running, loop: ripen, beat: castle-C001-20260724-081123, started:
+2026-07-24T15:11:45Z, step: UNDERSTAND` — but the diff already held a
+finished ripen sweep (three stones promoted, two cornerstone-test gate
+seeds planted, both maps rebuilt) plus a complete `ledger/2026-07-24-L293-ripen.md`
+and narrative log, i.e. step-6-done, ready-for-step-7 (COMMIT) work — the
+widest gap yet recorded (`step:` frozen at the first step while five steps
+of real work followed). Sole defect found: the narrative log itself was
+missing its frontmatter block, caught cleanly by `tools/castle check`
+exactly as `fields/F023` prescribes. Recovered the same way as the prior
+three instances: read the diff, trusted it over the marker, added the
+missing frontmatter, rebuilt `INDEX.md`/`MAP.md`, verified `castle check`
+and `friction.sh` both clean. Fourth confirmed occurrence, zero confirmed
+harm — still no case of a recovering beat acting on stale `step:` and
+redoing finished work. No code change made; still watching.

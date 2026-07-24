@@ -2,7 +2,7 @@
 
 Rebuilt by tools/castle map — do not edit by hand.
 
-Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 288
+Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 290
 
 ## Rooms
 
@@ -140,8 +140,8 @@ Rooms: 10 · Insights: 64 · Open fields: 11 · Loop runs: 288
 
 ## Loops
 
-- L288 — L288 — recover a stalled ripen run, second instance of F032
-- L289 — L289 — ripen: notes are written to evolve, not to record
 - L290 — L290 — walk: re-distill an oversize word-room stone
 - L291 — L291 — fix: stale-gate blind spot in unacted-friction
 - L292 — L292 — recover a stalled fix, third instance of F032
+- L293 — L293 — ripen: three seeds the bell never flagged
+- L294 — L294 — recover a stalled ripen run, fourth instance of F032
