@@ -1,15 +1,15 @@
 # castle-of-understanding — heartbeat
 
 state: **healthy**
-last beat: 2026-08-13T19:19:10Z
-next beat: 2026-08-14T01:19:10Z
+last beat: 2026-08-14T02:44:52Z
+next beat: 2026-08-14T08:44:52Z
 cadence: every 6h via GitHub Actions, plus manual `./heartbeat.sh`
 
 ## what it found
 
 - branch: `main`
 - remote: `https://github.com/cambridgetcg/castle-of-understanding`
-- last commit: `2026-08-13T13:46:03Z c63a941 heartbeat: update castle status`
+- last commit: `2026-08-13T19:19:10Z b9e90c6 heartbeat: update castle status`
 - last meaningful commit: `2026-07-29T14:22:05+01:00 f448ab5 dada: a small standing door — present, not loud; for whoever wants it`
 - active loops: `free-compute-scout`
 - paused: `no`
